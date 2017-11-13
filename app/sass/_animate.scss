@@ -1681,6 +1681,18 @@
   animation: spinLeft 8s linear infinite;
 }
 
+@keyframes skyAnimate {
+  0% { 
+    background-position-y: 0%;
+  }
+  100% { 
+    background-position-y: 100%;
+  }
+}
+.skyAnimate{
+  animation: skyAnimate 120s linear infinite;
+}
+
 
 @keyframes fadeInSlow{
   from {
