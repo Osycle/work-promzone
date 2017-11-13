@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		
+	  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+   	<link rel="stylesheet" href="css/main.css">
+
+
+		<script src="js/scripts.min.js"></script>
+		<script src="js/main.js"></script>
+		
+
+    <title>Title</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+<body>
+	<div id="page">
+	<noscript>
+		<p>Ваш браузер не поддерживает скрипты!<br/> 
+			 Пожалуйста подключите в настройках браузера Javascript</p>
+	</noscript> 
+	<!-- HEADER -->
+	
+
+
+
+
+
+
+
+
+	<div class="header-hidden"></div>
+	<header id="header" class="header-scroll">
+		<!-- HEADER TOP -->
+		<div class="skin-header-top ">
+			<div class="container">
+				<!-- HEADER NAVBAR -->
+				<div class="header-navbar">
+
+					<div class="container padd-0">
+
+						<div class="slogan-1">
+							<span>Традиции выдержанные временем!</span>
+						</div>
+
+						<div class="dropdown-lang">
+						  <div tabindex="1" role="button" class="dropbtn">
+						  	<span>RU</span><i class="fa fa-angle-down"></i>
+						  </div>
+						  <div class="dropdown-content">
+						    <a href="ru">RU</a>
+						    <a href="uz">UZ</a>
+						    <a href="en">EN</a>
+						  </div>
+						</div>
+		      <!-- MENU TOGGLE BUTTON -->
+			     <button class="menu-toggle collapsed" type="button" data-toggle="modal" data-target="#menuModal">
+			       <span class="icon-bar"></span>
+			       <span class="icon-bar"></span>
+			       <span class="icon-bar"></span>
+			    </button>
+						<!-- NAV FEEDBACK -->
+						<div class="nav-feedback">
+							<button class="btn-blue-1" type="button" data-toggle="modal" data-target="#feedback-modal">
+								<b class="clc">Связаться с нами</b>
+							</button>
+						</div>
+
+
+					</div>
+
+
+			  </div><!-- ./HEADER NAVBAR -->
+			</div><!-- ./CONTAINER -->
+		</div><!-- ./HEADER TOP -->
+
+
+
+
+     <!-- HEADER BOTTOM -->
+		<div class="skin-header-footer ">
+      <div class="container">
+	      <!-- MAIN NAVBAR -->
+			 	<nav class="main-navbar">
+	      	<div class="container padd-0">
+
+				    <!-- LOGOTYPE -->
+			      <div class="logo">
+			      	<a  href="index.html" ><img src="img/logo.png"/></a>
+			      </div>
+
+			    	<!-- SLOGAN-2 -->
+						<div class="slogan-2">
+							<font size="5">
+								<span>
+									ХК Узвинсаноат-холдинг<br/>
+									АО ИИ "Тошкентвино Комбинати
+								</span>
+							</font>
+						</div>
+
+		        <!-- MENU -->
+		       	<div class="nav-menu">
+			       	<div class="nav-header">
+
+		          <ul class="menu-list">
+								<li><a href="about.html">О компании</a>
+									<ul class="sub-menu-1">
+										<li><a href="factories.html">Наши заводы</a></li>
+										<li><a href="documents.html">Документы</a></li>
+									</ul>
+								</li>
+								<li><a href="vacancies.html">Вакансии</a></li>
+								<li><a href="production.html">Продукция</a></li>
+								<li><a href="rewards.html">Награды</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+		          </ul>
+							
+			      	</div>
+			      </div>
+
+			      <!-- NAV-SEARCH -->
+			      <div class="nav-search aSearch" tabindex="2">
+
+			      	<form method="POST" action="search.php">
+
+	              <b role="button" class="btn-search"><i class="fa fa-search"></i></b>
+
+	              <div class="nav-search-content">
+	              	<input class="form-control hide" type="search" minlength="3" required="required" name="query" value="" placeholder="Поиск">
+	              	<button type="submit" class="btn-search-sub hide"><i class="fa fa-search"></i></button>
+	              </div>
+
+	            </form>
+
+			      </div>
+
+					</div>
+			  </nav><!-- ./MAIN NAVBAR -->
+			</div>
+		</div>
+		
+	</header>
+
+
+
+	<!-- MIN MENU MODAL -->
+  <div class="min-menu-modal modal scale a-minMenu" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="min-menu">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	
+	    	<button type="button" class="btn" data-dismiss="modal">
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+
+	      <div class="modal-body min-navbar">
+	      	<!-- js append menu -->
+	      </div>
+	      
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+	<!-- FEEDBACK MODAL-->
+	<div class="feedback-modal modal scale" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="feedback">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+
+	    	<button type="button" class="btn" data-dismiss="modal">
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+
+	      <div class="modal-body">
+
+
+					<div class="col-md-12 success-info">
+						<div id="success-message"></div>
+						<div id="fail-message"></div>
+					</div>
+					<h2>Связаться с нами</h2>
+	      	<form id="feedback" method="post" action="feedback.php" class="contact-form">
+
+
+
+						<label>Ваше имя</label>
+						<input class="form-control" 
+									 type="text" 
+									 name="name" 
+									 placeholder="Имя" autocomplete="off" required="required"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Введите своё имя"/>
+
+
+
+						<label>Электронная почта</label>
+						<input class="form-control" 
+									 type="email" 
+									 name="email" 
+									 placeholder="email" autocomplete="off" required="required"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Укажите электронную почту"/>
+
+
+						<label>Номер телефона</label>
+						<input class="form-control" type="tel" 
+									 name="phone" 
+									 placeholder="+998 (xx) xxx-xx-xx" autocomplete="off" required="required"
+									 minlength="14"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Укажите номер телефона"/>
+
+
+
+						<textarea class="form-control" 
+									 name="message" 
+									 placeholder="Сообщение"></textarea>
+						
+	      	</form>
+			      <div class="modal-footer">
+			      	<button type="submit" class="align-right btn-opacity" form="feedback" autofocus="autofocus">Отправить</button>
+			      </div>
+
+	      </div>
+
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- MAIN -->
+	<main class="container-fluid">
+
+
+
+
+
+		<!-- BANNER -->
+		<div id="banner" class="row" style="background-image: url('img/slider/slide-1.jpg');" 
+																 data-toggle-img="background-image: url('img/slider/slide-2.jpg');" >
+
+		<div class="banner-shadow wow fadeIn" data-wow-dalay="0.6s">
+			</div>
+				<div class="container">
+
+					<div class="banner-content">
+
+						<h1 class="wow fadeIn" data-wow-delay="0.5s">Вакансии</h1>
+
+						<ol class="breadcrumb wow fadeIn padd-hor-0 marg-bottom-0 marg-top-15" data-wow-delay="1s">
+						  <li><a href="index.html">Главная</a></li>
+						  <li class="active"><a href="">Вакансии</a></li>
+						</ol>
+
+					</div>
+
+				</div> <!-- ./CONTEINER -->
+		</div><!-- ./BANNER -->
+
+
+		<!-- CONTACT -->
+		<div class="row m-v-60 wow fadeIn" data-wow-duration="1s" >
+			<div class="container">
+						<div class="col-md-10 col-md-offset-left-1 list-style parag-m-v-15">
+							<h2>Вакансии</h2>
+							<em>Порядок приема на работу и требования к кандидату</em>
+
+							<p>
+								Исходя из производственной необходимости предприятие проводит подбор кадров по требуемым: специальности, квалификации, образованию и компетентности. 
+							</p>
+							<p>
+								Практикуется подбор кадров по рекомендации компании "Узвиносаноат-холдинг". Кандидат на вакантное место проходит собседеования у руководителя подразделения, куда он принимается, при необходимости в присутствии начальника отдела кадров. 
+							</p>
+							<p>
+								При положительных результатах собеседования пакет документов кандидата передается на рассмотрение генеральному директору.
+							</p>
+							<p>
+								После одобрения генерального директора и представления всех необходимых документов заключается трудовой договор.
+							</p>
+							<p>
+								Вновь принимаемый работник должен предоставить следующие документы в отдел кадров:
+							</p>
+							<div class="p-h-60">
+								<ul>
+									<li><b><em>Трудовую книжку</em></b></li>
+									<li><b><em>Подлинник и копии паспорта, диплома и военного билета</em></b></li>
+									<li><b><em>Справку о прохождении медицинского осмотра</em></b></li>
+									<li><b><em>Справку с маста жительства</em></b></li>
+									<li><b><em>Накопительную пенсионную книжку</em></b></li>
+									<li><b><em>Справку ИНН (С налоговой)</em></b></li>
+									<li><b><em>Фотокарточки</em></b></li>
+								</ul>
+							</div>
+							<p>
+								После предоставления всех необходимых документов и одобрения генерального директора предприятия заключается трудовой договор (Приложение №2 к постановлению КМ РУз от 11.03.1997 №133)
+							</p>
+							<p>
+								Издается приказ о приеме на работу с испытательным сроком на определенное время. На нового работника заводится личная карточка с указанием данных об образовании, опыте, подготовке и квалификации. Принятый сотрудник проходит вводный инструкаж по технике безопасности в зависимости от занимаемой должности и рабочего места. Подготовка работника на рабочем месте проводится путем индивидуального обучения техническим персоналом подразделения.
+							</p>
+							<p>
+								По завершению испытательного срока руководитель соотвутствующего подразделения составляет отчет о пройденном обучении, а также о соответствии работника должности.
+							</p>
+							<p>
+								Условием приема на работу является обеспечение правильного подбора и расстановки кадров, требование к кандидатам - образование, грамотность, компетентность и профессиональная квалификация.
+							</p>
+							 
+						</div>
+						<div class="contact">
+							<div class="col-xs-12 col-md-8 col-md-offset-left-2">
+								<div class="row">
+									<div class="col-md-12 success-info p-v-30">
+										<div id="success-message"></div>
+										<div id="success-error"><font color="tomato"></font></div>
+									</div>
+
+									<form id="resume" method="post" action="" class="contact-form">
+
+										<div class="col-xs-12 col-sm-6 ">
+											<label>Вакансия</label>
+											<input type="text" placeholder="Укажите вакансию" name="subject" class="contact-form form-control input">
+										</div>
+										<div class="col-xs-12 col-sm-6 ">
+											<label>Имя</label>
+											<input type="text" placeholder="Ваше Имя" name="name" class="contact-form form-control input">
+										</div>
+										<div class="col-xs-12 col-sm-6 ">
+											<label>Эл. почта</label>
+											<input type="email" placeholder="Ваша почта" name="email" class="contact-form form-control input">
+										</div>
+										<div class="col-xs-12 col-sm-6 ">
+											<label>Телефон</label>
+											<input type="text" placeholder="+998 (xx) xxx-xx-x" name="phone" class="contact-form form-control input phone">
+										</div>
+										<div class="col-xs-12 col-sm-12 align-left">
+											<label>Расскажите о себе</label>
+											<textarea placeholder="Рассказ о себе и достижениях" cols="30" rows="10" name="message" class="contact-form form-control textarea">
+											</textarea>
+										</div>
+										<div class="col-xs-12 col-sm-12 align-left">
+											<label>Прикрепить резюме:</label>
+											<div class="box">
+												<input type="file" name="fileforsending" id="file-7" class="inputfile inputfile-6">
+												<label for="file-7">
+												<span></span> 
+												<strong role="button" class="m-l-5">Выбрать файл</strong>
+												</label>
+											</div>
+										</div>
+
+										<div class="col-xs-12 col-sm-12 align-center">
+											<button class="contact-form form-control submit btn-a btn-a_fill_theme" type="submit">Отправить</button>
+										</div>
+
+									</form>
+								</div>
+							</div>
+						</div>
+
+			</div> <!-- ./CONTAINER -->
+		</div><!-- ./CONTACT -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	</main><!-- ./MAIN -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- FOOTER -->
+	<footer id="footer" class="containe-fluid">
+			<div class="container">
+				<div class="float-left p-v-60">
+
+				<div class="sector col-md-3 p-v-30 footer-menu hidden-xs">
+          <ul>
+						<li><a href="about.html">О компании</a></li>
+						<li><a href="vacancies.html">Вакансии</a></li>
+						<li><a href="production.html">Продукция</a></li>
+						<li><a href="rewards.html">Награды</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+          </ul>
+				</div>
+
+
+				<div class="sector col-md-6 footer-about parag-m-t-30">
+					<div>
+						<p>
+							Комбинат Ташкентвино – одно из старейших предприятий в своей отрасли, 
+							основанное в 1867 г. в предместье Ташкента у берега канала Салар.
+						</p>
+						<p>
+							Завод развивается высокими темпами, строятся новые производственные цеха и винный подвал. 
+							За короткое время продукция завода становится известной не только в России, 
+							но и за рубежом.
+						</p>
+					</div>
+				</div>
+
+
+				<div class="sector col-md-3 footer-contacts parag-m-t-30">
+					<div>
+						<span class="text-uppercase">Юридический Адрес:</span></br>
+						<p>
+							Республика Узбекистан, 100060</br>
+							г. Ташкент, ул. Истикбол, 45
+						</p>
+
+						<p>
+							Тел: (998 71) 236-73-22,</br>
+							Факс: (998 71) 255-76-47
+						</p>
+
+						<p>
+							E-mail:<br>
+							<a href="mailto:tashkentvino@gmail.com">tashkentvino@gmail.com</a>
+							<a href="mailto:tashvino@mail.ru">tashvino@mail.ru</a>
+							<a href="mailto:info@tashkentvino.com">info@tashkentvino.com</a>
+						</p>
+
+					</div>
+				</div>
+
+		</div>
+
+
+
+
+			<div class="col-md-12 p-v-30 footer-footer">
+
+				<div class="col-md-6 social">
+					<ul>
+						<li><a href=""><img src="img/icons/facebook.png"/></a></li>
+						<li><a href=""><img src="img/icons/telegram.png"/></a></li>
+						<li><a href=""><img src="img/icons/youtube.png"/></a></li>
+						<li><a href=""><img src="img/icons/instagram.png"/></a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-6 copyright">
+					<p>
+						<a href="https://www.life-style.uz" 
+								title="Создание и продвижение сайтов в Ташкенте"
+								style="text-decoration: underline;">Создание сайтов</a> 
+								<em><font color="fcdbee">Life</font></em>
+								<font color="ghostwhite">Style</font>
+					</p>
+				</div>
+			
+
+
+			</div>
+
+		</div>
+	</footer>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

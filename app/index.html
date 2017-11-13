@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		
+	  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+   	<link rel="stylesheet" href="css/main.css">
+
+
+		<script src="js/scripts.min.js"></script>
+		<script src="js/main.js"></script>
+		
+
+
+    <title>Title</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+<body>
+	<div id="page">
+	<noscript>
+		<p>Ваш браузер не поддерживает скрипты!<br/> 
+			 Пожалуйста подключите в настройках браузера Javascript</p>
+	</noscript> 
+	<!-- HEADER -->
+	
+	<div class="header-hidden"></div>
+	<header id="header" class="header-scroll">
+		<!-- HEADER TOP -->
+		<div class="skin-header-top ">
+			<div class="container">
+				<!-- HEADER NAVBAR -->
+				<div class="header-navbar">
+
+					<div class="container padd-0">
+
+				    <!-- LOGOTYPE -->
+			      <div class="logo">
+			      	<a  href="index.html" ><img src="img/logo.png"/></a>
+			      </div>
+
+						<div class="slogan">
+							<p>ГУП "Дирекция по управлению<br>
+									малой промышленной<br>
+									зоной Яккасарой"
+							</p>
+						</div>
+
+						<div class="emblem">
+							<a  href="index.html" ><img src="img/emblem.png"/></a>
+						</div>
+
+			      <!-- MENU TOGGLE BUTTON -->
+				     <button class="menu-toggle collapsed" type="button" data-toggle="modal" data-target="#menuModal">
+				       <span class="icon-bar"></span>
+				       <span class="icon-bar"></span>
+				       <span class="icon-bar"></span>
+				    </button>
+
+
+					</div>
+
+
+			  </div><!-- ./HEADER NAVBAR -->
+			</div><!-- ./CONTAINER -->
+		</div><!-- ./HEADER TOP -->
+
+
+
+     <!-- HEADER BOTTOM -->
+		<div class="skin-header-footer ">
+      <div class="container">
+
+	      <!-- MAIN NAVBAR -->
+			 	<nav class="main-navbar">
+	      	<div class="container padd-0">
+
+
+		        <!-- MENU -->
+		       	<div class="nav-menu">
+			       	<div class="nav-header">
+
+			          <ul class="menu-list">
+									<li><a href="about.html">Главная</a></li>
+									<li><a href="vacancies.html">О комании</a></li>
+									<li><a href="production.html">Новости</a></li>
+									<li><a href="rewards.html">Предприятия</a></li>
+									<li><a href="contacts.html">Галерея</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
+			          </ul>
+							
+			      	</div>
+			      </div>
+
+			      <!-- NAV-FORM -->
+			      <div class="nav-form aSearch" tabindex="2">
+
+			      	<form method="POST" action="">
+
+	              <a role="button" class="btn-form-icon"><i class="fa fa-search"></i></a>
+	              <a role="button" class="btn-form-icon"><i class="fa fa-eye"></i></a>
+	              <a role="button" class="btn-form-icon"><i class="fa fa-sitemap"></i></a>
+
+	              <div class="nav-search-content">
+	              	<input class="form-control hide" type="search" minlength="3" required="required" name="query" value="" placeholder="Поиск">
+	              	<button type="submit" class="btn-search-sub hide"><i class="fa fa-search"></i></button>
+	              </div>
+
+	            </form>
+
+			      </div>
+			      <div class="nav-lang">
+			      	<ul>
+			      		<li class="active"><a href="uz">UZ</a></li>
+			      		<li><a href="ru">RUS</a></li>
+			      		<li><a href="en">ENG</a></li>
+			      	</ul>
+			      </div>
+
+
+					</div>
+			  </nav><!-- ./MAIN NAVBAR -->
+
+			</div>
+		</div>
+		
+	</header>
+
+
+
+	<!-- MIN MENU MODAL -->
+  <div class="min-menu-modal modal scale a-minMenu" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="min-menu">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	
+	    	<button type="button" class="btn" data-dismiss="modal">
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+
+	      <div class="modal-body min-navbar">
+	      	<!-- js append menu -->
+	      </div>
+	      
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<!-- FEEDBACK MODAL-->
+	<div class="feedback-modal modal scale" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="feedback">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+
+	    	<button type="button" class="btn" data-dismiss="modal">
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+
+	      <div class="modal-body">
+
+
+					<div class="col-md-12 success-info">
+						<div id="success-message"></div>
+						<div id="fail-message"></div>
+					</div>
+					<h2>Связаться с нами</h2>
+	      	<form id="feedback" method="post" action="feedback.php" class="contact-form">
+
+
+
+						<label>Ваше имя</label>
+						<input class="form-control" 
+									 type="text" 
+									 name="name" 
+									 placeholder="Имя" autocomplete="off" required="required"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Введите своё имя"/>
+
+
+
+						<label>Электронная почта</label>
+						<input class="form-control" 
+									 type="email" 
+									 name="email" 
+									 placeholder="email" autocomplete="off" required="required"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Укажите электронную почту"/>
+
+
+						<label>Номер телефона</label>
+						<input class="form-control" type="tel" 
+									 name="phone" 
+									 placeholder="+998 (xx) xxx-xx-xx" autocomplete="off" required="required"
+									 minlength="14"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Укажите номер телефона"/>
+
+
+
+						<textarea class="form-control" 
+									 name="message" 
+									 placeholder="Сообщение"></textarea>
+						
+	      	</form>
+			      <div class="modal-footer">
+			      	<button type="submit" class="align-right btn-opacity" form="feedback" autofocus="autofocus">Отправить</button>
+			      </div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set up your HTML -->
+<div class="index-carousel owl-carousel">
+
+  <div class="fadeOut">
+   <img src="img/slider/slide-1.jpg"> 
+ </div>
+
+  <div>
+   <img src="img/slider/slide-2.jpg"> 
+ </div>
+
+  <div>
+   <img src="img/slider/slide-3.jpg"> 
+ </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- MAIN -->
+	<main class="container-fluid">
+
+
+
+
+
+		<section class="short-enterprises">
+			<div class="row">
+				<div class="container">
+
+
+
+
+					<div class="short-enterprises-content">
+
+						<h1>О предприятии</h1>
+
+						<h4>Малая промышленная зона «YAKKASAROY».</h4>
+
+						<div class="this-content">
+							<p>
+								В целях эффективного использования государственной 
+								собственности(здание, сооружений и производственных площадей общего пользования 
+								бывшего ОАО «Ташкентского текстильного комбината» и части ПО «Узбектекстильмаш»), 
+								а также создания благоприятных условий и оказания различные видов услуг предпринимателям, 
+								на основании Решения Хокима г.Ташкента (№ 1025 от 23 декабря 2013г.) 
+								был образован «YAKKASAROY TEXNOPARK».  который в 2016 году переобразован в 
+								Малую промышленную зону «YAKKASAROY» (далее МПЗ «YAKKASAROY» )  
+								(Решение Хокима г.Ташкента №490 от 29.05.2015г)
+							</p>
+							<br>
+							<p>
+								В настоящее время на территории МПЗ «YAKKASAROY» на полезной площади 
+								35,3 га (общая площадь МПЗ 61,2 га ) разместили свое производство 304 предпринимателя, 
+								255 из которых завершили ремонтные работы, завели оборудование и приступили к производственной 
+								деятельности. Создано около 7 тыс. рабочих мест. Со стороны «Центра по сдаче государственного 
+								имущества в аренду» г. Ташкента оформлены договора сроком на 10 лет.
+ 								Инвестиционные обязательства предпринимателей на 10 лет составляют 
+ 								123,7 млрд.сум.из них36,7 млрд.сум на строительные работы; 87,0 млрд.сум на проибретение оборудования.
+							</p>
+						</div>
+
+
+
+						<div class="figure-content figure-m-v-30 inlineble-2">
+
+							<figure>
+								<div class="img-content">
+									<img src="img/enterprises-1.jpg"/>
+								</div>
+								<div class="desc sm-align-center">
+									<button class="btn-default">
+										<a href="" class="clc">Переход на фото галерею</a>
+									</button>
+								</div>
+							</figure>
+							
+							<figure>
+								<div class="img-content">
+									<img src="img/enterprises-1.jpg"/>
+								</div>
+								<div class="desc-content sm-align-center">
+									<button class="btn-default">
+										<a href="" class="clc">Переход на видео галерею</a>
+									</button>
+								</div>
+							</figure>
+
+
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+		<section class="short-advert">
+			<div class="row">
+				<div class="container">
+
+
+
+
+					<div class="short-advert-content">
+
+						<h1>Объявление</h1>
+
+						<div class="this-content figure-m-v-30 inlineble-4">
+
+							
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/advert/1.jpg"/>
+										<h3>Детские обуви</h3>
+									</div>
+									<div class="desc-content">
+										
+									</div>
+								</a>
+							</figure>
+
+								
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/advert/2.jpg"/>
+										<h3>О мебели</h3>
+									</div>
+									<div class="desc-content">
+										
+									</div>
+								</a>
+							</figure>
+
+								
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/advert/3.jpg"/>
+										<h3>О металлах</h3>
+									</div>
+									<div class="desc-content">
+										
+									</div>
+								</a>
+							</figure>
+
+								
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/advert/4.jpg"/>
+										<h3>О пластиковых труб</h3>
+									</div>
+									<div class="desc-content">
+										
+									</div>
+								</a>
+							</figure>
+
+
+
+						</div>
+
+
+
+					</div>
+
+
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<section class="short-news">
+			<div class="row">
+				<div class="container">
+
+
+
+
+					<div class="short-news-content">
+
+
+						<h1>Новости</h1>
+
+						<div class="this-content figure-m-v-30 inlineble-2">
+
+							
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/news/1.jpg"/>
+									</div>
+									<div class="desc-content">
+										<h3>Новый вид товара</h3>
+										<span class="time">
+											01.11.2017
+										</span>
+									</div>
+								</a>
+							</figure>
+
+								
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/news/2.jpg"/>
+									</div>
+									<div class="desc-content">
+										<h3>Новинки обуви</h3>
+										<span class="time">
+											01.11.2017
+										</span>
+									</div>
+								</a>
+							</figure>
+
+								
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/advert/3.jpg"/>
+									</div>
+									<div class="desc-content">
+										<h3>Купили новые станки</h3>
+										<span class="time">
+											01.11.2017
+										</span>
+									</div>
+								</a>
+							</figure>
+
+								
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/advert/4.jpg"/>
+									</div>
+									<div class="desc-content">
+										<h3>Посудочные станки</h3>
+										<span class="time">
+											01.11.2017
+										</span>
+									</div>
+								</a>
+							</figure>
+
+
+
+						</div>
+
+
+
+
+					</div>
+
+
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+		<section class="short-links">
+			<div class="row">
+				<div class="container">
+
+
+
+
+					<div class="short-links-content">
+
+
+						<h1>Полезные ссылки</h1>
+
+						<div class="this-content figure-m-v-15 inlineble-3">
+
+							
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/links/1.png"/>
+									</div>
+									<div class="desc-content">
+										<p>Официальный веб-сайт президента республики узбекистан</p>
+									</div>
+								</a>
+							</figure>
+
+								
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/links/2.png"/>
+									</div>
+									<div class="desc-content">
+										<p>Законодательная палата Олий Мажлиса Республики Узбекистан</p>
+									</div>
+								</a>
+							</figure>
+
+								
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/links/3.png"/>
+									</div>
+									<div class="desc-content">
+										<p>Купили новые станки</p>
+									</div>
+								</a>
+							</figure>
+
+								
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/links/4.png"/>
+									</div>
+									<div class="desc-content">
+										<p>Посудочные станки</p>
+									</div>
+								</a>
+							</figure>
+							
+	
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/links/5.png"/>
+									</div>
+									<div class="desc-content">
+										<p>Портал государственных программ Республики Узбекистан</p>
+									</div>
+								</a>
+							</figure>
+							
+	
+							<figure>
+								<a href="">
+									<div class="img-content">
+										<img src="img/links/6.png"/>
+									</div>
+									<div class="desc-content">
+										<p>Единая система идентификации</p>
+									</div>
+								</a>
+							</figure>
+
+
+
+						</div>
+
+
+
+
+					</div>
+
+
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</main><!-- ./MAIN -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- FOOTER -->
+	<footer id="footer" class="container-fluid">
+		<div class="container">
+				
+
+
+			<div class="footer-content">
+
+			</div>
+
+		
+
+
+
+		</div>
+	</footer>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
