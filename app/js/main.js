@@ -85,18 +85,6 @@ $(function(){
 	});
 
 
-
-
-	
-
-
-
-	//menu init
-	$(".vi-container").initMenu({
-		"menuToggleBtn": ".menu-toggle"
-	})
-
-
 	var statusSearchView = true;
 $(".btn-search").on("click", function(){
 	$(this).find("i")
@@ -128,6 +116,10 @@ $(".btn-search").on("click", function(){
 
 } )
 
+	
+
+
+
 
 
 //RESIZE
@@ -144,9 +136,21 @@ $( window ).on("scroll", function(e){
 });
 
 
-	$("#fs-range").on( "input", function(e){
-		console.log(e);
+
+
+
+
+
+	//vi init
+	window.vi = $(".vi-btn-toggle").initVi({
+		"bgStyle": "black" // default white
 	})
+
+
+
+
+
+
 
 
 
@@ -156,29 +160,97 @@ $( window ).on("scroll", function(e){
 }) (jQuery);
 
 
+var ix;
+
+function Vi( btnEvent, options ){
+
+	/**
+	*	
+	*	
+	*/
 
 
-function Menu( menu, options ){
 
-	var self = this;
-	menu = $( menu );
+	var _body = 						$( $("body") ),
+			_viEl = 						$( $(".vi") ),
 
-	console.log( menu, options );
+
+	    fsInputRange = 			$( $("#fs-range") ),
+	    fsList = 						$( $(".vi-font-size-list") ),
+	    fsClass =						options.fontSizeClass,
+	    fsPreVal = 					0
+	
+
+	this.btnEvent 		= btnEvent;
+	this.bgStyle 			= options.bgStyle;
+	this.inputRange 	= _inputRange
+	this._onChange 		= _fnChange;
+	//this.fontSizeClass
+	this.dataOptions = {
+		fontSize: 1
+	}
+
+
+
+	function _fnChange(){
+		console.log()
+	}
+
+	function _inputRange( fsParam ){
+
+		if ( typeof fsParam !== "number" )  
+			return console.error("Должно быть number");
+
+		if ( typeof fsParam == "undefined" && !fsInputRange.length)  
+			return false;
+		
+		fsInputRange[0].valueAsNumber = fsParam*1;
+		//fsInputRange[0].value= fsParam*1;
+		fsInputRange.trigger("input");
+		return fsInputRange;
+
+	}
+	$(fsInputRange).on( "input", function(e){
+
+		var val = this.valueAsNumber
+
+		$(this).attr("value", val);
+
+		$(_body)
+						.removeClass( fsClass+"-"+fsPreVal )
+						.addClass( fsClass+"-"+val );
+
+		
+
+		fsList.find( "[value="+fsPreVal+"]" ).removeClass("active");
+		fsList.find( "[value="+val+"]" ).addClass("active");
+		fsPreVal = val;
+	}); 
+
+
+
+
+
+
+
+	console.log( btnEvent, options, this.bgStyle );
 
 
 }
 
 
-window.$.fn.initMenu = function(option){
+
+window.$.fn.initVi = function(option){
 
 	var options = $.extend({
 
-		viContent: false
+		bgStyle: "white",
+		fontSizeClass: "vi-font-size"
 
 	}, option );
-	var menu = new Menu(this, options);
+	var vi = new Vi(this, options);
 
-	return menu;
+	return vi;
 
 }
 

@@ -87,7 +87,7 @@ $color_gray_3: darken(#ebebeb, 2%);
 			i, span{
 				display: inline-block;
 				width: 5%;
-				font-size: 20px;
+				font-size: em(20, 16);
 				vertical-align: middle;
 				//float: right;
 			}
@@ -218,6 +218,7 @@ button{
 }
 p{
 	margin: auto;
+	line-height: 110%;
 }
 img{
 	max-width: 100%;
@@ -661,7 +662,7 @@ $header-height: 50px;
 	@include table-celling( 200px, 0 );
 }
 
-.nav-menu, .logo, .slogan-2, .nav-form, .nav-lang, .emblem{
+.nav-menu, .logo, .nav-form, .nav-lang, .emblem{
 
 	@include table-celling($header-height);
 
@@ -685,8 +686,14 @@ $header-height: 50px;
   }
 
 }
-.emblem{
+.logo{
+	width: 15%;
+}
+.slogan{
 	width: 60%;
+}
+.emblem{
+	width: 100%;
 	text-align: right;
 	img{
 		width: 235px;
@@ -708,18 +715,11 @@ $header-height: 50px;
   text-transform: uppercase;
   color: #FFFFFF;
   text-align: left;
-  font-size: 18px;
+  font-size: em(18, 16);
   line-height: 22px;
   font-weight: bold;
   vertical-align: middle;
   text-shadow: 6px 6px 8px rgba(0,0,0,0.5);
-}
-
-.slogan-2{
-	color: inherit	;
-	font-size: em(24, 16);
-	font-family: $font-family-2;
-	
 }
 
 
@@ -829,7 +829,7 @@ $header-height: 50px;
     		@extend .claf;
 			  content: "";
 			  padding: 0 8px;
-			  font-size: 12px;
+			  font-size: em(12, 16);
 			  position: absolute;
 			  right: 8px;
 			  top: 4px;
@@ -1022,7 +1022,7 @@ $header-height: 50px;
 
 		i{
 			transition: all 0.2s ease-in;
-			font-size: 28px;
+			font-size: em(28, 16);
 			margin-left: 20px;
 			position: absolute;
 			color: rgba(white, 0.7);
@@ -1044,7 +1044,6 @@ $header-height: 50px;
 				border-bottom: 0;
 				margin: 0;
 			}
-			//font-size: 14px;
 			&:hover, &:focus{
 				& > a{
 					//letter-spacing: 4px;
@@ -1111,7 +1110,7 @@ $header-height: 50px;
 			@extend .claf;
 			@extend .fa;
 			content: "\f107";
-			font-size: 20px;
+			font-size: em(20, 16);
 	    top: inherit;
 	    height: inherit;
 	    bottom: 0;
@@ -1375,6 +1374,9 @@ h4{
 	font-size: em(18, 16);
 	font-weight: 600;
 }
+h5{
+	font-size: inherit;
+}
 h1, h2, h3{
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -1492,6 +1494,9 @@ main{
 
 
 //Flikity Carousel
+.flickity-prev-next-button{
+	border-radius: initial;
+}
 .index-carousel-advert{
 
 	.flickity-prev-next-button{
@@ -1837,7 +1842,7 @@ main{
 
 #footer{
 	position: relative;
-	background-color: $color_footer;
+	background: $color_footer;
 	font-size: em(18, 16);
 	&, a{
 		color: white;
@@ -1853,84 +1858,12 @@ main{
 }
 
 
-.footer-menu{
-
-	@extend .menu-list;
-
- 	li{
- 		width: 48%;
-		margin: 10px 0;
-		vertical-align: middle;
-		white-space: nowrap;
-  	display: inline-block;
-  	a{
-	  	font-weight: 500;
-		  padding: 5px 0px;
-		  margin: 10px 10px;
-  	}
-	}
-}
-.footer-content{
-	@include table-celling(150px);
-}
-.footer-logo{
-	padding: 10px 0;
-	text-align: center;
-}
-.footer-about{
-	padding-right: 30px;
-	p{
-		font-size: em(14, 16);
-		&:first-child{
-			margin-top: 0;
-		}
-	}
-}
-.footer-contacts{
-
-	p:nth-child(2){
-		margin-top: 0;
-	}
-}
-.copyright{
-	font-size: em(14, 16);
-	text-align: right;
-	p{
-		margin-top: 5px;
-	}
-}
-.social{
-	text-align: left;
-	ul li{
-		font-size: 20px;
-		margin-left: 10px;
-		display: inline-block;
-	}
-	img{
-		transition:all 0.3s ease-in-out;
-		width: 30px;
-		&:hover{
-			filter: brightness(150%);
-		}
-	}
-}
-
 
 
 /*
 										 --- OTHER ---
 */
 
-
-.mm-slideout{
-	z-index: initial;
-}
-html.mm-blocking #mm-blocker{
-	background: rgba( $color_1, 0.7 );
-}
-#mm-blocker{
-	//background-color: rgba( $color_1, 0.3 );
-}
 
 
 
@@ -1950,46 +1883,117 @@ html.mm-blocking #mm-blocker{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.chess-black{
+	color: white ;
+	background: black;
+	border-color: white;
+}
+.chess-white{
+	color: black ;
+	background: white;
+	border-color: black;
+}
+
+
+//МИКСИН ЁПТЫ
+@mixin bg-color($color_1, $color_2) {
+
+	@extend .chess-#{$color_1};
+
+	[class*='btn-default'], button{
+		@extend .style-#{$color_2};
+		border: 2px solid transparent;
+		*{
+			@extend .style-#{$color_2};
+		}
+		&:hover{
+			@extend .chess-white;
+			border: 2px solid $color_2;
+			a{
+				color: $color_2 ;
+				background: $color_1;
+			}
+		}
+	}
+	ul li{
+			&:hover, &.active{
+				color: $color_1 ;
+				background: $color_2 ;
+				border-color: $color_1 ;
+				a{
+					background: inherit;
+					color: inherit;
+				}
+			}
+	}
+
+	.is-selected{
+		@extend .chess-black;
+	}
+
+
+
+}
+//$("[class*='video']")
+.style-black{
+	@include bg-color(black, white);
+}
+
+.style-white{
+	@include bg-color(white, black);
+}
+
+
+
+
+.vi-active{
+
+	.vi-font-size-1{font-size: 14+px;}
+	.vi-font-size-2{font-size: 16+px;}
+	.vi-font-size-3{font-size: 18+px;}
+	.vi-font-size-4{font-size: 22+px;}
+	.vi-font-size-5{font-size: 26+px;}
+	//letter-spacing: 1px;
+	
+
+
+
+	.style-bg-1 *:not(.vi-over) *{
+
+		@extend .style-black;
+
+	}
+	.style-bg-2 *:not(.vi-over) *{
+
+		@extend .style-white;
+
+	}
+
+	
+
+}
+
+
 .vi{
 	background-color: #c3c3c3;
 	@extend .row;
 	.vi-container{
 		@extend .container;
 	}
-
-	font-family: "Arial";
-	&.f-arial{
-		font-family: "Arial";
-	}
-	&.f-times{
-		font-family: "Times New Roman";
-	}
-
-
-
-	&.size-1{
-		font-size: 14px;
-	}
-	&.size-2{
-		font-size: 16px;
-	}
-	&.size-3{
-		font-size: 18px;
-	}
-	&.size-4{
-		font-size: 22px;
-	}
-	&.size-5{
-		font-size: 26px;
-	}
-
-
-
-	&.letter-spacing-1{
-		letter-spacing: 2px;
-	}
-	&.letter-spacing-2{
-		letter-spacing: 4px;
+	h5{
+		font-size: 15px;
 	}
 
 
@@ -2008,7 +2012,7 @@ html.mm-blocking #mm-blocker{
 	}
 
 	.vi-table-center{
-		margin:0 15px;
+		margin:0 0px;
 		&>*{
 			vertical-align: middle;
 			display: inline-table;
@@ -2045,12 +2049,16 @@ html.mm-blocking #mm-blocker{
 		& > div{
 			margin: 0 15px;
 		}
+		.fs-range{
+			
+		}
 	}
-	.vi-font-size-1{font-size: 14+px;}
-	.vi-font-size-2{font-size: 16+px;}
-	.vi-font-size-3{font-size: 18+px;}
-	.vi-font-size-4{font-size: 22+px;}
-	.vi-font-size-5{font-size: 26+px;}
+
+
+
+
+
+
 
 
 
@@ -2061,14 +2069,21 @@ html.mm-blocking #mm-blocker{
 			[class*="vi-bg-color"]{
 				width: 50px;
 				height: 50px;
+				&.active{
+					border: 5px dashed gray;
+					span{
+						top: 6.5px;
+					}
+				}
 				&:hover{
 					cursor: pointer;
 				}
 				span{
 					border-radius: 50%;
-					top: 50%;
+					//top: 50%;
+					//margin-top: -12.5px;
+				  top: 11.5px;
 					display: inline-block;
-					margin-top: -12.5px;
 					width: 25px;
 					height: 25px;
 					position: relative;
@@ -2079,17 +2094,25 @@ html.mm-blocking #mm-blocker{
 		}
 
 		.vi-bg-color-1{
-			background: black;
-			span{background-color: white;}
+			background: black !important;
+			span{background-color: white !important;}
 		}
 		.vi-bg-color-2{
-			background: white;
-			span{background-color: black;}
+			background: white !important;
+			span{background-color: black !important;}
 		}
 
 
 
 	}
+
+
+
+
+
+
+
+
 
 
 
@@ -2104,6 +2127,7 @@ html.mm-blocking #mm-blocker{
 					cursor: pointer;
 				}
 				&.active{
+					border: 2px dashed gray;
 					span{
 						width: 20px;
 						height: 20px;
@@ -2131,12 +2155,23 @@ html.mm-blocking #mm-blocker{
 		}
 
 	}
-	.vi-btn-toggle{
 
+
+
+
+
+
+
+
+
+
+	.vi-reset{
+		margin: 5px 0;
+		font-size: 15px;
 		button{
 			transition: all 0.3s ease-out;
 			border: 0;
-			padding: 15px 30px;
+			padding: 10px 30px;
 			background-color: white;
 			&:hover{
 				color: white;
@@ -2145,6 +2180,8 @@ html.mm-blocking #mm-blocker{
 		}
 
 	}
+
+
 
 }
 

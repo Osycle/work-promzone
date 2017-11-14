@@ -11715,10 +11715,9 @@ button.close {
   .carousel-indicators {
     bottom: 20px; } }
 
-.clearfix:before, .nav-menu:not(.min) .menu-list:before, .nav-menu:not(.min) .footer-menu:before,
+.clearfix:before, .nav-menu:not(.min) .menu-list:before,
 .clearfix:after,
 .nav-menu:not(.min) .menu-list:after,
-.nav-menu:not(.min) .footer-menu:after,
 .dl-horizontal dd:before,
 .dl-horizontal dd:after,
 .container:before,
@@ -11760,7 +11759,7 @@ button.close {
   content: " ";
   display: table; }
 
-.clearfix:after, .nav-menu:not(.min) .menu-list:after, .nav-menu:not(.min) .footer-menu:after,
+.clearfix:after, .nav-menu:not(.min) .menu-list:after,
 .dl-horizontal dd:after,
 .container:after,
 .container-mpadd:after,
@@ -17147,7 +17146,7 @@ body {
     .panel-default .panel-heading .panel-title i, .panel-default .panel-heading .panel-title span {
       display: inline-block;
       width: 5%;
-      font-size: 20px;
+      font-size: 1.25em;
       vertical-align: middle; }
     .panel-default .panel-heading .panel-title span {
       font-size: 1em; }
@@ -17262,7 +17261,8 @@ button {
   outline: 0; }
 
 p {
-  margin: auto; }
+  margin: auto;
+  line-height: 110%; }
 
 img {
   max-width: 100%;
@@ -17598,7 +17598,7 @@ button:hover, button:focus {
   padding-right: 0;
   vertical-align: middle; }
 
-.nav-menu, .logo, .slogan-2, .nav-form, .nav-lang, .emblem {
+.nav-menu, .logo, .nav-form, .nav-lang, .emblem {
   display: table-cell;
   height: 50px;
   padding-left: 15px;
@@ -17615,8 +17615,14 @@ button:hover, button:focus {
   .logo > a:focus {
     outline: 0; }
 
+.logo {
+  width: 15%; }
+
+.slogan {
+  width: 60%; }
+
 .emblem {
-  width: 60%;
+  width: 100%;
   text-align: right; }
   .emblem img {
     width: 235px; }
@@ -17633,16 +17639,11 @@ button:hover, button:focus {
   text-transform: uppercase;
   color: #FFFFFF;
   text-align: left;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 22px;
   font-weight: bold;
   vertical-align: middle;
   text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5); }
-
-.slogan-2 {
-  color: inherit;
-  font-size: 1.5em;
-  font-family: "MonotypeCorsiva"; }
 
 .dropdown-lang {
   position: relative;
@@ -17732,7 +17733,7 @@ button:hover, button:focus {
       .nav-header form select:before {
         content: "";
         padding: 0 8px;
-        font-size: 12px;
+        font-size: 0.75em;
         position: absolute;
         right: 8px;
         top: 4px;
@@ -17743,7 +17744,7 @@ button:hover, button:focus {
         -webkit-box-sizing: border-box;
         box-sizing: border-box; }
 
-.menu-list, .footer-menu {
+.menu-list {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.8125em; }
@@ -17825,38 +17826,38 @@ button:hover, button:focus {
     position: relative;
     display: block;
     z-index: 1; }
-  .nav-menu:not(.min) .menu-list, .nav-menu:not(.min) .footer-menu {
+  .nav-menu:not(.min) .menu-list {
     display: inline-block;
     color: white; }
-    .nav-menu:not(.min) .menu-list ul, .nav-menu:not(.min) .footer-menu ul {
+    .nav-menu:not(.min) .menu-list ul {
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
-    .nav-menu:not(.min) .menu-list > li, .nav-menu:not(.min) .footer-menu > li {
+    .nav-menu:not(.min) .menu-list > li {
       position: relative;
       display: inline-block; }
-      .nav-menu:not(.min) .menu-list > li > a, .nav-menu:not(.min) .footer-menu > li > a {
+      .nav-menu:not(.min) .menu-list > li > a {
         font-family: "Open Sans";
         font-weight: 600;
         padding: 15px 15px;
         margin: 0px 0; }
-      .nav-menu:not(.min) .menu-list > li.active > a, .nav-menu:not(.min) .footer-menu > li.active > a {
+      .nav-menu:not(.min) .menu-list > li.active > a {
         color: #fcdbee;
         border: 0; }
-      .nav-menu:not(.min) .menu-list > li:hover > a, .nav-menu:not(.min) .footer-menu > li:hover > a, .nav-menu:not(.min) .menu-list > li:focus > a, .nav-menu:not(.min) .footer-menu > li:focus > a {
+      .nav-menu:not(.min) .menu-list > li:hover > a, .nav-menu:not(.min) .menu-list > li:focus > a {
         color: white; }
-      .nav-menu:not(.min) .menu-list > li:hover .sub-menu-1, .nav-menu:not(.min) .footer-menu > li:hover .sub-menu-1, .nav-menu:not(.min) .menu-list > li:focus .sub-menu-1, .nav-menu:not(.min) .footer-menu > li:focus .sub-menu-1 {
+      .nav-menu:not(.min) .menu-list > li:hover .sub-menu-1, .nav-menu:not(.min) .menu-list > li:focus .sub-menu-1 {
         visibility: visible;
         opacity: 1;
         -webkit-transform: inherit;
         -ms-transform: inherit;
         transform: inherit; }
-      .nav-menu:not(.min) .menu-list > li a:hover:before, .nav-menu:not(.min) .footer-menu > li a:hover:before {
+      .nav-menu:not(.min) .menu-list > li a:hover:before {
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1);
         visibility: visible; }
-      .nav-menu:not(.min) .menu-list > li a:before, .nav-menu:not(.min) .footer-menu > li a:before {
+      .nav-menu:not(.min) .menu-list > li a:before {
         content: "";
         width: 100%;
         height: 100%;
@@ -17885,7 +17886,7 @@ button:hover, button:focus {
       -webkit-transition: all 0.2s ease-in;
       -o-transition: all 0.2s ease-in;
       transition: all 0.2s ease-in;
-      font-size: 28px;
+      font-size: 1.75em;
       margin-left: 20px;
       position: absolute;
       color: rgba(255, 255, 255, 0.7); }
@@ -17955,7 +17956,7 @@ button:hover, button:focus {
   .nav-menu:not(.min) .sub-parent:after {
     display: none;
     content: "\f107";
-    font-size: 20px;
+    font-size: 1.25em;
     top: inherit;
     height: inherit;
     bottom: 0;
@@ -18172,6 +18173,9 @@ h4 {
   font-size: 1.125em;
   font-weight: 600; }
 
+h5 {
+  font-size: inherit; }
+
 h1, h2, h3 {
   margin-top: 10px;
   margin-bottom: 10px; }
@@ -18274,6 +18278,10 @@ main {
 
 .index-carousel .owl-item {
   height: 719px; }
+
+.flickity-prev-next-button {
+  -webkit-border-radius: initial;
+  border-radius: initial; }
 
 .index-carousel-advert .flickity-prev-next-button {
   -webkit-transform: translate3d(0%, -70%, 10px);
@@ -18501,7 +18509,7 @@ main {
 */
 #footer {
   position: relative;
-  background-color: #0071BC;
+  background: #0071BC;
   font-size: 1.125em; }
   #footer, #footer a {
     color: white; }
@@ -18511,68 +18519,9 @@ main {
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     padding-left: 45px; }
 
-.footer-menu li {
-  width: 48%;
-  margin: 10px 0;
-  vertical-align: middle;
-  white-space: nowrap;
-  display: inline-block; }
-  .footer-menu li a {
-    font-weight: 500;
-    padding: 5px 0px;
-    margin: 10px 10px; }
-
-.footer-content {
-  display: table-cell;
-  height: 150px;
-  padding-left: 15px;
-  padding-right: 15px;
-  vertical-align: middle; }
-
-.footer-logo {
-  padding: 10px 0;
-  text-align: center; }
-
-.footer-about {
-  padding-right: 30px; }
-  .footer-about p {
-    font-size: 0.875em; }
-    .footer-about p:first-child {
-      margin-top: 0; }
-
-.footer-contacts p:nth-child(2) {
-  margin-top: 0; }
-
-.copyright {
-  font-size: 0.875em;
-  text-align: right; }
-  .copyright p {
-    margin-top: 5px; }
-
-.social {
-  text-align: left; }
-  .social ul li {
-    font-size: 20px;
-    margin-left: 10px;
-    display: inline-block; }
-  .social img {
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    width: 30px; }
-    .social img:hover {
-      -webkit-filter: brightness(150%);
-      filter: brightness(150%); }
-
 /*
 										 --- OTHER ---
 */
-.mm-slideout {
-  z-index: initial; }
-
-html.mm-blocking #mm-blocker {
-  background: rgba(0, 113, 188, 0.7); }
-
 .fancybox-bg {
   background: white;
   opacity: 1 !important; }
@@ -18580,27 +18529,67 @@ html.mm-blocking #mm-blocker {
 .fancybox-button:hover:not([disabled]) {
   background-color: #0071BC; }
 
+.chess-black, .style-black, .style-white [class*='btn-default'], .style-black [class*='btn-default'] [class*='btn-default'], .style-black button [class*='btn-default'], .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'], .style-white button, .style-black [class*='btn-default'] button, .style-black button button, .vi-active .style-bg-2 *:not(.vi-over) * button, .style-white [class*='btn-default'] *, .style-black [class*='btn-default'] [class*='btn-default'] *, .style-black button [class*='btn-default'] *, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] *, .style-white button *, .style-black [class*='btn-default'] button *, .style-black button button *, .vi-active .style-bg-2 *:not(.vi-over) * button *, .vi-active .style-bg-1 *:not(.vi-over) *, .style-black .is-selected, .vi-active .style-bg-1 *:not(.vi-over) * .is-selected, .style-white .is-selected, .vi-active .style-bg-2 *:not(.vi-over) * .is-selected {
+  color: white;
+  background: black;
+  border-color: white; }
+
+.chess-white, .style-black [class*='btn-default']:hover, .style-black button:hover, .style-white, .style-black [class*='btn-default'], .style-white [class*='btn-default'] [class*='btn-default'], .style-white button [class*='btn-default'], .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'], .style-black button, .style-white [class*='btn-default'] button, .style-white button button, .vi-active .style-bg-1 *:not(.vi-over) * button, .style-black [class*='btn-default'] *, .style-white [class*='btn-default'] [class*='btn-default'] *, .style-white button [class*='btn-default'] *, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] *, .style-black button *, .style-white [class*='btn-default'] button *, .style-white button button *, .vi-active .style-bg-1 *:not(.vi-over) * button *, .vi-active .style-bg-2 *:not(.vi-over) *, .style-white [class*='btn-default']:hover, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default']:hover, .style-white button:hover, .vi-active .style-bg-2 *:not(.vi-over) * button:hover {
+  color: black;
+  background: white;
+  border-color: black; }
+
+.style-black [class*='btn-default'], .style-white [class*='btn-default'] [class*='btn-default'], .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] [class*='btn-default'], .style-white button [class*='btn-default'], .vi-active .style-bg-2 *:not(.vi-over) * button [class*='btn-default'], .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'], .style-black button, .style-white [class*='btn-default'] button, .style-black [class*='btn-default'] [class*='btn-default'] button, .style-black button [class*='btn-default'] button, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] button, .style-white button button, .style-black [class*='btn-default'] button button, .vi-active .style-bg-2 *:not(.vi-over) * button button, .vi-active .style-bg-1 *:not(.vi-over) * button {
+  border: 2px solid transparent; }
+  .style-black [class*='btn-default']:hover, .style-white [class*='btn-default'] [class*='btn-default']:hover, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover, .style-white button [class*='btn-default']:hover, .vi-active .style-bg-2 *:not(.vi-over) * button [class*='btn-default']:hover, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default']:hover, .style-black button:hover, .style-white [class*='btn-default'] button:hover, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] button:hover, .style-white button button:hover, .vi-active .style-bg-2 *:not(.vi-over) * button button:hover, .vi-active .style-bg-1 *:not(.vi-over) * button:hover {
+    border: 2px solid white; }
+    .style-black [class*='btn-default']:hover a, .style-white [class*='btn-default'] [class*='btn-default']:hover a, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover a, .style-white button [class*='btn-default']:hover a, .vi-active .style-bg-2 *:not(.vi-over) * button [class*='btn-default']:hover a, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default']:hover a, .style-black button:hover a, .style-white [class*='btn-default'] button:hover a, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] button:hover a, .style-white button button:hover a, .vi-active .style-bg-2 *:not(.vi-over) * button button:hover a, .vi-active .style-bg-1 *:not(.vi-over) * button:hover a {
+      color: white;
+      background: black; }
+
+.style-black ul li:hover, .style-white [class*='btn-default'] ul li:hover, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] ul li:hover, .style-white button ul li:hover, .vi-active .style-bg-2 *:not(.vi-over) * button ul li:hover, .vi-active .style-bg-1 *:not(.vi-over) * ul li:hover, .style-black ul li.active, .style-white [class*='btn-default'] ul li.active, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] ul li.active, .style-white button ul li.active, .vi-active .style-bg-2 *:not(.vi-over) * button ul li.active, .vi-active .style-bg-1 *:not(.vi-over) * ul li.active {
+  color: black;
+  background: white;
+  border-color: black; }
+  .style-black ul li:hover a, .style-white [class*='btn-default'] ul li:hover a, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] ul li:hover a, .style-white button ul li:hover a, .vi-active .style-bg-2 *:not(.vi-over) * button ul li:hover a, .vi-active .style-bg-1 *:not(.vi-over) * ul li:hover a, .style-black ul li.active a, .style-white [class*='btn-default'] ul li.active a, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] ul li.active a, .style-white button ul li.active a, .vi-active .style-bg-2 *:not(.vi-over) * button ul li.active a, .vi-active .style-bg-1 *:not(.vi-over) * ul li.active a {
+    background: inherit;
+    color: inherit; }
+
+.style-white [class*='btn-default'], .style-black [class*='btn-default'] [class*='btn-default'], .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] [class*='btn-default'], .style-black button [class*='btn-default'], .vi-active .style-bg-1 *:not(.vi-over) * button [class*='btn-default'], .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'], .style-white button, .style-black [class*='btn-default'] button, .style-white [class*='btn-default'] [class*='btn-default'] button, .style-white button [class*='btn-default'] button, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] button, .style-black button button, .style-white [class*='btn-default'] button button, .vi-active .style-bg-1 *:not(.vi-over) * button button, .vi-active .style-bg-2 *:not(.vi-over) * button {
+  border: 2px solid transparent; }
+  .style-white [class*='btn-default']:hover, .style-black [class*='btn-default'] [class*='btn-default']:hover, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover, .style-black button [class*='btn-default']:hover, .vi-active .style-bg-1 *:not(.vi-over) * button [class*='btn-default']:hover, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default']:hover, .style-white button:hover, .style-black [class*='btn-default'] button:hover, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] button:hover, .style-black button button:hover, .vi-active .style-bg-1 *:not(.vi-over) * button button:hover, .vi-active .style-bg-2 *:not(.vi-over) * button:hover {
+    border: 2px solid black; }
+    .style-white [class*='btn-default']:hover a, .style-black [class*='btn-default'] [class*='btn-default']:hover a, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover a, .style-black button [class*='btn-default']:hover a, .vi-active .style-bg-1 *:not(.vi-over) * button [class*='btn-default']:hover a, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default']:hover a, .style-white button:hover a, .style-black [class*='btn-default'] button:hover a, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] button:hover a, .style-black button button:hover a, .vi-active .style-bg-1 *:not(.vi-over) * button button:hover a, .vi-active .style-bg-2 *:not(.vi-over) * button:hover a {
+      color: black;
+      background: white; }
+
+.style-white ul li:hover, .style-black [class*='btn-default'] ul li:hover, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] ul li:hover, .style-black button ul li:hover, .vi-active .style-bg-1 *:not(.vi-over) * button ul li:hover, .vi-active .style-bg-2 *:not(.vi-over) * ul li:hover, .style-white ul li.active, .style-black [class*='btn-default'] ul li.active, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] ul li.active, .style-black button ul li.active, .vi-active .style-bg-1 *:not(.vi-over) * button ul li.active, .vi-active .style-bg-2 *:not(.vi-over) * ul li.active {
+  color: white;
+  background: black;
+  border-color: white; }
+  .style-white ul li:hover a, .style-black [class*='btn-default'] ul li:hover a, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] ul li:hover a, .style-black button ul li:hover a, .vi-active .style-bg-1 *:not(.vi-over) * button ul li:hover a, .vi-active .style-bg-2 *:not(.vi-over) * ul li:hover a, .style-white ul li.active a, .style-black [class*='btn-default'] ul li.active a, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] ul li.active a, .style-black button ul li.active a, .vi-active .style-bg-1 *:not(.vi-over) * button ul li.active a, .vi-active .style-bg-2 *:not(.vi-over) * ul li.active a {
+    background: inherit;
+    color: inherit; }
+
+.vi-active .vi-font-size-1 {
+  font-size: 14px; }
+
+.vi-active .vi-font-size-2 {
+  font-size: 16px; }
+
+.vi-active .vi-font-size-3 {
+  font-size: 18px; }
+
+.vi-active .vi-font-size-4 {
+  font-size: 22px; }
+
+.vi-active .vi-font-size-5 {
+  font-size: 26px; }
+
 .vi {
-  background-color: #c3c3c3;
-  font-family: "Arial"; }
-  .vi.f-arial {
-    font-family: "Arial"; }
-  .vi.f-times {
-    font-family: "Times New Roman"; }
-  .vi.size-1 {
-    font-size: 14px; }
-  .vi.size-2 {
-    font-size: 16px; }
-  .vi.size-3 {
-    font-size: 18px; }
-  .vi.size-4 {
-    font-size: 22px; }
-  .vi.size-5 {
-    font-size: 26px; }
-  .vi.letter-spacing-1 {
-    letter-spacing: 2px; }
-  .vi.letter-spacing-2 {
-    letter-spacing: 4px; }
+  background-color: #c3c3c3; }
+  .vi h5 {
+    font-size: 15px; }
   .vi .vi-content {
     display: table-cell;
     height: 60px;
@@ -18613,7 +18602,7 @@ html.mm-blocking #mm-blocker {
       display: inline-block;
       margin-left: 5px; }
   .vi .vi-table-center {
-    margin: 0 15px; }
+    margin: 0 0px; }
     .vi .vi-table-center > * {
       vertical-align: middle;
       display: inline-table;
@@ -18632,49 +18621,44 @@ html.mm-blocking #mm-blocker {
       border-color: black; }
   .vi .vi-font-size > div {
     margin: 0 15px; }
-  .vi .vi-font-size-1 {
-    font-size: 14px; }
-  .vi .vi-font-size-2 {
-    font-size: 16px; }
-  .vi .vi-font-size-3 {
-    font-size: 18px; }
-  .vi .vi-font-size-4 {
-    font-size: 22px; }
-  .vi .vi-font-size-5 {
-    font-size: 26px; }
   .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"] {
     width: 50px;
     height: 50px; }
+    .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"].active {
+      border: 5px dashed gray; }
+      .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"].active span {
+        top: 6.5px; }
     .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"]:hover {
       cursor: pointer; }
     .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"] span {
       -webkit-border-radius: 50%;
       border-radius: 50%;
-      top: 50%;
+      top: 11.5px;
       display: inline-block;
-      margin-top: -12.5px;
       width: 25px;
       height: 25px;
       position: relative; }
   .vi .vi-bg-color .vi-bg-color-1 {
-    background: black; }
+    background: black !important; }
     .vi .vi-bg-color .vi-bg-color-1 span {
-      background-color: white; }
+      background-color: white !important; }
   .vi .vi-bg-color .vi-bg-color-2 {
-    background: white; }
+    background: white !important; }
     .vi .vi-bg-color .vi-bg-color-2 span {
-      background-color: black; }
+      background-color: black !important; }
   .vi .vi-img .vi-img-list [class*="vi-img"] {
     width: 30px;
     height: 30px; }
     .vi .vi-img .vi-img-list [class*="vi-img"]:hover {
       cursor: pointer; }
-    .vi .vi-img .vi-img-list [class*="vi-img"].active span {
-      width: 20px;
-      height: 20px;
-      margin-top: -10px;
-      background-color: white;
-      border: 2px solid black; }
+    .vi .vi-img .vi-img-list [class*="vi-img"].active {
+      border: 2px dashed gray; }
+      .vi .vi-img .vi-img-list [class*="vi-img"].active span {
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        background-color: white;
+        border: 2px solid black; }
     .vi .vi-img .vi-img-list [class*="vi-img"] span {
       -webkit-border-radius: 50%;
       border-radius: 50%;
@@ -18687,16 +18671,19 @@ html.mm-blocking #mm-blocker {
       vertical-align: top;
       background-color: black;
       border: 2px solid white; }
-  .vi .vi-btn-toggle button {
-    -webkit-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    border: 0;
-    padding: 15px 30px;
-    background-color: white; }
-    .vi .vi-btn-toggle button:hover {
-      color: white;
-      background-color: black; }
+  .vi .vi-reset {
+    margin: 5px 0;
+    font-size: 15px; }
+    .vi .vi-reset button {
+      -webkit-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      border: 0;
+      padding: 10px 30px;
+      background-color: white; }
+      .vi .vi-reset button:hover {
+        color: white;
+        background-color: black; }
 
 /*
 		_media.scss	

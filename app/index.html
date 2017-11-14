@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="vi-active">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,8 +27,15 @@
     <![endif]-->
 
   </head>
-<body>
+<body class="style-bg-2">
 	<div id="page">
+
+
+
+
+
+
+
 	<noscript>
 		<p>Ваш браузер не поддерживает скрипты!<br/> 
 			 Пожалуйста подключите в настройках браузера Javascript</p>
@@ -36,6 +43,66 @@
 	<!-- HEADER -->
 	
 	<div class="header-hidden"></div>
+		<!-- VI -->
+		<div class="vi">
+			<div class="vi-container">
+				<div class="vi-content vi-table-center">
+
+
+
+					<div class="vi-font-size vi-table-center">
+
+						<h5>Размер шрифта:</h5>
+						<input id="fs-range" type="range" min="1" max="5" value="2">
+						<div class="vi-font-size-list">
+							<ul>
+								<li class="vi-font-size-1" status="off" value="1" tabindex="1">a</li>
+								<li class="vi-font-size-2" status="off" value="2" tabindex="1">a</li>
+								<li class="vi-font-size-3" status="off" value="3" tabindex="1">a</li>
+								<li class="vi-font-size-4" status="off" value="4" tabindex="1">a</li>
+								<li class="vi-font-size-5" status="off" value="5" tabindex="1">a</li>
+							</ul>
+						</div>
+
+					</div>
+
+
+					<div class="vi-bg-color vi-table-center">
+
+						<h5>Цвет:</h5>
+						<div class="vi-bg-color-list">
+							<ul>
+								<li class="vi-bg-color-1 active" tabindex="1"><span></span></li>
+								<li class="vi-bg-color-2" tabindex="1"><span></span></li>
+							</ul>
+						</div>
+
+					</div>
+
+
+					<div class="vi-img vi-table-center">
+
+
+						<h5>Изображение:</h5>
+						<div class="vi-img-list">
+							<ul>
+								<li class="vi-img-1 active"><span></span></li>
+								<li class="vi-img-2"><span></span></li>
+							</ul>
+						</div>
+
+					</div>
+
+
+					<div class="vi-reset">
+						<button type="button">Обычный режим</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
 	<header id="header" class="header-scroll">
 		<!-- HEADER TOP -->
 		<div class="skin-header-top ">
@@ -103,7 +170,7 @@
 			      <div class="nav-form aSearch" tabindex="2">
 
 			      	<a role="button" class="btn-form-icon btn-search"><i class="fa fa-search"></i></a>
-            	<a role="button" class="btn-form-icon"><i class="fa fa-eye"></i></a>
+            	<a role="button" class="btn-form-icon vi-btn-toggle"><i class="fa fa-eye"></i></a>
             	<a role="button" class="btn-form-icon"><i class="fa fa-sitemap"></i></a>
 
 			      	<form method="POST" action="">
@@ -238,71 +305,6 @@
 
 
 
-
-
-
-
-
-
-
-<!-- VI -->
-<div class="vi">
-	<div class="vi-container">
-		<div class="vi-content vi-table-center">
-
-
-
-			<div class="vi-font-size vi-table-center">
-
-				<h5>Размер шрифта:</h5>
-				<input id="fs-range" type="range" min="1" max="5" value="2">
-				<div class="vi-font-size-list">
-					<ul>
-						<li class="vi-font-size-1" status="on" tabindex="1">a</li>
-						<li class="vi-font-size-2" status="on" tabindex="1">a</li>
-						<li class="vi-font-size-3" status="on" tabindex="1">a</li>
-						<li class="vi-font-size-4" status="on" tabindex="1">a</li>
-						<li class="vi-font-size-5" status="on" tabindex="1">a</li>
-					</ul>
-				</div>
-
-			</div>
-
-
-			<div class="vi-bg-color vi-table-center">
-
-				<h5>Цвет:</h5>
-				<div class="vi-bg-color-list">
-					<ul>
-						<li class="vi-bg-color-1" tabindex="1"><span></span></li>
-						<li class="vi-bg-color-2" tabindex="1"><span></span></li>
-					</ul>
-				</div>
-
-			</div>
-
-
-			<div class="vi-img vi-table-center">
-
-
-				<h5>Изображение:</h5>
-				<div class="vi-img-list">
-					<ul>
-						<li class="vi-img-1 active"><span></span></li>
-						<li class="vi-img-2"><span></span></li>
-					</ul>
-				</div>
-
-			</div>
-
-
-			<div class="vi-btn-toggle">
-				<button type="button">Вернуть</button>
-			</div>
-
-		</div>
-	</div>
-</div>
 
 
 
