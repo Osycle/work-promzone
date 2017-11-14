@@ -50,7 +50,7 @@
 			      	<a  href="index.html" ><img src="img/logo.png"/></a>
 			      </div>
 
-						<div class="slogan">
+						<div class="slogan hidden-sm hidden-xs">
 							<p>
 								ГУП "Дирекция по управлению<br>
 								малой промышленной<br>
@@ -58,16 +58,11 @@
 							</p>
 						</div>
 
-						<div class="emblem">
-							<a  href="index.html" ><img src="img/emblem.png"/></a>
+						<div class="emblem hidden-sm hidden-xs">
+							<a  href="index.html"><img src="img/emblem.png"/></a>
 						</div>
 
-			      <!-- MENU TOGGLE BUTTON -->
-				     <button class="menu-toggle collapsed" type="button" data-toggle="modal" data-target="#menuModal">
-				       <span class="icon-bar"></span>
-				       <span class="icon-bar"></span>
-				       <span class="icon-bar"></span>
-				    </button>
+
 
 
 					</div>
@@ -138,25 +133,32 @@
 
 
 
-	<!-- MIN MENU MODAL -->
-  <div class="min-menu-modal modal scale a-minMenu" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="min-menu">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	    	
-	    	<button type="button" class="btn" data-dismiss="modal">
-	    		<span class="icon-bar"></span>
-	    		<span class="icon-bar"></span>
-	    	</button>
 
-	      <div class="modal-body min-navbar">
-	      	<!-- js append menu -->
-	      </div>
-	      
-	    </div>
-	  </div>
+
+  <div class="min-menu hidden-md hidden-lg">
+
+	  <input id="hamburger" class="hamburger" type="checkbox"/>
+
+	  <label class="hamburger" for="hamburger">
+	    <i></i>
+	    <text>
+	      <close>Закрыть</close>
+	      <open>Меню</open>
+	    </text>
+	  </label>
+
+	  <section class="drawer-list">
+		  <ul>
+				<li><a href="about.html">Главная</a></li>
+				<li><a href="vacancies.html">О комании</a></li>
+				<li><a href="production.html">Новости</a></li>
+				<li><a href="rewards.html">Предприятия</a></li>
+				<li><a href="contacts.html">Галерея</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+		  </ul>
+	   </section>
+
 	</div>
-
-
 
 
 
@@ -243,6 +245,69 @@
 
 
 
+<!-- VI -->
+<div class="vi">
+	<div class="vi-container">
+		<div class="vi-content vi-table-center">
+
+
+
+			<div class="vi-font-size vi-table-center">
+
+				<h5>Размер шрифта:</h5>
+				<input id="fs-range" type="range" min="1" max="5" value="2">
+				<div class="vi-font-size-list">
+					<ul>
+						<li class="vi-font-size-1" status="on" tabindex="1">a</li>
+						<li class="vi-font-size-2" status="on" tabindex="1">a</li>
+						<li class="vi-font-size-3" status="on" tabindex="1">a</li>
+						<li class="vi-font-size-4" status="on" tabindex="1">a</li>
+						<li class="vi-font-size-5" status="on" tabindex="1">a</li>
+					</ul>
+				</div>
+
+			</div>
+
+
+			<div class="vi-bg-color vi-table-center">
+
+				<h5>Цвет:</h5>
+				<div class="vi-bg-color-list">
+					<ul>
+						<li class="vi-bg-color-1" tabindex="1"><span></span></li>
+						<li class="vi-bg-color-2" tabindex="1"><span></span></li>
+					</ul>
+				</div>
+
+			</div>
+
+
+			<div class="vi-img vi-table-center">
+
+
+				<h5>Изображение:</h5>
+				<div class="vi-img-list">
+					<ul>
+						<li class="vi-img-1 active"><span></span></li>
+						<li class="vi-img-2"><span></span></li>
+					</ul>
+				</div>
+
+			</div>
+
+
+			<div class="vi-btn-toggle">
+				<button type="button">Вернуть</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
 
 
 
@@ -312,7 +377,7 @@
 
 
 
-		<section class="short-enterprises">
+		<section class="short-enterprises m-v-60">
 			<div class="row">
 				<div class="container">
 
@@ -403,7 +468,7 @@
 
 
 
-		<section class="short-advert">
+		<section class="short-advert m-v-60">
 			<div class="row">
 				<div class="container">
 
@@ -414,60 +479,51 @@
 
 						<h1>Объявление</h1>
 
-						<div class="this-content figure-m-v-30 inlineble-4">
+						<div class="this-content">
 
-							
-							<figure>
-								<a href="">
-									<div class="img-content">
-										<img src="img/advert/1.jpg"/>
+							<div class="index-carousel-advert">
+								<figure class="carousel-cell">
+									<a href="">
+										<div class="img-content" data-context-desc="Краткая информация в пару или несколько строк">
+											<img src="img/Детские обуви/1.jpg"/>
+										</div>
 										<h3>Детские обуви</h3>
-									</div>
-									<div class="desc-content">
-										
-									</div>
-								</a>
-							</figure>
+									</a>
+								</figure>
 
-								
-							<figure>
-								<a href="">
-									<div class="img-content">
-										<img src="img/advert/2.jpg"/>
+									
+								<figure class="carousel-cell">
+									<a href="">
+										<div class="img-content" data-context-desc="Краткая информация в пару или несколько строк">
+											<img src="img/Мебели/2.jpg"/>
+										</div>
 										<h3>О мебели</h3>
-									</div>
-									<div class="desc-content">
-										
-									</div>
-								</a>
-							</figure>
+									</a>
+								</figure>
 
 								
-							<figure>
-								<a href="">
-									<div class="img-content">
-										<img src="img/advert/3.jpg"/>
+								<figure class="carousel-cell">
+									<a href="">
+										<div class="img-content" data-context-desc="Краткая информация в пару или несколько строк">
+											<img src="img/Металл/1.jpg"/>
+										</div>
 										<h3>О металлах</h3>
-									</div>
-									<div class="desc-content">
-										
-									</div>
-								</a>
-							</figure>
+									</a>
+								</figure>
 
-								
-							<figure>
-								<a href="">
-									<div class="img-content">
-										<img src="img/advert/4.jpg"/>
+									
+								<figure class="carousel-cell">
+									<a href="">
+										<div class="img-content" data-context-desc="Вид наземного транспорта">
+											<span class="context-caption"></span>
+											<img src="img/Пластик/1.jpg"/>
+										</div>
 										<h3>О пластиковых труб</h3>
-									</div>
-									<div class="desc-content">
-										
-									</div>
-								</a>
-							</figure>
+									</a>
+								</figure>
 
+
+							</div>
 
 
 						</div>
@@ -509,8 +565,8 @@
 
 
 
-
-		<section class="short-news">
+		<!-- NEWS -->
+		<section class="short-news m-v-60 sm-align-center">
 			<div class="row">
 				<div class="container">
 
@@ -628,7 +684,7 @@
 
 
 
-
+		<!-- LINKS -->
 		<section class="short-links">
 			<div class="row">
 				<div class="container">

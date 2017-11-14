@@ -6977,22 +6977,22 @@ pre code {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, .container-mpadd {
+.container, .container-mpadd, .vi .vi-container, .vi .vi-content {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
 
 @media (min-width: 768px) {
-  .container, .container-mpadd {
+  .container, .container-mpadd, .vi .vi-container, .vi .vi-content {
     width: 750px; } }
 
 @media (min-width: 992px) {
-  .container, .container-mpadd {
+  .container, .container-mpadd, .vi .vi-container, .vi .vi-content {
     width: 970px; } }
 
 @media (min-width: 1200px) {
-  .container, .container-mpadd {
+  .container, .container-mpadd, .vi .vi-container, .vi .vi-content {
     width: 1170px; } }
 
 .container-fluid {
@@ -7001,7 +7001,7 @@ pre code {
   padding-left: 15px;
   padding-right: 15px; }
 
-.row {
+.row, .vi {
   margin-left: -15px;
   margin-right: -15px; }
 
@@ -9484,17 +9484,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-fixed-bottom .navbar-collapse {
     max-height: 200px; } }
 
-.container > .navbar-header, .container-mpadd > .navbar-header,
+.container > .navbar-header, .container-mpadd > .navbar-header, .vi .vi-container > .navbar-header, .vi .vi-content > .navbar-header,
 .container-fluid > .navbar-header,
-.container > .navbar-collapse, .container-mpadd > .navbar-collapse,
+.container > .navbar-collapse, .container-mpadd > .navbar-collapse, .vi .vi-container > .navbar-collapse, .vi .vi-content > .navbar-collapse,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
 
 @media (min-width: 768px) {
-  .container > .navbar-header, .container-mpadd > .navbar-header,
+  .container > .navbar-header, .container-mpadd > .navbar-header, .vi .vi-container > .navbar-header, .vi .vi-content > .navbar-header,
   .container-fluid > .navbar-header,
-  .container > .navbar-collapse, .container-mpadd > .navbar-collapse,
+  .container > .navbar-collapse, .container-mpadd > .navbar-collapse, .vi .vi-container > .navbar-collapse, .vi .vi-content > .navbar-collapse,
   .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0; } }
@@ -9545,7 +9545,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block; }
 
 @media (min-width: 768px) {
-  .navbar > .container .navbar-brand, .navbar > .container-mpadd .navbar-brand,
+  .navbar > .container .navbar-brand, .navbar > .container-mpadd .navbar-brand, .vi .navbar > .vi-container .navbar-brand, .vi .navbar > .vi-content .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px; } }
 
@@ -10221,21 +10221,21 @@ a.badge:focus {
 .jumbotron > hr {
   border-top-color: #d5d5d5; }
 
-.container .jumbotron, .container-mpadd .jumbotron,
+.container .jumbotron, .container-mpadd .jumbotron, .vi .vi-container .jumbotron, .vi .vi-content .jumbotron,
 .container-fluid .jumbotron {
   -webkit-border-radius: 6px;
   border-radius: 6px;
   padding-left: 15px;
   padding-right: 15px; }
 
-.jumbotron .container, .jumbotron .container-mpadd {
+.jumbotron .container, .jumbotron .container-mpadd, .jumbotron .vi .vi-container, .vi .jumbotron .vi-container, .jumbotron .vi .vi-content, .vi .jumbotron .vi-content {
   max-width: 100%; }
 
 @media screen and (min-width: 768px) {
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px; }
-  .container .jumbotron, .container-mpadd .jumbotron,
+  .container .jumbotron, .container-mpadd .jumbotron, .vi .vi-container .jumbotron, .vi .vi-content .jumbotron,
   .container-fluid .jumbotron {
     padding-left: 60px;
     padding-right: 60px; }
@@ -11723,12 +11723,18 @@ button.close {
 .dl-horizontal dd:after,
 .container:before,
 .container-mpadd:before,
+.vi .vi-container:before,
+.vi .vi-content:before,
 .container:after,
 .container-mpadd:after,
+.vi .vi-container:after,
+.vi .vi-content:after,
 .container-fluid:before,
 .container-fluid:after,
 .row:before,
+.vi:before,
 .row:after,
+.vi:after,
 .form-horizontal .form-group:before,
 .form-horizontal .form-group:after,
 .btn-toolbar:before,
@@ -11758,8 +11764,11 @@ button.close {
 .dl-horizontal dd:after,
 .container:after,
 .container-mpadd:after,
+.vi .vi-container:after,
+.vi .vi-content:after,
 .container-fluid:after,
 .row:after,
+.vi:after,
 .form-horizontal .form-group:after,
 .btn-toolbar:after,
 .btn-group-vertical > .btn-group:after,
@@ -15514,6 +15523,546 @@ http://flickity.metafizzy.co
   .col-sm-offset-right-12 {
     margin-right: 100%; } }
 
+html {
+  font-family: 'Lato', sans-serif; }
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.msg {
+  font-family: 'Pacifico', cursive;
+  font-size: 8vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FEFEFE;
+  background-color: #1184F0; }
+
+.features {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase; }
+  .features li {
+    width: 100%;
+    text-align: center;
+    padding: .25em; }
+
+.drawer-list {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transform: translate(100vw, 0);
+  transform: translate(100vw, 0);
+  /* ie workaround */
+  -ms-transform: translatex(-100vw);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  pointer-events: none;
+  padding-top: 125px;
+  -webkit-transition: width 475ms ease-out, -webkit-transform 450ms ease, -webkit-border-radius .8s .1s ease;
+  transition: width 475ms ease-out, -webkit-transform 450ms ease, -webkit-border-radius .8s .1s ease;
+  -o-transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease;
+  transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease;
+  transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease, -webkit-transform 450ms ease, -webkit-border-radius .8s .1s ease;
+  -webkit-border-bottom-left-radius: 100vw;
+  border-bottom-left-radius: 100vw;
+  background-color: #3d88ce;
+  background-color: rgba(12, 106, 194, 0.8); }
+  @media (min-width: 768px) {
+    .drawer-list {
+      width: 40vw; } }
+  .drawer-list ul {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    pointer-events: auto; }
+  .drawer-list li {
+    list-style: none;
+    text-transform: uppercase;
+    pointer-events: auto;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translatex(100vw);
+    transform: translatex(100vw);
+    /* ie workaround */
+    -ms-transform: translatex(-100vw); }
+    .drawer-list li:last-child {
+      margin-bottom: 2em; }
+    .drawer-list li a {
+      text-decoration: none;
+      color: #FEFEFE;
+      text-align: center;
+      display: block;
+      padding: 1rem;
+      font-size: -webkit-calc(24px - .5vw);
+      font-size: calc(24px - .5vw); }
+      @media (min-width: 768px) {
+        .drawer-list li a {
+          text-align: right;
+          padding: .5rem; } }
+      .drawer-list li a:hover {
+        cursor: pointer;
+        background-color: #88c2f8;
+        background-color: rgba(17, 132, 240, 0.5); }
+
+input.hamburger {
+  display: none; }
+  input.hamburger:checked ~ .drawer-list {
+    -webkit-transform: translatex(0);
+    -ms-transform: translatex(0);
+    transform: translatex(0);
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0; }
+    input.hamburger:checked ~ .drawer-list li {
+      -webkit-transform: translatex(0);
+      -ms-transform: translatex(0);
+      transform: translatex(0); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(1) {
+        -webkit-transition: -webkit-transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(2) {
+        -webkit-transition: -webkit-transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(3) {
+        -webkit-transition: -webkit-transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(4) {
+        -webkit-transition: -webkit-transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(5) {
+        -webkit-transition: -webkit-transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(6) {
+        -webkit-transition: -webkit-transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(7) {
+        -webkit-transition: -webkit-transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(8) {
+        -webkit-transition: -webkit-transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(9) {
+        -webkit-transition: -webkit-transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(10) {
+        -webkit-transition: -webkit-transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(11) {
+        -webkit-transition: -webkit-transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(12) {
+        -webkit-transition: -webkit-transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(13) {
+        -webkit-transition: -webkit-transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(14) {
+        -webkit-transition: -webkit-transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(15) {
+        -webkit-transition: -webkit-transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(16) {
+        -webkit-transition: -webkit-transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(17) {
+        -webkit-transition: -webkit-transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(18) {
+        -webkit-transition: -webkit-transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(19) {
+        -webkit-transition: -webkit-transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(20) {
+        -webkit-transition: -webkit-transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(21) {
+        -webkit-transition: -webkit-transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(22) {
+        -webkit-transition: -webkit-transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(23) {
+        -webkit-transition: -webkit-transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(24) {
+        -webkit-transition: -webkit-transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(25) {
+        -webkit-transition: -webkit-transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(26) {
+        -webkit-transition: -webkit-transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(27) {
+        -webkit-transition: -webkit-transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(28) {
+        -webkit-transition: -webkit-transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(29) {
+        -webkit-transition: -webkit-transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(30) {
+        -webkit-transition: -webkit-transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(31) {
+        -webkit-transition: -webkit-transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(32) {
+        -webkit-transition: -webkit-transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(33) {
+        -webkit-transition: -webkit-transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(34) {
+        -webkit-transition: -webkit-transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(35) {
+        -webkit-transition: -webkit-transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(36) {
+        -webkit-transition: -webkit-transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(37) {
+        -webkit-transition: -webkit-transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(38) {
+        -webkit-transition: -webkit-transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(39) {
+        -webkit-transition: -webkit-transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(40) {
+        -webkit-transition: -webkit-transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(41) {
+        -webkit-transition: -webkit-transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(42) {
+        -webkit-transition: -webkit-transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(43) {
+        -webkit-transition: -webkit-transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(44) {
+        -webkit-transition: -webkit-transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(45) {
+        -webkit-transition: -webkit-transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(46) {
+        -webkit-transition: -webkit-transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(47) {
+        -webkit-transition: -webkit-transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(48) {
+        -webkit-transition: -webkit-transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(49) {
+        -webkit-transition: -webkit-transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(50) {
+        -webkit-transition: -webkit-transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li a {
+        padding-right: 15px; }
+  input.hamburger:checked ~ label > i {
+    background-color: transparent;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+    input.hamburger:checked ~ label > i:before {
+      -webkit-transform: translate(-50%, -50%) rotate(315deg);
+      -ms-transform: translate(-50%, -50%) rotate(315deg);
+      transform: translate(-50%, -50%) rotate(315deg); }
+    input.hamburger:checked ~ label > i:after {
+      -webkit-transform: translate(-50%, -50%) rotate(-315deg);
+      -ms-transform: translate(-50%, -50%) rotate(-315deg);
+      transform: translate(-50%, -50%) rotate(-315deg); }
+  input.hamburger:checked ~ label close {
+    color: #FEFEFE;
+    width: 100%; }
+  input.hamburger:checked ~ label open {
+    color: transparent;
+    width: 0; }
+
+label.hamburger {
+  z-index: 9999;
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 50px; }
+  label.hamburger:hover {
+    cursor: pointer; }
+  label.hamburger text close,
+  label.hamburger text open {
+    text-transform: uppercase;
+    font-size: .8em;
+    align-text: center;
+    position: absolute;
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition: width .25s .35s, color .45s .35s;
+    -o-transition: width .25s .35s, color .45s .35s;
+    transition: width .25s .35s, color .45s .35s; }
+  label.hamburger text close {
+    color: transparent;
+    right: 0;
+    width: 0; }
+  label.hamburger text open {
+    color: #FEFEFE;
+    width: 100%; }
+  label.hamburger > i {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    background-color: #FEFEFE;
+    pointer-events: auto;
+    -webkit-transition-duration: .35s;
+    -o-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-delay: .35s;
+    -o-transition-delay: .35s;
+    transition-delay: .35s; }
+    label.hamburger > i:before, label.hamburger > i:after {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      left: 50%;
+      background-color: #FEFEFE;
+      content: "";
+      -webkit-transition: -webkit-transform 0.35s;
+      transition: -webkit-transform 0.35s;
+      -o-transition: transform 0.35s;
+      transition: transform 0.35s;
+      transition: transform 0.35s, -webkit-transform 0.35s;
+      -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%; }
+    label.hamburger > i:before {
+      -webkit-transform: translate(-50%, -14px);
+      -ms-transform: translate(-50%, -14px);
+      transform: translate(-50%, -14px); }
+    label.hamburger > i:after {
+      -webkit-transform: translate(-50%, 14px);
+      -ms-transform: translate(-50%, 14px);
+      transform: translate(-50%, 14px); }
+
+label.hamburger {
+  position: fixed;
+  top: 15px;
+  right: 15px; }
+
+/**
+    SCROLLBAR STYLE FOR IE
+*/
+body {
+  scrollbar-base-color: #138a72;
+  scrollbar-3dlight-color: #fff;
+  scrollbar-highlight-color: #1abc9c;
+  scrollbar-track-color: #fff;
+  scrollbar-arrow-color: #1abc9c;
+  scrollbar-shadow-color: #1abc9c;
+  scrollbar-dark-shadow-color: #1abc9c;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+
+.icon {
+  display: inline-block;
+  width: 5vw;
+  height: 4vw;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
+
 /**
  * Owl Carousel v2.2.1
  * Copyright 2013-2017 David Deutsch
@@ -16819,7 +17368,7 @@ button:hover, button:focus {
 .bg-color-4 {
   background-color: #e31f24; }
 
-.claf, .btn-anima::before, .btn-anima:hover::before, .nav-header form select:before, .nav-menu:not(.min) .sub-parent:after {
+.claf, .btn-anima::before, .btn-anima:hover::before, .nav-header form select:before, .nav-menu:not(.min) .sub-parent:after, .short-advert a .img-content:before, .short-advert a .img-content:after {
   content: "";
   position: absolute;
   left: 0;
@@ -16830,7 +17379,7 @@ button:hover, button:focus {
 .btn:focus, .btn:active {
   outline: none; }
 
-.btn-res, .btn-style, .btn-default, .nav-form .btn-search-sub, .nav-form .btn-form-icon, .menu-toggle {
+.btn-res, .btn-style, .btn-default, .nav-form .btn-search-sub, .nav-form .btn-form-icon {
   background: transparent;
   border: 0;
   padding: 0; }
@@ -16921,7 +17470,7 @@ button:hover, button:focus {
   max-width: 100%;
   text-align: center; }
   [class*="inlineble"] * {
-    text-align: initial; }
+    text-align: inherit; }
   [class*="inlineble"] figure {
     display: inline-block;
     display: inline-table; }
@@ -17051,7 +17600,7 @@ button:hover, button:focus {
 
 .nav-menu, .logo, .slogan-2, .nav-form, .nav-lang, .emblem {
   display: table-cell;
-  height: 10px;
+  height: 50px;
   padding-left: 15px;
   padding-right: 15px;
   vertical-align: middle; }
@@ -17070,7 +17619,7 @@ button:hover, button:focus {
   width: 60%;
   text-align: right; }
   .emblem img {
-    width: 140px; }
+    width: 235px; }
 
 .nav-feedback {
   float: right; }
@@ -17225,7 +17774,7 @@ button:hover, button:focus {
     font-size: 1.1em;
     z-index: 3;
     bottom: 0;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     color: #0071BC;
     -webkit-transition: all 0.35s ease-in;
     -o-transition: all 0.35s ease-in;
@@ -17246,7 +17795,7 @@ button:hover, button:focus {
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
     position: absolute;
-    bottom: 5px;
+    bottom: 7.5px;
     z-index: 1;
     height: 35px; }
 
@@ -17427,46 +17976,6 @@ button:hover, button:focus {
     bottom: 50%;
     margin-bottom: -15px; }
 
-.menu-toggle {
-  position: relative;
-  float: right;
-  -webkit-border-radius: 4px;
-  border-radius: 4px; }
-  .menu-toggle:focus {
-    outline: 0; }
-
-.menu-toggle:not(.collapsed) .icon-bar {
-  opacity: 0; }
-  .menu-toggle:not(.collapsed) .icon-bar:nth-child(1) {
-    -webkit-transform: rotate(138deg) translate(6px, -5px);
-    -ms-transform: rotate(138deg) translate(6px, -5px);
-    transform: rotate(138deg) translate(6px, -5px); }
-  .menu-toggle:not(.collapsed) .icon-bar:nth-child(2) {
-    -webkit-transform: rotate(180deg) translate(0, -16px);
-    -ms-transform: rotate(180deg) translate(0, -16px);
-    transform: rotate(180deg) translate(0, -16px); }
-  .menu-toggle:not(.collapsed) .icon-bar:nth-child(3) {
-    -webkit-transform: rotate(-138deg) translate(7px, 7px);
-    -ms-transform: rotate(-138deg) translate(7px, 7px);
-    transform: rotate(-138deg) translate(7px, 7px); }
-
-.icon-bar {
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-  display: block;
-  width: 35px;
-  height: 4px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px; }
-  .icon-bar + .icon-bar {
-    margin-top: 5px; }
-  .icon-bar:nth-child(2) {
-    -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    transform: scaleX(1); }
-
 .form-control:focus {
   border-color: #0071BC;
   -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.275), 0 0 8px rgba(255, 255, 255, 0.8);
@@ -17546,40 +18055,16 @@ button:hover, button:focus {
 #fail-message {
   color: #e31f24; }
 
-.min-menu-modal {
-  z-index: 1100; }
-  .min-menu-modal .contact-form {
-    margin-top: 0; }
-  .min-menu-modal .menu-toggle {
-    margin-right: 10px; }
-  .min-menu-modal .menu-list, .min-menu-modal .footer-menu {
-    text-align: center; }
-    .min-menu-modal .menu-list .sub-parent, .min-menu-modal .footer-menu .sub-parent {
-      overflow: initial;
-      padding: 10px 0; }
-      .min-menu-modal .menu-list .sub-parent a, .min-menu-modal .footer-menu .sub-parent a {
-        padding: 10px 0; }
-    .min-menu-modal .menu-list .sub-menu-1 li, .min-menu-modal .footer-menu .sub-menu-1 li {
-      width: 40%;
-      display: inline-block;
-      margin: 5px 15px;
-      background-color: rgba(255, 255, 255, 0.2); }
-    .min-menu-modal .menu-list .sub-menu-1 a, .min-menu-modal .footer-menu .sub-menu-1 a {
-      font-size: 1.1em;
-      padding: 10px;
-      word-break: break-word; }
-    .min-menu-modal .menu-list li, .min-menu-modal .footer-menu li {
-      width: 100%;
-      margin-bottom: 15px; }
-    .min-menu-modal .menu-list a, .min-menu-modal .footer-menu a {
-      color: white;
-      font-weight: 500;
-      font-size: 1.3em;
-      display: block;
-      padding: 15px; }
-  .min-menu-modal .nav-header {
-    display: block;
-    top: -10%; }
+.min-menu {
+  z-index: 100;
+  position: relative; }
+  .min-menu .hamburger i, .min-menu .hamburger i:after, .min-menu .hamburger i:before {
+    background-color: #0071BC; }
+  .min-menu .hamburger text open, .min-menu .hamburger text close {
+    color: #0071BC; }
+
+.drawer-list {
+  z-index: 1; }
 
 .feedback-modal form {
   width: 90%;
@@ -17772,7 +18257,7 @@ main {
       -ms-flex-preferred-size: 100%;
       flex-basis: 100%; } }
 
-.flex-center {
+.flex-center, .short-advert a .img-content:before, .short-advert a .img-content:after {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17788,7 +18273,28 @@ main {
   align-items: center; }
 
 .index-carousel .owl-item {
-  height: 440px; }
+  height: 719px; }
+
+.index-carousel-advert .flickity-prev-next-button {
+  -webkit-transform: translate3d(0%, -70%, 10px);
+  transform: translate3d(0%, -70%, 10px);
+  width: 100px;
+  height: 35%; }
+  .index-carousel-advert .flickity-prev-next-button, .index-carousel-advert .flickity-prev-next-button * {
+    background-color: transparent; }
+
+.index-carousel-advert .arrow {
+  fill: white; }
+
+.index-carousel-advert figure {
+  width: 310px;
+  padding: 0 20px;
+  margin: 10px 0; }
+  .index-carousel-advert figure img {
+    width: 100%; }
+
+.short-enterprises .this-content {
+  text-align: justify; }
 
 .short-enterprises-content {
   overflow: hidden; }
@@ -17803,10 +18309,125 @@ main {
     width: 100%;
     height: 100%; }
 
+.short-advert .context-caption {
+  color: #333;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: visibility 0s linear 0.3s, opacity 0.3s linear,  -webkit-transform 0.225s linear;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear,  -webkit-transform 0.225s linear;
+  -o-transition: transform 0.225s linear,  visibility 0s linear 0.3s, opacity 0.3s linear;
+  transition: transform 0.225s linear,  visibility 0s linear 0.3s, opacity 0.3s linear;
+  transition: transform 0.225s linear,  visibility 0s linear 0.3s, opacity 0.3s linear,  -webkit-transform 0.225s linear;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  left: 0;
+  top: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: translate3d(0%, -100%, 0px);
+  transform: translate3d(0%, -100%, 0px);
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  font-size: 0.9em; }
+
+.short-advert a .img-content {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background-color: white; }
+  .short-advert a .img-content:focus {
+    color: inherit;
+    text-decoration: none; }
+  .short-advert a .img-content:before, .short-advert a .img-content:after {
+    border: 2px solid transparent;
+    width: 100%;
+    height: 100%;
+    font-weight: initial;
+    color: transparent;
+    overflow: hidden; }
+  .short-advert a .img-content:before {
+    display: block;
+    left: inherit;
+    top: inherit;
+    bottom: 0;
+    right: 0;
+    font-weight: inherit;
+    font-size: 1em; }
+  .short-advert a .img-content:after {
+    line-height: 120%;
+    font-size: 0.8em;
+    text-transform: initial;
+    padding: 0 10px; }
+
+.short-advert a .img-content:hover {
+  text-decoration: none;
+  color: transparent;
+  background-color: rgba(255, 255, 255, 0); }
+  .short-advert a .img-content:hover:before, .short-advert a .img-content:hover:after {
+    width: 100%;
+    height: 100%;
+    color: white; }
+  .short-advert a .img-content:hover:before {
+    content: attr(data-context-header);
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*  			transition: border-color 0s ease-out 0.0s, 
+ 									 width 0.25s ease-out 0.0s,
+ 									 color 0.3s ease-in 0.25s,
+ 									 height 0.25s ease-out 0.2s; */ }
+  .short-advert a .img-content:hover:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: attr(data-context-desc);
+    border-top-color: #0071BC;
+    border-bottom-color: #0071BC;
+    -webkit-transition: border-color 0s ease-out 0.0s,  width 0.15s ease-out 0.0s, overflow 0s ease-out 4s, color 0.2s ease-in 0.15s, height 0.15s ease-out 0.2s;
+    -o-transition: border-color 0s ease-out 0.0s,  width 0.15s ease-out 0.0s, overflow 0s ease-out 4s, color 0.2s ease-in 0.15s, height 0.15s ease-out 0.2s;
+    transition: border-color 0s ease-out 0.0s,  width 0.15s ease-out 0.0s, overflow 0s ease-out 4s, color 0.2s ease-in 0.15s, height 0.15s ease-out 0.2s; }
+  .short-advert a .img-content:hover .context-caption {
+    visibility: visible;
+    -webkit-transform: translate3d(0%, -110%, 0px);
+    transform: translate3d(0%, -110%, 0px);
+    -webkit-transition: opacity 0.3s linear,  -webkit-transform 0.225s linear;
+    transition: opacity 0.3s linear,  -webkit-transform 0.225s linear;
+    -o-transition: transform 0.225s linear,  opacity 0.3s linear;
+    transition: transform 0.225s linear,  opacity 0.3s linear;
+    transition: transform 0.225s linear,  opacity 0.3s linear,  -webkit-transform 0.225s linear;
+    opacity: 1; }
+
 .short-advert-content .img-content {
   position: relative; }
   .short-advert-content .img-content h3 {
     color: white;
+    text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
     padding: 0 10px;
     position: absolute;
     bottom: 0;
@@ -17817,6 +18438,13 @@ main {
   .short-advert-content .this-content .desc-content {
     bottom: 0;
     position: absolute; }
+
+.short-news-content h3 {
+  font-weight: 700; }
+
+.short-news-content .desc-content {
+  padding: 0 5px;
+  text-align: center; }
 
 .short-links-content figure {
   position: relative;
@@ -17952,6 +18580,124 @@ html.mm-blocking #mm-blocker {
 .fancybox-button:hover:not([disabled]) {
   background-color: #0071BC; }
 
+.vi {
+  background-color: #c3c3c3;
+  font-family: "Arial"; }
+  .vi.f-arial {
+    font-family: "Arial"; }
+  .vi.f-times {
+    font-family: "Times New Roman"; }
+  .vi.size-1 {
+    font-size: 14px; }
+  .vi.size-2 {
+    font-size: 16px; }
+  .vi.size-3 {
+    font-size: 18px; }
+  .vi.size-4 {
+    font-size: 22px; }
+  .vi.size-5 {
+    font-size: 26px; }
+  .vi.letter-spacing-1 {
+    letter-spacing: 2px; }
+  .vi.letter-spacing-2 {
+    letter-spacing: 4px; }
+  .vi .vi-content {
+    display: table-cell;
+    height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: middle;
+    text-align: center; }
+    .vi .vi-content li {
+      text-transform: uppercase;
+      display: inline-block;
+      margin-left: 5px; }
+  .vi .vi-table-center {
+    margin: 0 15px; }
+    .vi .vi-table-center > * {
+      vertical-align: middle;
+      display: inline-table;
+      width: initial; }
+  .vi .vi-font-size h5 {
+    font-weight: 500; }
+  .vi .vi-font-size li {
+    font-weight: 700;
+    vertical-align: baseline;
+    border: 2px solid transparent;
+    padding: 5px 5px;
+    color: #111; }
+    .vi .vi-font-size li:hover, .vi .vi-font-size li.active {
+      cursor: pointer;
+      color: black;
+      border-color: black; }
+  .vi .vi-font-size > div {
+    margin: 0 15px; }
+  .vi .vi-font-size-1 {
+    font-size: 14px; }
+  .vi .vi-font-size-2 {
+    font-size: 16px; }
+  .vi .vi-font-size-3 {
+    font-size: 18px; }
+  .vi .vi-font-size-4 {
+    font-size: 22px; }
+  .vi .vi-font-size-5 {
+    font-size: 26px; }
+  .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"] {
+    width: 50px;
+    height: 50px; }
+    .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"]:hover {
+      cursor: pointer; }
+    .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"] span {
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      top: 50%;
+      display: inline-block;
+      margin-top: -12.5px;
+      width: 25px;
+      height: 25px;
+      position: relative; }
+  .vi .vi-bg-color .vi-bg-color-1 {
+    background: black; }
+    .vi .vi-bg-color .vi-bg-color-1 span {
+      background-color: white; }
+  .vi .vi-bg-color .vi-bg-color-2 {
+    background: white; }
+    .vi .vi-bg-color .vi-bg-color-2 span {
+      background-color: black; }
+  .vi .vi-img .vi-img-list [class*="vi-img"] {
+    width: 30px;
+    height: 30px; }
+    .vi .vi-img .vi-img-list [class*="vi-img"]:hover {
+      cursor: pointer; }
+    .vi .vi-img .vi-img-list [class*="vi-img"].active span {
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      background-color: white;
+      border: 2px solid black; }
+    .vi .vi-img .vi-img-list [class*="vi-img"] span {
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      top: 50%;
+      display: inline-block;
+      margin-top: -7.5px;
+      width: 15px;
+      height: 15px;
+      position: relative;
+      vertical-align: top;
+      background-color: black;
+      border: 2px solid white; }
+  .vi .vi-btn-toggle button {
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border: 0;
+    padding: 15px 30px;
+    background-color: white; }
+    .vi .vi-btn-toggle button:hover {
+      color: white;
+      background-color: black; }
+
 /*
 		_media.scss	
 */
@@ -17962,6 +18708,10 @@ html.mm-blocking #mm-blocker {
 @media only screen and (max-width: 991px) {
   html body {
     font-size: 14px; }
+  #header {
+    position: fixed; }
+  .logo {
+    width: 50px; }
   .slogan-1 {
     width: 100%;
     text-align: center;
