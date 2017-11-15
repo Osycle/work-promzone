@@ -17611,10 +17611,7 @@ button:hover, button:focus {
   vertical-align: middle; }
 
 .logo {
-  padding: 25px 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  padding: 25px 0; }
   .logo img {
     width: 126px; }
   .logo > a:focus {
@@ -17776,11 +17773,11 @@ button:hover, button:focus {
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    padding: 5px 10px;
-    font-size: 1.1em;
+    padding: 0px 5px;
+    font-size: 20px;
     z-index: 3;
     bottom: 0;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: #0071BC;
     -webkit-transition: all 0.35s ease-in;
     -o-transition: all 0.35s ease-in;
@@ -18548,45 +18545,45 @@ main {
 .fancybox-button:hover:not([disabled]) {
   background-color: #0071BC; }
 
-.chess-black, .style-black, .style-white [class*='btn-default'], .style-black [class*='btn-default'] [class*='btn-default'], .style-black button [class*='btn-default'], .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'], .style-white button, .style-black [class*='btn-default'] button, .style-black button button, .vi-active .style-bg-2 *:not(.vi-over) * button, .style-white [class*='btn-default'] *, .style-black [class*='btn-default'] [class*='btn-default'] *, .style-black button [class*='btn-default'] *, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] *, .style-white button *, .style-black [class*='btn-default'] button *, .style-black button button *, .vi-active .style-bg-2 *:not(.vi-over) * button *, .vi-active .style-bg-1 *:not(.vi-over) *, .style-black .is-selected, .vi-active .style-bg-1 *:not(.vi-over) * .is-selected, .style-white .is-selected, .vi-active .style-bg-2 *:not(.vi-over) * .is-selected {
-  color: white;
-  background: black;
-  border-color: white; }
+.chess-black, .style-black, .style-white [class*='btn-default'], .style-black [class*='btn-default'] [class*='btn-default'], .style-black button [class*='btn-default'], .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'], .style-white button, .style-black [class*='btn-default'] button, .style-black button button, .vi-active .vi-bg-color-white *:not(.vi-over) * button, .style-white [class*='btn-default'] *, .style-black [class*='btn-default'] [class*='btn-default'] *, .style-black button [class*='btn-default'] *, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] *, .style-white button *, .style-black [class*='btn-default'] button *, .style-black button button *, .vi-active .vi-bg-color-white *:not(.vi-over) * button *, .vi-active .vi-bg-color-black *:not(.vi-over) *, .style-black .is-selected, .vi-active .vi-bg-color-black *:not(.vi-over) * .is-selected, .style-white .is-selected, .vi-active .vi-bg-color-white *:not(.vi-over) * .is-selected {
+  color: white  !important;
+  background: black !important;
+  border-color: white !important; }
 
-.chess-white, .style-black [class*='btn-default']:hover, .style-black button:hover, .style-white, .style-black [class*='btn-default'], .style-white [class*='btn-default'] [class*='btn-default'], .style-white button [class*='btn-default'], .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'], .style-black button, .style-white [class*='btn-default'] button, .style-white button button, .vi-active .style-bg-1 *:not(.vi-over) * button, .style-black [class*='btn-default'] *, .style-white [class*='btn-default'] [class*='btn-default'] *, .style-white button [class*='btn-default'] *, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] *, .style-black button *, .style-white [class*='btn-default'] button *, .style-white button button *, .vi-active .style-bg-1 *:not(.vi-over) * button *, .vi-active .style-bg-2 *:not(.vi-over) *, .style-white [class*='btn-default']:hover, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default']:hover, .style-white button:hover, .vi-active .style-bg-2 *:not(.vi-over) * button:hover {
-  color: black;
-  background: white;
-  border-color: black; }
+.chess-white, .style-black [class*='btn-default']:hover, .style-black button:hover, .style-white, .style-black [class*='btn-default'], .style-white [class*='btn-default'] [class*='btn-default'], .style-white button [class*='btn-default'], .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'], .style-black button, .style-white [class*='btn-default'] button, .style-white button button, .vi-active .vi-bg-color-black *:not(.vi-over) * button, .style-black [class*='btn-default'] *, .style-white [class*='btn-default'] [class*='btn-default'] *, .style-white button [class*='btn-default'] *, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'] *, .style-black button *, .style-white [class*='btn-default'] button *, .style-white button button *, .vi-active .vi-bg-color-black *:not(.vi-over) * button *, .vi-active .vi-bg-color-white *:not(.vi-over) *, .style-white [class*='btn-default']:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default']:hover, .style-white button:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * button:hover {
+  color: black  !important;
+  background: white !important;
+  border-color: black !important; }
 
-.style-black [class*='btn-default'], .style-white [class*='btn-default'] [class*='btn-default'], .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] [class*='btn-default'], .style-white button [class*='btn-default'], .vi-active .style-bg-2 *:not(.vi-over) * button [class*='btn-default'], .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'], .style-black button, .style-white [class*='btn-default'] button, .style-black [class*='btn-default'] [class*='btn-default'] button, .style-black button [class*='btn-default'] button, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] button, .style-white button button, .style-black [class*='btn-default'] button button, .vi-active .style-bg-2 *:not(.vi-over) * button button, .vi-active .style-bg-1 *:not(.vi-over) * button {
+.style-black [class*='btn-default'], .style-white [class*='btn-default'] [class*='btn-default'], .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] [class*='btn-default'], .style-white button [class*='btn-default'], .vi-active .vi-bg-color-white *:not(.vi-over) * button [class*='btn-default'], .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'], .style-black button, .style-white [class*='btn-default'] button, .style-black [class*='btn-default'] [class*='btn-default'] button, .style-black button [class*='btn-default'] button, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] button, .style-white button button, .style-black [class*='btn-default'] button button, .vi-active .vi-bg-color-white *:not(.vi-over) * button button, .vi-active .vi-bg-color-black *:not(.vi-over) * button {
   border: 2px solid transparent; }
-  .style-black [class*='btn-default']:hover, .style-white [class*='btn-default'] [class*='btn-default']:hover, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover, .style-white button [class*='btn-default']:hover, .vi-active .style-bg-2 *:not(.vi-over) * button [class*='btn-default']:hover, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default']:hover, .style-black button:hover, .style-white [class*='btn-default'] button:hover, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] button:hover, .style-white button button:hover, .vi-active .style-bg-2 *:not(.vi-over) * button button:hover, .vi-active .style-bg-1 *:not(.vi-over) * button:hover {
+  .style-black [class*='btn-default']:hover, .style-white [class*='btn-default'] [class*='btn-default']:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover, .style-white button [class*='btn-default']:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * button [class*='btn-default']:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default']:hover, .style-black button:hover, .style-white [class*='btn-default'] button:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] button:hover, .style-white button button:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * button button:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * button:hover {
     border: 2px solid white; }
-    .style-black [class*='btn-default']:hover a, .style-white [class*='btn-default'] [class*='btn-default']:hover a, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover a, .style-white button [class*='btn-default']:hover a, .vi-active .style-bg-2 *:not(.vi-over) * button [class*='btn-default']:hover a, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default']:hover a, .style-black button:hover a, .style-white [class*='btn-default'] button:hover a, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] button:hover a, .style-white button button:hover a, .vi-active .style-bg-2 *:not(.vi-over) * button button:hover a, .vi-active .style-bg-1 *:not(.vi-over) * button:hover a {
+    .style-black [class*='btn-default']:hover a, .style-white [class*='btn-default'] [class*='btn-default']:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover a, .style-white button [class*='btn-default']:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * button [class*='btn-default']:hover a, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default']:hover a, .style-black button:hover a, .style-white [class*='btn-default'] button:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] button:hover a, .style-white button button:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * button button:hover a, .vi-active .vi-bg-color-black *:not(.vi-over) * button:hover a {
       color: white;
       background: black; }
 
-.style-black ul li:hover, .style-white [class*='btn-default'] ul li:hover, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] ul li:hover, .style-white button ul li:hover, .vi-active .style-bg-2 *:not(.vi-over) * button ul li:hover, .vi-active .style-bg-1 *:not(.vi-over) * ul li:hover, .style-black ul li.active, .style-white [class*='btn-default'] ul li.active, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] ul li.active, .style-white button ul li.active, .vi-active .style-bg-2 *:not(.vi-over) * button ul li.active, .vi-active .style-bg-1 *:not(.vi-over) * ul li.active {
-  color: black;
-  background: white;
-  border-color: black; }
-  .style-black ul li:hover a, .style-white [class*='btn-default'] ul li:hover a, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] ul li:hover a, .style-white button ul li:hover a, .vi-active .style-bg-2 *:not(.vi-over) * button ul li:hover a, .vi-active .style-bg-1 *:not(.vi-over) * ul li:hover a, .style-black ul li.active a, .style-white [class*='btn-default'] ul li.active a, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'] ul li.active a, .style-white button ul li.active a, .vi-active .style-bg-2 *:not(.vi-over) * button ul li.active a, .vi-active .style-bg-1 *:not(.vi-over) * ul li.active a {
+.style-black ul li:hover, .style-white [class*='btn-default'] ul li:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] ul li:hover, .style-white button ul li:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * button ul li:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * ul li:hover, .style-black ul li.active, .style-white [class*='btn-default'] ul li.active, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] ul li.active, .style-white button ul li.active, .vi-active .vi-bg-color-white *:not(.vi-over) * button ul li.active, .vi-active .vi-bg-color-black *:not(.vi-over) * ul li.active {
+  color: black !important;
+  background: white !important;
+  border-color: black !important; }
+  .style-black ul li:hover a, .style-white [class*='btn-default'] ul li:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] ul li:hover a, .style-white button ul li:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * button ul li:hover a, .vi-active .vi-bg-color-black *:not(.vi-over) * ul li:hover a, .style-black ul li.active a, .style-white [class*='btn-default'] ul li.active a, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] ul li.active a, .style-white button ul li.active a, .vi-active .vi-bg-color-white *:not(.vi-over) * button ul li.active a, .vi-active .vi-bg-color-black *:not(.vi-over) * ul li.active a {
     background: inherit;
     color: inherit; }
 
-.style-white [class*='btn-default'], .style-black [class*='btn-default'] [class*='btn-default'], .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] [class*='btn-default'], .style-black button [class*='btn-default'], .vi-active .style-bg-1 *:not(.vi-over) * button [class*='btn-default'], .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default'], .style-white button, .style-black [class*='btn-default'] button, .style-white [class*='btn-default'] [class*='btn-default'] button, .style-white button [class*='btn-default'] button, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] button, .style-black button button, .style-white [class*='btn-default'] button button, .vi-active .style-bg-1 *:not(.vi-over) * button button, .vi-active .style-bg-2 *:not(.vi-over) * button {
+.style-white [class*='btn-default'], .style-black [class*='btn-default'] [class*='btn-default'], .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'] [class*='btn-default'], .style-black button [class*='btn-default'], .vi-active .vi-bg-color-black *:not(.vi-over) * button [class*='btn-default'], .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'], .style-white button, .style-black [class*='btn-default'] button, .style-white [class*='btn-default'] [class*='btn-default'] button, .style-white button [class*='btn-default'] button, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'] button, .style-black button button, .style-white [class*='btn-default'] button button, .vi-active .vi-bg-color-black *:not(.vi-over) * button button, .vi-active .vi-bg-color-white *:not(.vi-over) * button {
   border: 2px solid transparent; }
-  .style-white [class*='btn-default']:hover, .style-black [class*='btn-default'] [class*='btn-default']:hover, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover, .style-black button [class*='btn-default']:hover, .vi-active .style-bg-1 *:not(.vi-over) * button [class*='btn-default']:hover, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default']:hover, .style-white button:hover, .style-black [class*='btn-default'] button:hover, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] button:hover, .style-black button button:hover, .vi-active .style-bg-1 *:not(.vi-over) * button button:hover, .vi-active .style-bg-2 *:not(.vi-over) * button:hover {
+  .style-white [class*='btn-default']:hover, .style-black [class*='btn-default'] [class*='btn-default']:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover, .style-black button [class*='btn-default']:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * button [class*='btn-default']:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default']:hover, .style-white button:hover, .style-black [class*='btn-default'] button:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'] button:hover, .style-black button button:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * button button:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * button:hover {
     border: 2px solid black; }
-    .style-white [class*='btn-default']:hover a, .style-black [class*='btn-default'] [class*='btn-default']:hover a, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover a, .style-black button [class*='btn-default']:hover a, .vi-active .style-bg-1 *:not(.vi-over) * button [class*='btn-default']:hover a, .vi-active .style-bg-2 *:not(.vi-over) * [class*='btn-default']:hover a, .style-white button:hover a, .style-black [class*='btn-default'] button:hover a, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] button:hover a, .style-black button button:hover a, .vi-active .style-bg-1 *:not(.vi-over) * button button:hover a, .vi-active .style-bg-2 *:not(.vi-over) * button:hover a {
+    .style-white [class*='btn-default']:hover a, .style-black [class*='btn-default'] [class*='btn-default']:hover a, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover a, .style-black button [class*='btn-default']:hover a, .vi-active .vi-bg-color-black *:not(.vi-over) * button [class*='btn-default']:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default']:hover a, .style-white button:hover a, .style-black [class*='btn-default'] button:hover a, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'] button:hover a, .style-black button button:hover a, .vi-active .vi-bg-color-black *:not(.vi-over) * button button:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * button:hover a {
       color: black;
       background: white; }
 
-.style-white ul li:hover, .style-black [class*='btn-default'] ul li:hover, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] ul li:hover, .style-black button ul li:hover, .vi-active .style-bg-1 *:not(.vi-over) * button ul li:hover, .vi-active .style-bg-2 *:not(.vi-over) * ul li:hover, .style-white ul li.active, .style-black [class*='btn-default'] ul li.active, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] ul li.active, .style-black button ul li.active, .vi-active .style-bg-1 *:not(.vi-over) * button ul li.active, .vi-active .style-bg-2 *:not(.vi-over) * ul li.active {
-  color: white;
-  background: black;
-  border-color: white; }
-  .style-white ul li:hover a, .style-black [class*='btn-default'] ul li:hover a, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] ul li:hover a, .style-black button ul li:hover a, .vi-active .style-bg-1 *:not(.vi-over) * button ul li:hover a, .vi-active .style-bg-2 *:not(.vi-over) * ul li:hover a, .style-white ul li.active a, .style-black [class*='btn-default'] ul li.active a, .vi-active .style-bg-1 *:not(.vi-over) * [class*='btn-default'] ul li.active a, .style-black button ul li.active a, .vi-active .style-bg-1 *:not(.vi-over) * button ul li.active a, .vi-active .style-bg-2 *:not(.vi-over) * ul li.active a {
+.style-white ul li:hover, .style-black [class*='btn-default'] ul li:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'] ul li:hover, .style-black button ul li:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * button ul li:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * ul li:hover, .style-white ul li.active, .style-black [class*='btn-default'] ul li.active, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'] ul li.active, .style-black button ul li.active, .vi-active .vi-bg-color-black *:not(.vi-over) * button ul li.active, .vi-active .vi-bg-color-white *:not(.vi-over) * ul li.active {
+  color: white !important;
+  background: black !important;
+  border-color: white !important; }
+  .style-white ul li:hover a, .style-black [class*='btn-default'] ul li:hover a, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'] ul li:hover a, .style-black button ul li:hover a, .vi-active .vi-bg-color-black *:not(.vi-over) * button ul li:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * ul li:hover a, .style-white ul li.active a, .style-black [class*='btn-default'] ul li.active a, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'] ul li.active a, .style-black button ul li.active a, .vi-active .vi-bg-color-black *:not(.vi-over) * button ul li.active a, .vi-active .vi-bg-color-white *:not(.vi-over) * ul li.active a {
     background: inherit;
     color: inherit; }
 
@@ -18604,6 +18601,9 @@ main {
 
 .vi-active .vi-font-size-5 {
   font-size: 26px; }
+
+.vi-active .vi-img-visibility-hidden img, .vi-active .vi-img-visibility-hidden iframe, .vi-active .vi-img-visibility-hidden * img, .vi-active .vi-img-visibility-hidden * iframe {
+  visibility: hidden; }
 
 .vi {
   background-color: #c3c3c3; }
@@ -18634,28 +18634,25 @@ main {
     border: 2px solid transparent;
     padding: 5px 5px;
     color: #111; }
-    .vi .vi-font-size li:hover, .vi .vi-font-size li.active {
-      cursor: pointer;
-      color: black;
-      border-color: black; }
+    .vi .vi-font-size li:hover {
+      cursor: pointer; }
   .vi .vi-font-size > div {
     margin: 0 15px; }
   .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"] {
     width: 50px;
-    height: 50px; }
+    height: 50px;
+    overflow: hidden; }
     .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"].active {
-      border: 5px dashed gray; }
-      .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"].active span {
-        top: 6.5px; }
+      top: 11.5px;
+      border: 2.5px dashed gray; }
     .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"]:hover {
       cursor: pointer; }
     .vi .vi-bg-color .vi-bg-color-list [class*="vi-bg-color"] span {
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
+      top: 0;
       top: 11.5px;
       display: inline-block;
-      width: 25px;
-      height: 25px;
+      width: 50%;
+      height: 100%;
       position: relative; }
   .vi .vi-bg-color .vi-bg-color-1 {
     background: black !important; }
@@ -18665,31 +18662,36 @@ main {
     background: white !important; }
     .vi .vi-bg-color .vi-bg-color-2 span {
       background-color: black !important; }
-  .vi .vi-img .vi-img-list [class*="vi-img"] {
+  .vi .vi-img-visibility .vi-img-visibility-list [class*="vi-img-visibility"] {
     width: 30px;
     height: 30px; }
-    .vi .vi-img .vi-img-list [class*="vi-img"]:hover {
+    .vi .vi-img-visibility .vi-img-visibility-list [class*="vi-img-visibility"]:hover {
       cursor: pointer; }
-    .vi .vi-img .vi-img-list [class*="vi-img"].active {
-      border: 2px dashed gray; }
-      .vi .vi-img .vi-img-list [class*="vi-img"].active span {
-        width: 20px;
-        height: 20px;
-        margin-top: -10px;
-        background-color: white;
-        border: 2px solid black; }
-    .vi .vi-img .vi-img-list [class*="vi-img"] span {
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
+    .vi .vi-img-visibility .vi-img-visibility-list [class*="vi-img-visibility"].active span {
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      width: 2px;
+      height: 2px;
+      margin-top: -10px;
+      background-color: black;
+      border: 2px solid black; }
+    .vi .vi-img-visibility .vi-img-visibility-list [class*="vi-img-visibility"] span {
       top: 50%;
       display: inline-block;
       margin-top: -7.5px;
       width: 15px;
       height: 15px;
       position: relative;
-      vertical-align: top;
-      background-color: black;
-      border: 2px solid white; }
+      vertical-align: top; }
+  .vi .vi-img-visibility .vi-img-visibility-list .vi-img-visibility-1 {
+    background-color: black;
+    border: 2px solid white; }
+  .vi .vi-img-visibility .vi-img-visibility-list .vi-img-visibility-2 {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 5px dashed gray;
+    background-color: white; }
   .vi .vi-reset {
     margin: 5px 0;
     font-size: 15px; }

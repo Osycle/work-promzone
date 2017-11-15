@@ -85,7 +85,7 @@ $(function(){
 	});
 
 
-	var statusSearchView = true;
+var statusSearchView = true;
 $(".btn-search").on("click", function(){
 	$(this).find("i")
 		.toggleClass("fa fa-search")
@@ -111,7 +111,7 @@ $(".btn-search").on("click", function(){
 			.find(".btn-search-sub")
 			.add("input")
 			.addClass("hide").removeClass("show")
-		}, 300);
+		}, 1);
 	}
 
 } )
@@ -143,7 +143,8 @@ $( window ).on("scroll", function(e){
 
 	//vi init
 	window.vi = $(".vi-btn-toggle").initVi({
-		"bgStyle": "black" // default white
+		fontSize: 4,
+		bgColor: "black" // default white
 	})
 
 
@@ -171,6 +172,27 @@ function Vi( btnEvent, options ){
 
 
 
+
+	//protected
+	var _listToggle,
+			_bodyToggleClass,
+			_onChange;
+
+	// public
+	this.btnEvent 		= btnEvent;
+	this.dataOptions = {
+		fontSize: options.fontSize,
+		bgColor: options.bgColor,
+		imgVisibility: options.imgVisibility
+	}
+
+	this.inputRange 	= inputRange;
+	this.bgColorSet 	= bgColorSet;
+
+
+
+
+
 	var _body = 						$( $("body") ),
 			_viEl = 						$( $(".vi") ),
 			_self =             this,
@@ -178,72 +200,170 @@ function Vi( btnEvent, options ){
 	    fsInputRange = 			$( $("#fs-range") ),
 	    fsList = 						$( $(".vi-font-size-list") ),
 	    fsClass =						options.fontSizeClass,
-	    fsPreVal = 					0
-	
+	    fsPreVal = 					_self.dataOptions.fontSize,
+	    
+	    bgColorList = 			$( $(".vi-bg-color-list") ),
+	    bgColorClass =			options.bgColorClass,
+			bgPreVal = 					_self.dataOptions.bgColor,
 
-	this.btnEvent 		= btnEvent;
-	this.bgStyle 			= options.bgStyle;
-	this.inputRange 	= _inputRange
-	this._onChange 		= _onChange;
-	this.dataOptions = {
-		fontSize: 1
-	}
+			imgVisibilityList =			$( $(".vi-img-visibility-list") ),
+			imgVisibilityClass =		options.imgVisibilityClass,
+			imgPreVal = 					_self.dataOptions.imgVisibility
 
 
 
 	function _onChange( options ){
 		
-		  _self.dataOptions.fontSize = options.fontSize || _self.dataOptions.fontSize;
-		 	//console.log( _self.dataOptions.fontSize )
+	  _self.dataOptions.fontSize = options.fontSize || _self.dataOptions.fontSize;
+	  _self.dataOptions.bgColor = options.bgColor || _self.dataOptions.bgColor;
+	  _self.dataOptions.imgVisibility = options.imgVisibility || _self.dataOptions.imgVisibility;
+
+		  console.log( _self.dataOptions );
+		 	return _self.dataOptions
+	}
+	_listToggle = function( el, val, fsPreVal ){
+		el
+			.find( "[value="+fsPreVal+"]" )
+			.removeClass("active");
+		el
+			.find( "[value="+val+"]" )
+			.addClass( "active" );
 	}
 
-	function _inputRange( fsParam ){
+	_bodyToggleClass = function( elClass, val, preVal ){
+		$( _body )
+			.removeClass( elClass+"-"+preVal )
+			.addClass( elClass+"-"+val );
+	}
 
-		if ( typeof fsParam !== "number" )  
-			return console.error("Должно быть number");
 
-		if ( typeof fsParam == "undefined" && !fsInputRange.length)  
-			return false;
-		
+
+
+
+
+
+
+	/*
+		-fontSize-
+	*/
+
+	function inputRange( fsParam ){
+		var type = "number";
+		if ( typeof fsParam !== type ) return console.error("Должно быть "+type);
+		if ( typeof fsParam == "undefined" && !fsInputRange.length) return false;
+
 		//input range value
-		fsInputRange[0].valueAsNumber = fsParam*1;
-		fsInputRange.trigger("input");
 
+		fsInputRange[ fsInputRange.length-1 ].valueAsNumber = fsParam*1;
 		return fsInputRange;
-
 	}
-	$(fsInputRange).on( "input", _self.dataOptions,function(e){
-		console.log( e.data );
-		var val = this.valueAsNumber
+
+	/*
+		EVENT fsInputRange oninput
+	*/
+	$(fsInputRange).on( "input", function(e, fsVal){
+
+		var val = fsVal || this.valueAsNumber;
 
 		$(this).attr("value", val);
 
-		$(_body)
-						.removeClass( fsClass+"-"+fsPreVal )
-						.addClass( fsClass+"-"+val );
+		_listToggle					( fsList, val, fsPreVal );
+		_bodyToggleClass		( fsClass, val, fsPreVal );
 
+		inputRange( val );
 
-		fsList.find( "[value="+fsPreVal+"]" ).removeClass("active");
-		fsList.find( "[value="+val+"]" ).addClass("active");
-		
 		_onChange({
-			fontSize: val // value fontSize
+			fontSize: val // // CHANGE OPTION
 		});
 
-		fsPreVal = val; // prev value fontSize 
-
+		fsPreVal = val;
 	}); 
 
-	$(fsList).find("li, [vi-fs]").on("click", function(e){
-		fsInputRange.trigger("input", _self.dataOptions.fontSize = 1);
+	/*
+		EVENT fsList onclick
+	*/
+	$( fsList ).find( "li, [vi-fs]" ).on( "click", function(e){
+		var val = this.value;
+		fsInputRange.trigger("input", [val]);
 	})
+	
 
 
 
 
 
-	//console.log( btnEvent, options, this.bgStyle );
 
+
+	/*
+		-bgColor-
+	*/
+	function bgColorSet( bgColorParam ){
+
+		if ( typeof bgColorParam !== "string" ) return console.error("Должно быть string");
+		if ( typeof bgColorParam == "undefined") return false;
+
+		_listToggle				( bgColorList, bgColorParam, bgPreVal);
+		_bodyToggleClass	( bgColorClass, bgColorParam, bgPreVal);
+
+		bgPreVal = bgColorParam;
+
+		_onChange({
+			bgColor: bgColorParam // CHANGE OPTION
+		});
+	}
+
+	$(bgColorList).find('li, [vi-fs]').on( "click", function(e){
+		var val = $(this).attr("value");
+		bgColorSet( val );
+	} )
+
+
+
+
+	/*
+		-imgVisibility-
+	*/
+	function imgVisibilitySet( imgVisibilityParam ){
+
+		
+		if ( typeof imgVisibilityParam !== "string" ) return console.error("Должно быть string");
+		if ( typeof imgVisibilityParam == "undefined") return false;
+
+		_listToggle				( imgVisibilityList, imgVisibilityParam, imgPreVal);
+		_bodyToggleClass	( imgVisibilityClass, imgVisibilityParam, imgPreVal);
+
+		imgPreVal = imgVisibilityParam;
+
+		_onChange({
+			imgVisibility: imgVisibilityParam // CHANGE OPTION
+		});
+	}
+
+	$(imgVisibilityList).find('li, [vi-fs]').on( "click", function(e){
+		var val = $(this).attr("value");
+		console.log(val, imgPreVal)
+		imgVisibilitySet( val );
+	} )
+
+
+
+
+
+
+
+
+	function startInit(){
+		
+		var fontSize = 				_self.dataOptions.fontSize;
+		var bgColor = 				_self.dataOptions.bgColor;
+		var imgVisibility = 	_self.dataOptions.imgVisibility;
+
+		fsInputRange.trigger	("input", [ fontSize ]);
+		bgColorSet						( bgColor );
+		imgVisibilitySet			( imgVisibility );
+
+	}
+	startInit();
 
 }
 
@@ -253,8 +373,13 @@ window.$.fn.initVi = function(option){
 
 	var options = $.extend({
 
-		bgStyle: "white",
-		fontSizeClass: "vi-font-size"
+		fontSizeClass: "vi-font-size",
+		bgColorClass: "vi-bg-color",
+
+		//dafault options
+		fontSize: 2, 
+		bgColor: "white",
+		imgVisibility: "hidden"
 
 	}, option );
 	var vi = new Vi(this, options);

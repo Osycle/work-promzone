@@ -672,7 +672,6 @@ $header-height: 50px;
 .logo {
 
   padding: 25px 0;
-  transition: all 0.3s ease-in-out;
   img{
 		width: 126px;
 	}
@@ -883,12 +882,13 @@ $header-height: 50px;
 		@extend .btn-res;
     position: absolute;
     opacity: 0;
+   
     transform: rotate(-90deg);
-		padding: 5px 10px;
-    font-size: 1.1em;
+		padding: 0px 5px;
+    font-size: 20px;
     z-index: 3;
     bottom: 0;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: $color_1;
     transition: all 0.35s ease-in;
  
@@ -1911,14 +1911,14 @@ main{
 
 
 .chess-black{
-	color: white ;
-	background: black;
-	border-color: white;
+	color: white  !important;
+	background: black !important;
+	border-color: white !important;
 }
 .chess-white{
-	color: black ;
-	background: white;
-	border-color: black;
+	color: black  !important;
+	background: white !important;
+	border-color: black !important;
 }
 
 
@@ -1943,15 +1943,15 @@ main{
 		}
 	}
 	ul li{
-			&:hover, &.active{
-				color: $color_1 ;
-				background: $color_2 ;
-				border-color: $color_1 ;
-				a{
-					background: inherit;
-					color: inherit;
-				}
+		&:hover, &.active{
+			color: $color_1 !important;
+			background: $color_2 !important;
+			border-color: $color_1 !important;
+			a{
+				background: inherit;
+				color: inherit;
 			}
+		}
 	}
 
 	.is-selected{
@@ -1981,21 +1981,25 @@ main{
 	.vi-font-size-4{font-size: 22+px;}
 	.vi-font-size-5{font-size: 26+px;}
 	//letter-spacing: 1px;
-	
 
 
 
-	.style-bg-1 *:not(.vi-over) *{
-
+	.vi-bg-color-black *:not(.vi-over) *{
 		@extend .style-black;
-
 	}
-	.style-bg-2 *:not(.vi-over) *{
-
+	.vi-bg-color-white *:not(.vi-over) *{
 		@extend .style-white;
-
 	}
 
+
+
+	.vi-img-visibility-hidden{
+		&, *{
+			img, iframe{
+				visibility: hidden;
+			}
+		}
+	}
 	
 
 }
@@ -2055,10 +2059,8 @@ main{
 			border: 2px solid transparent;
 			padding: 5px 5px;
 			color: #111;
-			&:hover, &.active{
+			&:hover{
 				cursor: pointer;
-				color: black;
-				border-color: black;
 			}
 		}
 		& > div{
@@ -2084,23 +2086,24 @@ main{
 			[class*="vi-bg-color"]{
 				width: 50px;
 				height: 50px;
+				overflow: hidden;
 				&.active{
-					border: 5px dashed gray;
+					top: 11.5px;
+					border: 2.5px dashed gray;
 					span{
-						top: 6.5px;
+						//top: 0;
 					}
 				}
 				&:hover{
 					cursor: pointer;
 				}
 				span{
-					border-radius: 50%;
-					//top: 50%;
+					top: 0;
 					//margin-top: -12.5px;
 				  top: 11.5px;
 					display: inline-block;
-					width: 25px;
-					height: 25px;
+					width: 50%;
+					height: 100%;
 					position: relative;
 
 				}
@@ -2131,29 +2134,28 @@ main{
 
 
 
-	.vi-img{
+	.vi-img-visibility{
 
-		.vi-img-list{
+		.vi-img-visibility-list{
 
-			[class*="vi-img"]{
+			[class*="vi-img-visibility"]{
 				width: 30px;
 				height: 30px;
 				&:hover{
 					cursor: pointer;
 				}
 				&.active{
-					border: 2px dashed gray;
+					
 					span{
-						width: 20px;
-						height: 20px;
+						border-radius: 0;
+						width: 2px;
+						height: 2px;
 						margin-top: -10px;
-						background-color: white;
+						background-color: black;
 						border: 2px solid black;
 					}
 				}
 				span{
-
-					border-radius: 50%;
 					top: 50%;
 					display: inline-block;
 					margin-top: -7.5px;
@@ -2161,18 +2163,23 @@ main{
 					height: 15px;
 					position: relative;
 					vertical-align: top;
-					background-color: black;
-					border: 2px solid white;
+					
+					
 				}
 			}
-
+			.vi-img-visibility-1{
+				background-color: black;
+				border: 2px solid white;
+			}
+			.vi-img-visibility-2{
+				transform: rotate(45deg);
+				border: 5px dashed gray;
+				background-color: white;
+			}
 
 		}
 
 	}
-
-
-
 
 
 
