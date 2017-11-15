@@ -6977,22 +6977,22 @@ pre code {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, .container-mpadd, .vi .vi-container, .vi .vi-content {
+.container, .container-mpadd, #footer .footer-content, .vi .vi-container, .vi .vi-content {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
 
 @media (min-width: 768px) {
-  .container, .container-mpadd, .vi .vi-container, .vi .vi-content {
+  .container, .container-mpadd, #footer .footer-content, .vi .vi-container, .vi .vi-content {
     width: 750px; } }
 
 @media (min-width: 992px) {
-  .container, .container-mpadd, .vi .vi-container, .vi .vi-content {
+  .container, .container-mpadd, #footer .footer-content, .vi .vi-container, .vi .vi-content {
     width: 970px; } }
 
 @media (min-width: 1200px) {
-  .container, .container-mpadd, .vi .vi-container, .vi .vi-content {
+  .container, .container-mpadd, #footer .footer-content, .vi .vi-container, .vi .vi-content {
     width: 1170px; } }
 
 .container-fluid {
@@ -9484,17 +9484,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-fixed-bottom .navbar-collapse {
     max-height: 200px; } }
 
-.container > .navbar-header, .container-mpadd > .navbar-header, .vi .vi-container > .navbar-header, .vi .vi-content > .navbar-header,
+.container > .navbar-header, .container-mpadd > .navbar-header, #footer .footer-content > .navbar-header, .vi .vi-container > .navbar-header, .vi .vi-content > .navbar-header,
 .container-fluid > .navbar-header,
-.container > .navbar-collapse, .container-mpadd > .navbar-collapse, .vi .vi-container > .navbar-collapse, .vi .vi-content > .navbar-collapse,
+.container > .navbar-collapse, .container-mpadd > .navbar-collapse, #footer .footer-content > .navbar-collapse, .vi .vi-container > .navbar-collapse, .vi .vi-content > .navbar-collapse,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
 
 @media (min-width: 768px) {
-  .container > .navbar-header, .container-mpadd > .navbar-header, .vi .vi-container > .navbar-header, .vi .vi-content > .navbar-header,
+  .container > .navbar-header, .container-mpadd > .navbar-header, #footer .footer-content > .navbar-header, .vi .vi-container > .navbar-header, .vi .vi-content > .navbar-header,
   .container-fluid > .navbar-header,
-  .container > .navbar-collapse, .container-mpadd > .navbar-collapse, .vi .vi-container > .navbar-collapse, .vi .vi-content > .navbar-collapse,
+  .container > .navbar-collapse, .container-mpadd > .navbar-collapse, #footer .footer-content > .navbar-collapse, .vi .vi-container > .navbar-collapse, .vi .vi-content > .navbar-collapse,
   .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0; } }
@@ -9545,7 +9545,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block; }
 
 @media (min-width: 768px) {
-  .navbar > .container .navbar-brand, .navbar > .container-mpadd .navbar-brand, .vi .navbar > .vi-container .navbar-brand, .vi .navbar > .vi-content .navbar-brand,
+  .navbar > .container .navbar-brand, .navbar > .container-mpadd .navbar-brand, #footer .navbar > .footer-content .navbar-brand, .vi .navbar > .vi-container .navbar-brand, .vi .navbar > .vi-content .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px; } }
 
@@ -10221,21 +10221,21 @@ a.badge:focus {
 .jumbotron > hr {
   border-top-color: #d5d5d5; }
 
-.container .jumbotron, .container-mpadd .jumbotron, .vi .vi-container .jumbotron, .vi .vi-content .jumbotron,
+.container .jumbotron, .container-mpadd .jumbotron, #footer .footer-content .jumbotron, .vi .vi-container .jumbotron, .vi .vi-content .jumbotron,
 .container-fluid .jumbotron {
   -webkit-border-radius: 6px;
   border-radius: 6px;
   padding-left: 15px;
   padding-right: 15px; }
 
-.jumbotron .container, .jumbotron .container-mpadd, .jumbotron .vi .vi-container, .vi .jumbotron .vi-container, .jumbotron .vi .vi-content, .vi .jumbotron .vi-content {
+.jumbotron .container, .jumbotron .container-mpadd, .jumbotron #footer .footer-content, #footer .jumbotron .footer-content, .jumbotron .vi .vi-container, .vi .jumbotron .vi-container, .jumbotron .vi .vi-content, .vi .jumbotron .vi-content {
   max-width: 100%; }
 
 @media screen and (min-width: 768px) {
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px; }
-  .container .jumbotron, .container-mpadd .jumbotron, .vi .vi-container .jumbotron, .vi .vi-content .jumbotron,
+  .container .jumbotron, .container-mpadd .jumbotron, #footer .footer-content .jumbotron, .vi .vi-container .jumbotron, .vi .vi-content .jumbotron,
   .container-fluid .jumbotron {
     padding-left: 60px;
     padding-right: 60px; }
@@ -11722,10 +11722,12 @@ button.close {
 .dl-horizontal dd:after,
 .container:before,
 .container-mpadd:before,
+#footer .footer-content:before,
 .vi .vi-container:before,
 .vi .vi-content:before,
 .container:after,
 .container-mpadd:after,
+#footer .footer-content:after,
 .vi .vi-container:after,
 .vi .vi-content:after,
 .container-fluid:before,
@@ -11763,6 +11765,7 @@ button.close {
 .dl-horizontal dd:after,
 .container:after,
 .container-mpadd:after,
+#footer .footer-content:after,
 .vi .vi-container:after,
 .vi .vi-content:after,
 .container-fluid:after,
@@ -17585,6 +17588,8 @@ button:hover, button:focus {
 
 .skin-header-top {
   background: url("../img/clouds.jpg") center 0 repeat-y;
+  -webkit-background-size: cover;
+  background-size: cover;
   -webkit-animation: skyAnimate 65s linear infinite;
   animation: skyAnimate 65s linear infinite; }
 
@@ -18518,6 +18523,20 @@ main {
   #footer .sector:not(:first-child) {
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     padding-left: 45px; }
+  #footer .footer-content {
+    min-width: 280px;
+    display: table-cell;
+    height: 180px;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: middle; }
+    #footer .footer-content .footer-phone {
+      text-align: right;
+      text-align: right; }
+      #footer .footer-content .footer-phone .fa, #footer .footer-content .footer-phone .nav-menu:not(.min) .sub-parent:after, .nav-menu:not(.min) #footer .footer-content .footer-phone .sub-parent:after {
+        font-size: 1.4em;
+        vertical-align: baseline;
+        margin-right: 15px; }
 
 /*
 										 --- OTHER ---

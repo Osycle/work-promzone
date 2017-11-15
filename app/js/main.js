@@ -173,7 +173,7 @@ function Vi( btnEvent, options ){
 
 	var _body = 						$( $("body") ),
 			_viEl = 						$( $(".vi") ),
-
+			_self =             this,
 
 	    fsInputRange = 			$( $("#fs-range") ),
 	    fsList = 						$( $(".vi-font-size-list") ),
@@ -184,16 +184,17 @@ function Vi( btnEvent, options ){
 	this.btnEvent 		= btnEvent;
 	this.bgStyle 			= options.bgStyle;
 	this.inputRange 	= _inputRange
-	this._onChange 		= _fnChange;
-	//this.fontSizeClass
+	this._onChange 		= _onChange;
 	this.dataOptions = {
 		fontSize: 1
 	}
 
 
 
-	function _fnChange(){
-		console.log()
+	function _onChange( options ){
+		
+		  _self.dataOptions.fontSize = options.fontSize || _self.dataOptions.fontSize;
+		 	//console.log( _self.dataOptions.fontSize )
 	}
 
 	function _inputRange( fsParam ){
@@ -204,14 +205,15 @@ function Vi( btnEvent, options ){
 		if ( typeof fsParam == "undefined" && !fsInputRange.length)  
 			return false;
 		
+		//input range value
 		fsInputRange[0].valueAsNumber = fsParam*1;
-		//fsInputRange[0].value= fsParam*1;
 		fsInputRange.trigger("input");
+
 		return fsInputRange;
 
 	}
-	$(fsInputRange).on( "input", function(e){
-
+	$(fsInputRange).on( "input", _self.dataOptions,function(e){
+		console.log( e.data );
 		var val = this.valueAsNumber
 
 		$(this).attr("value", val);
@@ -220,20 +222,27 @@ function Vi( btnEvent, options ){
 						.removeClass( fsClass+"-"+fsPreVal )
 						.addClass( fsClass+"-"+val );
 
-		
 
 		fsList.find( "[value="+fsPreVal+"]" ).removeClass("active");
 		fsList.find( "[value="+val+"]" ).addClass("active");
-		fsPreVal = val;
+		
+		_onChange({
+			fontSize: val // value fontSize
+		});
+
+		fsPreVal = val; // prev value fontSize 
+
 	}); 
 
+	$(fsList).find("li, [vi-fs]").on("click", function(e){
+		fsInputRange.trigger("input", _self.dataOptions.fontSize = 1);
+	})
 
 
 
 
 
-
-	console.log( btnEvent, options, this.bgStyle );
+	//console.log( btnEvent, options, this.bgStyle );
 
 
 }

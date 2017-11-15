@@ -652,6 +652,7 @@ $header-height: 50px;
 
 .skin-header-top{
 	background: url("../img/clouds.jpg") center 0 repeat-y;
+	background-size: cover;
 	animation: skyAnimate 65s linear infinite;
 }
 .skin-header-footer{
@@ -1844,6 +1845,7 @@ main{
 	position: relative;
 	background: $color_footer;
 	font-size: em(18, 16);
+
 	&, a{
 		color: white;
 	}
@@ -1854,7 +1856,20 @@ main{
 		border-left: 1px solid rgba(white, 0.20);
     padding-left: 45px;
 	}
-
+	.footer-content{
+		@extend .container;
+		min-width: 280px;
+		.footer-phone{
+			text-align: right;
+			.fa{
+				font-size: 1.4em;
+				vertical-align: baseline;
+				margin-right: 15px;
+			}
+			text-align: right;
+		}
+		@include table-celling(180px);
+	}
 }
 
 
