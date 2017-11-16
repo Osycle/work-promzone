@@ -1486,7 +1486,7 @@ main{
 //Carousel
 .index-carousel{
 	.owl-item{
-		height: 719px;
+		//height: 600px;
 	}
 }
 
@@ -1910,6 +1910,7 @@ main{
 
 
 
+
 .chess-black{
 	color: white  !important;
 	background: black !important;
@@ -1975,6 +1976,10 @@ main{
 
 .vi-active{
 
+	body.vi-grayscale{
+		filter: grayscale(1);
+	}
+
 	.vi-font-size-1{font-size: 14+px;}
 	.vi-font-size-2{font-size: 16+px;}
 	.vi-font-size-3{font-size: 18+px;}
@@ -1987,11 +1992,14 @@ main{
 	.vi-bg-color-black *:not(.vi-over) *{
 		@extend .style-black;
 	}
+
 	.vi-bg-color-white *:not(.vi-over) *{
 		@extend .style-white;
 	}
 
 
+	.vi-bg-color-white .vi {@extend .style-white;}
+	.vi-bg-color-black .vi {@extend .style-black;}
 
 	.vi-img-visibility-hidden{
 		&, *{
@@ -2000,13 +2008,22 @@ main{
 			}
 		}
 	}
+
 	
 
 }
 
 
 .vi{
-	background-color: #c3c3c3;
+	&.active{
+		display: block;
+	}
+	&.deactive{
+		display: none;
+	}
+	*{
+		user-select: none;
+	}
 	@extend .row;
 	.vi-container{
 		@extend .container;
@@ -2014,7 +2031,6 @@ main{
 	h5{
 		font-size: 15px;
 	}
-
 
 	.vi-content{
 		@include table-celling(60px);
@@ -2044,7 +2060,7 @@ main{
 
 
 
-
+	// VI-FONT-SIZE
 	.vi-font-size{
 
 		h5{
@@ -2066,8 +2082,9 @@ main{
 		& > div{
 			margin: 0 15px;
 		}
-		.fs-range{
-			
+		#fs-range{
+			  width: 100px;
+			  margin: 0 15px;
 		}
 	}
 
@@ -2078,7 +2095,7 @@ main{
 
 
 
-
+	// VI-BG-COLOR
 	.vi-bg-color{
 
 		.vi-bg-color-list{
@@ -2133,9 +2150,9 @@ main{
 
 
 
-
+	// VI-IMG-VISIBILITY
 	.vi-img-visibility{
-
+    margin: 0 25px;
 		.vi-img-visibility-list{
 
 			[class*="vi-img-visibility"]{
@@ -2173,7 +2190,7 @@ main{
 			}
 			.vi-img-visibility-2{
 				transform: rotate(45deg);
-				border: 5px dashed gray;
+				border: 6px dashed gray;
 				background-color: white;
 			}
 
