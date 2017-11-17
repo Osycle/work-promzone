@@ -1486,7 +1486,9 @@ main{
 //Carousel
 .index-carousel{
 	.owl-item{
-		//height: 600px;
+		position: relative;
+		//height: 300px;
+		display: inline-table;
 	}
 }
 

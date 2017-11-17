@@ -18278,6 +18278,10 @@ main {
   -ms-flex-align: center;
   align-items: center; }
 
+.index-carousel .owl-item {
+  position: relative;
+  display: inline-table; }
+
 .flickity-prev-next-button {
   -webkit-border-radius: initial;
   border-radius: initial; }

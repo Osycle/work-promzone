@@ -158,13 +158,14 @@ $( window ).on("scroll", function(e){
 		imgVisibility: "hidden", 	// default hidden
 		grayScale: true, 					// default true
 
-		callOn: function(){},			// Callback function on
-		callOff: function(){},		// Callback function off
-		callToggle: function(){		// Callback function toggle
-
-			$(".fa.fa-eye").toggleClass("fa-eye-slash")
-
-		}
+		// Callback function
+		callOn: function(){				
+			$(".fa.fa-eye").addClass("fa-eye-slash")
+		},			
+		callOff: function(){
+			$(".fa.fa-eye").removeClass("fa-eye-slash")
+		},		
+		callToggle: function(){}
 
 
 	})
@@ -183,11 +184,12 @@ function Vi( btnEvent, options ){
 	*	
 	*/
 
-
+	var jsonOptions = localStorage["viDataOptions"] || false
+	if( jsonOptions )
+		jsonOptions = JSON.parse( jsonOptions );
 
 	// public
 
-	this.status;
 	this.btnEvent 		= btnEvent;
 	this.inputRange 	= inputRange;
 	this.on						= on,
@@ -195,14 +197,19 @@ function Vi( btnEvent, options ){
 	this.toggle				= toggle,
 	this.bgColorSet 	= bgColorSet;
 
+	!jsonOptions ? 
 	this.dataOptions 	= {
-
+		status:         options.status,
 		fontSize: 			options.fontSize,
 		bgColor: 				options.bgColor,
 		grayScale: 			options.grayScale,
 		imgVisibility: 	options.imgVisibility
 
-	};
+	}
+	:this.dataOptions = jsonOptions;
+
+
+
 
 
 	var template = '<div class="vi deactive">'+
@@ -291,22 +298,22 @@ function Vi( btnEvent, options ){
 
 
 	_statusToggle = function (){
-		return _self.status = !_self.status;
+		return _self.dataOptions.status = !_self.dataOptions.status;
 	}
 
 	_onChange = function( options ){
-		if ( _self.dataOptions.status )
-			sessionStorage["viDataOptions"] 
 
-	  _self.dataOptions.fontSize = 			_self.dataOptions.fontSize  			|| options.fontSize;
-	  _self.dataOptions.bgColor = 			_self.dataOptions.bgColor  				|| options.bgColor;
-	  _self.dataOptions.imgVisibility = _self.dataOptions.imgVisibility 	|| options.imgVisibility;
+		if ( typeof options  !== "undefined"){
 
-	  console.log( _self.dataOptions );
+	  	_self.dataOptions.fontSize = 			 options.fontSize || _self.dataOptions.fontSize;
+	  	_self.dataOptions.bgColor = 			 options.bgColor || _self.dataOptions.bgColor;
+	  	_self.dataOptions.imgVisibility =  options.imgVisibility || _self.dataOptions.imgVisibility;
 
-	  sessionStorage["viDataOptions"] = JSON.stringify( _self.dataOptions );
+		}
+	  localStorage["viDataOptions"] = JSON.stringify( _self.dataOptions );
 
-		 return _self.dataOptions;
+		return _self.dataOptions;
+
 	}
 
 	_listToggle = function( el, val, fsPreVal ){
@@ -341,11 +348,9 @@ function Vi( btnEvent, options ){
 	function inputRange( fsParam ){
 
 		typeof fsParam !== "number" ? console.error("Должно быть number")
-
 			: void(0);
 
 		if ( typeof fsParam == "undefined" && !fsInputRange.length ) 
-
 			return false;
 
 		fsInputRange[ fsInputRange.length-1 ].valueAsNumber = fsParam*1;
@@ -366,9 +371,7 @@ function Vi( btnEvent, options ){
 		inputRange( val );
 
 		_onChange({
-
 			fontSize: val // // CHANGE OPTION
-
 		});
 
 		fsPreVal = val;
@@ -392,20 +395,16 @@ function Vi( btnEvent, options ){
 	function bgColorSet( bgColorParam ){
 
 		typeof bgColorParam !== "string" ? console.error("Должно быть string") 
-
 		: void(0);
 
 		if ( typeof bgColorParam == "undefined") 
-
 			return false;
 
 		_listToggle				( bgColorList, 	bgColorParam, bgPreVal);
 		_bodyToggleClass	( bgColorClass, bgColorParam, bgPreVal);
 
 		_onChange({
-
 			bgColor: bgColorParam // CHANGE OPTION
-
 		});
 
 		bgPreVal = bgColorParam;
@@ -427,11 +426,9 @@ function Vi( btnEvent, options ){
 
 		
 		typeof imgVisibilityParam !== "string" ? console.error("Должно быть string") 
-
 		: void(0);
 
 		if ( typeof imgVisibilityParam == "undefined") 
-
 			return false;
 
 		_listToggle				( imgVisibilityList, 	imgVisibilityParam, imgPreVal);
@@ -458,23 +455,7 @@ function Vi( btnEvent, options ){
 	} )
 
 
-
-	function startInit(){
-		
-		var fontSize = 				_self.dataOptions.fontSize;
-		var bgColor = 				_self.dataOptions.bgColor;
-		var imgVisibility = 	_self.dataOptions.imgVisibility;
-		var grayScale = 			_self.dataOptions.grayScale;
-		
-		fsInputRange.trigger				( "input", [ fontSize ] ); 				// fontSize
-		bgColorSet									( bgColor );						 					// bgColor
-		imgVisibilitySet						( imgVisibility );								// imgVisibility
-		grayScale ? _body.addClass	( "vi-grayscale" )								// grayScale
-		: void(0);  				
-
-	}
-	startInit();
-
+	
 
 	/*
 		btnEvent
@@ -510,23 +491,38 @@ function Vi( btnEvent, options ){
 	$(btnEvent).on("click", function(){
 
 		_self.toggle();
+
 		typeof options.callToggle === "function" ?
-			options.callToggle() : void(0)
+			options.callToggle() 
+		: 
+			void(0);
 
 	})
 
 
 	$(btnReset).on("click", function(){
-
 		$(btnEvent).trigger("click");
-
 	})
-	if ( _self.status )
-		on();
 
 
+	function startInit(){
+		
+		var fontSize = 				_self.dataOptions.fontSize;
+		var bgColor = 				_self.dataOptions.bgColor;
+		var imgVisibility = 	_self.dataOptions.imgVisibility;
+		var grayScale = 			_self.dataOptions.grayScale;
+		
+		fsInputRange.trigger				( "input", [ fontSize ] ); 				// fontSize
+		bgColorSet									( bgColor );						 					// bgColor
+		imgVisibilitySet						( imgVisibility );								// imgVisibility
+		grayScale ? _body.addClass	( "vi-grayscale" )								// grayScale
+		: void(0);  				
 
-	
+	}
+	startInit();
+
+	if ( _self.dataOptions.status )
+		_self.on();
 
 
 
@@ -548,6 +544,7 @@ window.$.fn.initVi = function(option){
 		fontSize: 						2, 
 		bgColor: 							"white",
 		imgVisibility: 				"hidden",
+		status: 							false,
 		grayScale: 						true,
 		callOn: 							Function,
 		callOff: 							Function,
