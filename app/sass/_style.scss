@@ -195,7 +195,7 @@ body{
 
 
 p, li, ul, menu{
-	font-weight: 300;
+	font-weight: 400;
 	margin: 0;
 	padding: 0;
 	vertical-align: middle;
@@ -474,7 +474,7 @@ button:hover, button:focus{
 	max-width: 100%;
 	text-align: center;
  *{
-		text-align: inherit;
+		text-align: initial;
 	}
 	figure{
 		
@@ -497,6 +497,10 @@ button:hover, button:focus{
 }
 .inlineble-2{
 	@include inline-ble(90/2+%, 2+%);
+	figure{
+		margin-right: 1%;
+		margin-left: 1%;
+	}
 }
 
 .inlineble-3{
@@ -600,9 +604,10 @@ button:hover, button:focus{
 
 [class*='list-style']{
 	ul{
-		padding-left: 15px;
-		margin-top: 15px;
+		padding: 0 15px;
+		margin: 15px 0;
 		li{
+			margin: 0 15px;
 			font-size: 1em;
 			list-style: disc;
 			line-height: 170%;
@@ -616,6 +621,7 @@ button:hover, button:focus{
 	ul{
 
 		li{
+			font-weight: 500;
 			//font-weight: 600;
 			list-style: circle;
 		}
@@ -947,7 +953,7 @@ $header-height: 50px;
   $color: white;
 	a{
 		color: $color;
-		transition: all 0.1s linear;
+		//transition: all 0.1s linear;
 		position: relative;
 		display: block;
 		z-index: 1;
@@ -960,7 +966,7 @@ $header-height: 50px;
 			//background-color: $color_1;
 		}
 		& ul{
-			transition: all 0.3s ease-in-out;
+			//transition: all 0.3s ease-in-out;
 		}
 		& > li {
 			position: relative;
@@ -1019,7 +1025,7 @@ $header-height: 50px;
 		width: max-content;
 		visibility: hidden;
 		opacity: 0;
-		background-color: $color_2;
+		background-color: $color_1;
 
 		i{
 			transition: all 0.2s ease-in;
@@ -1051,7 +1057,7 @@ $header-height: 50px;
 					//transform: translateX(4px);
 					//transform: matrix(-2, 0, 0, 1, 0, 0);
 					//animation: shake 1s ease-in-out infinite;
-					color: $color_1;
+					color: white;
 				}
 			}
 		}
@@ -1067,7 +1073,9 @@ $header-height: 50px;
 
 	.sub-menu-1{
 
-		margin-top: 5px;
+		&:first-child{
+			padding-top: 5px;
+		}
 		perspective: 500px;
 		transform-style: preserve-3d;
 		transform: scale(0.75) perspective(500px) rotateX(-75deg);
@@ -1075,7 +1083,7 @@ $header-height: 50px;
 		transform-origin: 40% 0;
 		z-index: 1;
 		li{
-			margin-bottom: 5px;
+			//margin-bottom: 5px;
 			&:hover, &:focus{
 				.sub-menu-2{
 					transform: inherit;
@@ -1247,6 +1255,16 @@ $header-height: 50px;
 			}
 		}
 	}
+	a:not([href]){
+		//text-align: ;
+	}
+	.sub-menu-1{
+		li{
+			a{
+				padding: 0 15px;
+				font-size: 1em;}
+		}
+	}
 }
 .drawer-list{
 	z-index: 1;
@@ -1351,6 +1369,7 @@ $header-height: 50px;
 										 --- CONTENT ---
 */
 h1{
+	text-align: center;
 	position: relative;
 	font-weight: 600;
 	font-size: em(30, 16);
@@ -1370,6 +1389,7 @@ h2{
 h3{
 	text-transform: uppercase;
 	font-size: em(22, 16);
+	font-weight: 600;
 }
 h4{
 	font-size: em(18, 16);
@@ -1378,12 +1398,13 @@ h4{
 h5{
 	font-size: inherit;
 }
-h1, h2, h3{
+h1, h2, h3, h4{
 	margin-top: 10px;
 	margin-bottom: 10px;
+	
 }
 h1, h2, h3, h4, h5{
-	text-align: center;
+	
 }
 p{
 	font-size: em(16, 16);
@@ -1464,7 +1485,15 @@ main{
 }
 
 
-
+.img-hover{
+	img{
+		transition: all 0.25s ease-in-out;
+		filter: brightness(95%);
+		&:hover, &:focus{
+			filter: brightness(110%);
+		}
+	}
+}
 
 
 
@@ -1485,10 +1514,19 @@ main{
 
 //Carousel
 .index-carousel{
+	h3, h4{
+		text-align: center;
+	}
 	.owl-item{
 		position: relative;
 		//height: 300px;
 		display: inline-table;
+	}
+	.owl-carousel-item{
+		//height: 200px;
+		img{
+			//width: 50%;
+		}
 	}
 }
 
@@ -1537,6 +1575,9 @@ main{
 }
 .short-enterprises-content{
 	overflow: hidden;
+	h3, h4{
+		text-align: center;
+	}
 	figure{
 		vertical-align: top;
 		//height: 100%;
@@ -1703,6 +1744,9 @@ main{
 			width: 100%;
 		}
 	}
+	h3{
+		text-align: center;
+	}
 	.this-content{
 			position: relative;
 		.desc-content{
@@ -1718,15 +1762,16 @@ main{
 
 
 
-.short-news-content{
+.short-news-content, .news-content{
 	h3{
 		font-weight: 700;
 	}
 	.desc-content{
 		padding: 0 5px;
-		text-align: center;
+		p{
+			padding: 0 15px;
+		}
 	}
-
 }
 
 
@@ -1795,8 +1840,176 @@ main{
 
 
 
+// ----------------- NEWS
+.news{
+
+}
+.news-in{
+	.desc-content{
+		padding: 0 12%;
+	}
+}
+// ----------------- COMPANY
+.company{
+
+}
+.company-content{
+
+}
+.company-section-type{
+
+	padding: 30px 0;
+	ul{
+	column-gap: 30px;
+  column-count: 4;
+	}
+	li{
+		font-style: italic;
+
+	}
+	a{
+		&:hover{
+			color: $color_1;
+		}
+	}
+	border-bottom: 1px solid #d1d1d1;
+	&:last-child{
+		border-bottom: 1px solid transparent;
+	}
+}
 
 
+
+
+
+
+
+
+//---------------- CONTACTS
+
+.map-column{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: left;
+  float: none;
+  margin-bottom: -30px;
+}
+#map{
+	display: block;
+	height: 550px;
+	z-index: 1;
+	color: $color_3;
+
+	h1{
+		margin-top: 0;
+		margin-left: 10px;
+		display: inline-block;
+		&:before{
+			left: 50px;
+		}
+	}
+	img{
+			vertical-align: text-bottom;
+	}
+	p{
+		color: white;
+		text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+		margin-left: 10px;
+	}
+}
+
+.map-hidden-bottom{
+	width: 100%;
+	height: 30px;
+	bottom: 0;
+	position: absolute;
+	z-index: 30;
+	background-color: white;
+}
+
+.contacts-info{
+	ul{
+		margin: 30px 0;
+
+	}
+	li{
+		margin: 5px 0;		
+	}
+}
+.sunday{
+	margin: 15px 0;
+	color: red;
+}
+
+
+
+
+
+
+//---------------GALLERY-PHOTO
+
+.carousel-style-1 {
+  //background: #EEE;
+  .flickity-prev-next-button {
+  	background-color: transparent;
+  	&.previous{
+  		transform: scale(2) translateX(-30px);
+  	}
+  	&.next{
+  		transform: scale(2) translateX(30px);
+  	}
+
+  }
+  .arrow{
+  	//color: red;
+  	fill: black;
+  }
+}
+.gallery-photo{
+
+	.carousel-cell {
+	  margin-right: 20px;
+	  overflow: hidden;
+	}
+
+	.carousel-cell img {
+	  display: block;
+	  height: 200px;
+	}
+
+	@media screen and ( min-width: 768px ) {
+	  .carousel-cell img {
+	    height: 400px;
+	  }
+	}
+
+}
+.gallery-photo-content{
+	position: relative;
+	.gallery-photo-item{
+		img{
+			max-width: initial;
+			display: block;
+    	margin: auto;
+    	//width: 300px;
+    	height: 500px;
+    	//height: 100px;
+    }
+	}
+
+
+}
+
+// -------------- GALLERY-VIDEO
+.gallery-video-content{
+
+	iframe{
+		width: 100%;
+		height: 300px;
+	}
+
+}
 
 
 
@@ -1886,7 +2099,7 @@ main{
 
 
 .fancybox-bg{
-	background: white;
+	background: black;
 	opacity: 1 !important;
 }
 
@@ -1964,7 +2177,7 @@ main{
 
 
 }
-//$("[class*='video']")
+
 .style-black{
 	@include bg-color(black, white);
 }
@@ -2009,9 +2222,20 @@ main{
 				visibility: hidden;
 			}
 		}
+		.vi-img-visibility-show{
+
+			&, *{
+				img, iframe{
+					visibility: initial !important;
+				}
+			}
+
+		}
+		.vi-img-visibility-none{
+			display: none !important;
+		}
 	}
 
-	
 
 }
 

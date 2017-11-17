@@ -51,7 +51,8 @@ gulp.task('scripts', () =>
 			//'app/js/jquery.fractionslider.js',
 			//'app/js/classie.js',
 			//'app/js/skrollr.min.js',
-			'app/js/aos.js',
+			//'app/js/aos.js',
+			'app/js/jquery.fancybox.js',
 			'app/js/wow.js',
 			'app/js/owl.carousel.min.js',
 			'app/js/flickity.js'
@@ -113,6 +114,7 @@ gulp.task('build', ['clean', 'cssnano', 'sass', 'scripts'], () =>
 	{
 		var css 	= gulp.src('app/css/main.min.css').pipe( gulp.dest( 'dist/css/' ) );
 		var fonts 	= gulp.src('app/fonts/**/*').pipe( gulp.dest('dist/fonts/') );
+		var img 	= gulp.src('app/img/**/*').pipe( gulp.dest('dist/img/') );
 		var js  	= gulp.src(['app/js/scripts.min.js', 'app/js/main.js']).pipe( gulp.dest('dist/js/') );
 		var html 	= gulp.src('app/*.+(html|php)').pipe( gulp.dest('dist/') );
 	}
