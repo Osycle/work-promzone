@@ -99,6 +99,13 @@ $(function(){
 		percentPosition: true,
 		cellAlign: 'center'
 	});
+	function phoneDap(){
+		if ( checkView(992) )
+			return;
+		$(".copyright")
+			.before	( $(".footer-phone") )
+	}
+	phoneDap();
 
 
 var statusSearchView = true;

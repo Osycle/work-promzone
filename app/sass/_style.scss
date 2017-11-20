@@ -496,11 +496,19 @@ button:hover, button:focus{
 	}
 }
 .inlineble-2{
-	@include inline-ble(90/2+%, 2+%);
-	figure{
-		margin-right: 1%;
-		margin-left: 1%;
+	@include inline-ble(96/2+%, 0+%);
+	@media only screen and ( min-width: 992px ){
+		text-align: left;
+		figure:nth-child(odd){
+			margin-right: 1.5%;
+			margin-left: 0%;
+		}
+		figure:nth-child(even){
+			margin-right: 0%;
+			margin-left: 2%;
+		}
 	}
+
 }
 
 .inlineble-3{
@@ -696,10 +704,10 @@ $header-height: 50px;
 	width: 15%;
 }
 .slogan{
-	width: 60%;
+	width: 65%;
 }
 .emblem{
-	width: 100%;
+	width: 20%;
 	text-align: right;
 	img{
 		width: 235px;
@@ -862,7 +870,7 @@ $header-height: 50px;
 	text-align: right;
 }
 .nav-form{
-	width: 13%;
+	width: 19.5%;
 	
 	position: relative;
 	&:focus{
@@ -890,14 +898,17 @@ $header-height: 50px;
     opacity: 0;
    
     transform: rotate(-90deg);
-		padding: 0px 5px;
+		//padding: 0px 5px;
+		left: 25%;
     font-size: 20px;
     z-index: 3;
     bottom: 0;
     margin-bottom: 10px;
     color: $color_1;
     transition: all 0.35s ease-in;
- 
+ 		@media only screen and (min-width: 1199px){
+ 			left: 80px;
+ 		}
 	}
 	.btn-form-icon{
 		@extend .btn-res;
@@ -925,7 +936,7 @@ $header-height: 50px;
 
 }
 .nav-lang{
-	width: 12.5%;
+	width: 100%;
 	ul{
 		li{
 			margin-left: 3px;
@@ -946,7 +957,7 @@ $header-height: 50px;
 	}
 }
 .nav-menu:not(.min){
-	width: 60%;
+	width: 70%;
 	position: relative;
   margin: auto auto;
   padding: 0 2.5%;
@@ -1247,7 +1258,7 @@ $header-height: 50px;
 	.hamburger{
 		
 		i, i:after, i:before{
-			background-color: $color_1;
+			background-color: white;
 		}
 		text{
 			open, close{
@@ -1523,9 +1534,14 @@ main{
 		display: inline-table;
 	}
 	.owl-carousel-item{
-		//height: 200px;
+		height: 500px;
 		img{
-			//width: 50%;
+			display: block;
+	    width: 100%;
+	    top: -260px;
+	    bottom: 0;
+	    //margin-top: 200px;
+	    position: relative;
 		}
 	}
 }
@@ -1552,8 +1568,8 @@ main{
 		fill: white;
 	}
 	figure{
-		width: 310px;
-		    padding: 0 20px;
+		width: 300px;
+		padding: 0 15px;
     margin: 10px 0;
 		img{
 			width: 100%;
@@ -1774,6 +1790,17 @@ main{
 	}
 }
 
+.short-news-content{
+	.inlineble-2{
+		@media only screen and ( min-width: 992px ){
+
+		}
+
+	}
+	.this-content{
+		text-align: left ;
+	}
+}
 
 
 
@@ -1824,6 +1851,13 @@ main{
 	    transform: scaleX(0);
 	    visibility: hidden;
 		}
+		@media only screen and ( min-width: 992px ){
+			width: 30%;
+		}
+		@media only screen and ( max-width: 767px ){
+			width: 100%;
+		}
+
 	}
 	.img-content{
 		padding: 15px 0;
@@ -2074,17 +2108,27 @@ main{
 	.footer-content{
 		@extend .container;
 		min-width: 280px;
+		padding: 15px 0;
 		.footer-phone{
-			text-align: right;
+
 			.fa{
 				font-size: 1.4em;
 				vertical-align: baseline;
 				margin-right: 15px;
 			}
-			text-align: right;
+			
 		}
-		@include table-celling(180px);
+		@media only screen and ( min-width: 992px ){
+			@include table-celling(180px);
+		}
 	}
+	.copyright{
+		p{
+			margin: 20px 0;
+		}
+		line-height: 200%;
+	}
+
 }
 
 
@@ -2241,6 +2285,10 @@ main{
 
 
 .vi{
+  position: absolute;
+  z-index: 1200;
+  width: 100%;
+  border-bottom: 1px solid;
 	&.active{
 		display: block;
 	}
@@ -2259,7 +2307,7 @@ main{
 	}
 
 	.vi-content{
-		@include table-celling(60px);
+		@include table-celling(50px);
 		@extend .container;
 		text-align: center;
 		& > .vi-table-center{
@@ -2313,6 +2361,13 @@ main{
 			  margin: 0 15px;
 		}
 	}
+	.vi-font-size-list{
+		.vi-font-size-1{font-size: 8+px;}
+		.vi-font-size-2{font-size: 10+px;}
+		.vi-font-size-3{font-size: 12+px;}
+		.vi-font-size-4{font-size: 16+px;}
+		.vi-font-size-5{font-size: 20+px;}
+	}
 
 
 
@@ -2327,12 +2382,12 @@ main{
 		.vi-bg-color-list{
 
 			[class*="vi-bg-color"]{
-				width: 50px;
-				height: 50px;
+				width: 35px;
+				height: 35px;
 				overflow: hidden;
 				&.active{
 					top: 11.5px;
-					border: 2.5px dashed gray;
+					border: 9.5px dotted gray;
 					span{
 						//top: 0;
 					}
@@ -2436,7 +2491,7 @@ main{
 		button{
 			transition: all 0.3s ease-out;
 			border: 0;
-			padding: 10px 30px;
+			padding: 5px 15px;
 			background-color: white;
 			&:hover{
 				color: white;

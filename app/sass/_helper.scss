@@ -278,6 +278,7 @@
 
 
 
+
 .float-center{
 	float: center;
 }
@@ -344,6 +345,21 @@
 		text-align: center !important;
 	}
 	.sm-align-right{
+		text-align: right !important;
+	}
+
+
+}
+
+@media (max-width: 767px){
+
+	.xs-align-left{
+		text-align: left !important;
+	}
+	.xs-align-center{
+		text-align: center !important;
+	}
+	.xs-align-right{
 		text-align: right !important;
 	}
 
