@@ -1933,7 +1933,7 @@ main{
 	display: block;
 	height: 550px;
 	z-index: 1;
-	color: $color_3;
+	color: black;
 
 	h1{
 		margin-top: 0;
@@ -1947,7 +1947,7 @@ main{
 			vertical-align: text-bottom;
 	}
 	p{
-		color: white;
+		color: black;
 		text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
 		margin-left: 10px;
 	}
