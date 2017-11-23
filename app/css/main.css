@@ -16290,6 +16290,30 @@ button:hover, button:focus {
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.5); }
 
+.lnk-anim a:hover:before, .docs-list a:hover:before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  visibility: visible; }
+
+.lnk-anim a:before, .docs-list a:before {
+  content: "";
+  width: 50%;
+  height: 1px;
+  color: black;
+  border: 1px solid;
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  visibility: hidden; }
+
 .btn-style, .btn-default {
   white-space: nowrap;
   margin: 15px 0; }
@@ -16438,7 +16462,8 @@ button:hover, button:focus {
   padding: 0 15px;
   margin: 15px 0; }
   [class*='list-style'] ul li {
-    margin: 0 15px;
+    margin-left: 15px;
+    margin-right: 15px;
     font-size: 1em;
     list-style: disc;
     line-height: 170%;
@@ -16447,6 +16472,11 @@ button:hover, button:focus {
 .list-style-1 ul li {
   font-weight: 500;
   list-style: circle; }
+
+.list-style-3 ul li {
+  font-weight: 500;
+  list-style: disc;
+  font-style: initial; }
 
 /*
 										 --- HEADER ---
@@ -17181,9 +17211,12 @@ main {
   -webkit-border-radius: initial;
   border-radius: initial; }
 
+.index-carousel-advert .flickity-viewport {
+  height: 220px !important; }
+
 .index-carousel-advert .flickity-prev-next-button {
-  -webkit-transform: translate3d(0%, -70%, 10px);
-  transform: translate3d(0%, -70%, 10px);
+  -webkit-transform: translate3d(0%, -75%, 10px);
+  transform: translate3d(0%, -75%, 10px);
   width: 100px;
   height: 35%; }
   .index-carousel-advert .flickity-prev-next-button, .index-carousel-advert .flickity-prev-next-button * {
@@ -17197,7 +17230,8 @@ main {
   padding: 0 15px;
   margin: 10px 0; }
   .index-carousel-advert figure img {
-    width: 100%; }
+    width: 100%;
+    width: 270px; }
 
 .short-enterprises .this-content {
   text-align: justify; }
@@ -17350,6 +17384,36 @@ main {
     bottom: 0;
     position: absolute; }
 
+.docs-list h1, .docs-list h2 {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.docs-list-content ul {
+  width: 90%;
+  margin: auto;
+  display: block;
+  text-align: center; }
+
+.docs-list-content li {
+  display: inline-block;
+  width: 33%;
+  position: relative;
+  list-style: none;
+  /* 		text-transform: lowercase;
+		&::first-letter{
+			text-transform: uppercase;
+		} */
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+@media only screen and (max-width: 991px) {
+  .docs-list-content li {
+    width: 49.5%; } }
+
+@media only screen and (max-width: 767px) {
+  .docs-list-content li {
+    width: 100%; } }
+
 .short-news-content h3, .news-content h3 {
   font-weight: 700; }
 
@@ -17492,7 +17556,13 @@ main {
     height: 400px; } }
 
 .gallery-photo-content {
-  position: relative; }
+  position: relative;
+  display: block; }
+  .gallery-photo-content .gallery-photo-item .img-content {
+    position: relative;
+    display: block; }
+    .gallery-photo-content .gallery-photo-item .img-content a {
+      display: block; }
   .gallery-photo-content .gallery-photo-item img {
     max-width: initial;
     display: block;

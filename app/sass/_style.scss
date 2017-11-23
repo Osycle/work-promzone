@@ -408,7 +408,27 @@ button:hover, button:focus{
 	}
 }
 
-
+.lnk-anim{
+		a:hover:before{
+				transform: scaleX(1);
+				visibility: visible;
+		}
+		a:before{
+			content: ""; 
+	    width: 50%;
+	    height: 1px;
+	    //background-color: $color_1;
+	    color: black;
+	    border: 1px solid;
+	    position: absolute;
+	    left: 25%;
+	    bottom: 0;
+	    right: 0;
+	   	transition: all 0.1s ease-in-out;
+	    transform: scaleX(0);
+	    visibility: hidden;
+		}
+}
 
 .btn-style{
 	@extend .btn-res;	
@@ -615,7 +635,8 @@ button:hover, button:focus{
 		padding: 0 15px;
 		margin: 15px 0;
 		li{
-			margin: 0 15px;
+			margin-left: 15px;
+			margin-right: 15px;
 			font-size: 1em;
 			list-style: disc;
 			line-height: 170%;
@@ -632,6 +653,19 @@ button:hover, button:focus{
 			font-weight: 500;
 			//font-weight: 600;
 			list-style: circle;
+		}
+	}
+
+}
+.list-style-3{
+
+	ul{
+
+		li{
+			font-weight: 500;
+			//font-weight: 600;
+			list-style: disc;
+			font-style: initial;
 		}
 	}
 
@@ -1555,12 +1589,14 @@ main{
 	border-radius: initial;
 }
 .index-carousel-advert{
-
+		.flickity-viewport{
+			height: 220px !important;
+		}
 	.flickity-prev-next-button{
 		&, *{
 			background-color: transparent;
 		}
-		transform: translate3d(0%, -70%, 10px);
+		transform: translate3d(0%, -75%, 10px);
 		width: 100px;
 		height: 35%;
 	}
@@ -1573,6 +1609,7 @@ main{
     margin: 10px 0;
 		img{
 			width: 100%;
+			width: 270px;
 		}
 	}
 
@@ -1778,6 +1815,64 @@ main{
 
 
 
+
+
+
+
+
+.docs-list{
+	h1, h2{
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	@extend .lnk-anim;
+}
+
+.docs-list-content{
+
+	ul{
+  	width: 90%;
+    margin: auto;
+    display: block;
+  	//padding: 0 150px;
+    text-align: center;
+	}
+
+	li{
+		display: inline-block;
+		width: 99/3+%;
+		position:relative ;
+		list-style: none;
+/* 		text-transform: lowercase;
+		&::first-letter{
+			text-transform: uppercase;
+		} */
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	@media only screen and ( max-width: 991px ){
+		li{
+			width: 99/2+%;
+		}
+	}
+	@media only screen and ( max-width: 767px ){
+		li{
+			width: 100%;
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
 .short-news-content, .news-content{
 	h3{
 		font-weight: 700;
@@ -1894,8 +1989,8 @@ main{
 
 	padding: 30px 0;
 	ul{
-	column-gap: 30px;
-  column-count: 4;
+		column-gap: 30px;
+  	column-count: 4;
 	}
 	li{
 		font-style: italic;
@@ -2021,12 +2116,21 @@ main{
 }
 .gallery-photo-content{
 	position: relative;
+	display: block;
 	.gallery-photo-item{
+		.img-content{
+			position: relative;
+			display: block;
+			a{
+				display: block;
+			}
+		}
 		img{
 			max-width: initial;
 			display: block;
     	margin: auto;
     	//width: 300px;
+    	//width: 100%;
     	height: 500px;
     	//height: 100px;
     }

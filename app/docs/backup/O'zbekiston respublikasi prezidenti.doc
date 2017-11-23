@@ -1,0 +1,918 @@
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'></style><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 12pt;
+ font-family: 'Virtec Times New Roman Uz';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-weight: bold;
+}
+span.rvts2
+{
+}
+a.rvts3, span.rvts3
+{
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.rvts4
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts5
+{
+ font-style: italic;
+}
+span.rvts6
+{
+ color: #800080;
+}
+span.rvts7
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts8
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+a.rvts9, span.rvts9
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts10, span.rvts10
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.rvts11
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts12
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts13
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts14
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts15
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ font-style: italic;
+}
+span.rvts16
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #800080;
+}
+span.rvts17
+{
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #800080;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-align: right;
+}
+.rvps3
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps7
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps8
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps9
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps10
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps11
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps12
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps13
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps14
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps15
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps16
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps17
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps18
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps19
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps20
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps21
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps22
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps23
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps24
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps25
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps26
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps27
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps28
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps29
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps30
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps31
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps32
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps33
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps34
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps35
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps36
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps37
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps38
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps39
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps40
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps41
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps42
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps43
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps44
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps45
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps46
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps47
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps48
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps49
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps50
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps51
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps52
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps53
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps54
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps55
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps56
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps57
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps58
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps59
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps60
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps61
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps62
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps63
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps64
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps65
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps66
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps67
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps68
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps69
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps70
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps71
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps72
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps73
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps74
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps75
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps76
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps77
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps78
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps79
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps80
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps81
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps82
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps83
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps84
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps85
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps86
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps87
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps88
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps89
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps90
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps91
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps92
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps93
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps94
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps95
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps96
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps97
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps98
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps99
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps100
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps101
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps102
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps103
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps104
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps105
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps106
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps107
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps108
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps109
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps110
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps111
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps112
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps113
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps114
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps115
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps116
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps117
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps118
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps119
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps120
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps121
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps122
+{
+ margin: 0px 0px 0px 38px;
+}
+--></style>
+</head>
+<body>
+<p class=rvps1><span class=rvts7>ЎЗБЕКИСТОН РЕСПУБЛИКАСИ</span></p>
+<p class=rvps1><span class=rvts7>ПРЕЗИДЕНТИНИНГ</span></p>
+<p class=rvps1><span class=rvts8>Қ</span><span class=rvts7>АРОРИ</span></p>
+<p class=rvps1><span class=rvts7>25.10.2017 й.</span></p>
+<p class=rvps1><span class=rvts7>N П</span><span class=rvts8>Қ</span><span class=rvts7>-3356</span></p>
+<p class=rvps1><span class=rvts2></span></p>
+<p class=rvps1><span class=rvts2></span></p>
+
+<p class=rvps1><span class=rvts11>ЭРКИН И</span><span class=rvts12>Қ</span><span class=rvts11>ТИСОДИЙ ЗОНАЛАР</span></p>
+<p class=rvps1><span class=rvts11>ВА КИЧИК САНОАТ ЗОНАЛАРИ ФАОЛИЯТИ</span></p>
+<p class=rvps1><span class=rvts11>САМАРАДОРЛИГИНИ ОШИРИШ БОРАСИДАГИ</span></p>
+<p class=rvps1><span class=rvts12>Қ</span><span class=rvts11>ЎШИМЧА ЧОРА-ТАДБИРЛАР ТЎ</span><span class=rvts12>Ғ</span><span class=rvts11>РИСИДА</span></p>
+<p class=rvps1><span class=rvts2></span></p>
+<p class=rvps1><span class=rvts2></span></p>
+<p class=rvps3><span class=rvts13>Қ</span><span class=rvts14>айд этиб ўтилсинки, кейинги йилларда мамлакатимизда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналарини вужудга келтириш, жумладан уларнинг фаолиятини тартибга солувчи муста</span><span class=rvts13>ҳ</span><span class=rvts14>кам норматив-</span><span class=rvts13>ҳ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>ий базани шакллантириш, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва саноат зоналарини ривожлантиришга хорижий </span><span class=rvts13>ҳ</span><span class=rvts14>амда ма</span><span class=rvts13>ҳ</span><span class=rvts14>аллий инвестицияларни жалб этиш имконини берадиган соли</span><span class=rvts13>қ</span><span class=rvts14>, божхона имтиёзлари ва енгилликларининг кенг тизимини яратиш борасида ани</span><span class=rvts13>қ</span><span class=rvts14> ма</span><span class=rvts13>қ</span><span class=rvts14>садга йўналтирилган кенг кўламли ишлар амалга оширилди.</span></p>
+<p class=rvps4><span class=rvts14>Шу билан бирга эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар фаолиятини ташкил этишда жиддий камчилик ва ну</span><span class=rvts13>қ</span><span class=rvts14>сонлар мавжудки, улар шундай зоналарни ривожлантиришга ва самарали фаолият юритишига тўс</span><span class=rvts13>қ</span><span class=rvts14>инлик </span><span class=rvts13>қ</span><span class=rvts14>илмо</span><span class=rvts13>қ</span><span class=rvts14>да. Ўзбекистон Республикаси Президентининг 2017 йил 7 августдаги П</span><span class=rvts13>Қ</span><span class=rvts14>-3175-сонли </span><span class="rvts1">қ</span><span class="rvts1">арори</span><span class=rvts14> билан ташкил </span><span class=rvts13>қ</span><span class=rvts14>илинган Махсус идоралараро комиссия томонидан жойларга чи</span><span class=rvts13>қ</span><span class=rvts14>иб ўрганилганда </span><span class=rvts13>қ</span><span class=rvts14>уйидагилар ани</span><span class=rvts13>қ</span><span class=rvts14>ланди:</span></p>
+<p class=rvps5><span class=rvts14>биринчидан, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари </span><span class=rvts13>ҳ</span><span class=rvts14>удудларида жойлаштириш учун лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларни танлашнинг ани</span><span class=rvts13>қ</span><span class=rvts14> мезонлари мавжуд эмас. Инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларини кўриб чи</span><span class=rvts13>қ</span><span class=rvts14>ишда янгидан ташкил этилаётган иш ўринлари сони, сало</span><span class=rvts13>ҳ</span><span class=rvts14>иятли хорижий шерик ва инвестор-мамлакатнинг мавжудлиги, ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>арилаётган ма</span><span class=rvts13>ҳ</span><span class=rvts14>сулотнинг ички ва таш</span><span class=rvts13>қ</span><span class=rvts14>и бозорларда талаб </span><span class=rvts13>қ</span><span class=rvts14>илиниши, экспорт </span><span class=rvts13>ҳ</span><span class=rvts14>ажми, шунингдек, ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>аришни ма</span><span class=rvts13>ҳ</span><span class=rvts14>аллийлаштириш даражаси </span><span class=rvts13>ҳ</span><span class=rvts14>исобга олинмаяпти;</span></p>
+<p class=rvps6><span class=rvts14>иккинчидан, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар </span><span class=rvts13>ҳ</span><span class=rvts14>удудида жойлаштириш ва амалга ошириш учун таклиф этилаётган инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларини келишиб олиш ва маъ</span><span class=rvts13>қ</span><span class=rvts14>уллаш механизми амалда </span><span class=rvts13>ҳ</span><span class=rvts14>аддан таш</span><span class=rvts13>қ</span><span class=rvts14>ари мураккаб бюрократизмга учраган, бу эса мазкур лойи</span><span class=rvts13>ҳ</span><span class=rvts14>алар бўйича </span><span class=rvts13>қ</span><span class=rvts14>арорлар </span><span class=rvts13>қ</span><span class=rvts14>абул </span><span class=rvts13>қ</span><span class=rvts14>илишни </span><span class=rvts13>қ</span><span class=rvts14>ўп ойларга чўзиб юбормо</span><span class=rvts13>қ</span><span class=rvts14>да;</span></p>
+<p class=rvps7><span class=rvts14>учинчидан, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари учун зарур му</span><span class=rvts13>ҳ</span><span class=rvts14>андислик-коммуникация ва ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>ариш инфратузилмасини ўз ва</span><span class=rvts13>қ</span><span class=rvts14>тида барпо этиш масалаларига етарлича эътибор берилмаяпти;</span></p>
+<p class=rvps8><span class=rvts14>тўртинчидан, таклиф этилаётган инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларининг ишончли молиявий манбалар, шу жумладан, ма</span><span class=rvts13>ҳ</span><span class=rvts14>аллий ва хорижий кредит ресурслари, тў</span><span class=rvts13>ғ</span><span class=rvts14>ридан-тў</span><span class=rvts13>ғ</span><span class=rvts14>ри хорижий инвестициялар </span><span class=rvts13>ҳ</span><span class=rvts14>исобига ишончли таъминланиши муфассал ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>илмаган. Эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналарига бириктирилган тижорат банклари ушбу муаммоларни </span><span class=rvts13>ҳ</span><span class=rvts14>ал этишда суст иштирок этмо</span><span class=rvts13>қ</span><span class=rvts14>далар;</span></p>
+<p class=rvps9><span class=rvts14>бешинчидан, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарнинг иштирокчилари Республика товар-хомашё биржаси ор</span><span class=rvts13>қ</span><span class=rvts14>али сотиладиган хомашё ресурсларини зарур </span><span class=rvts13>ҳ</span><span class=rvts14>ажмда сотиб олишда каттагина </span><span class=rvts13>қ</span><span class=rvts14>ийинчиликларга дуч келмо</span><span class=rvts13>қ</span><span class=rvts14>да;</span></p>
+<p class=rvps10><span class=rvts14>олтинчидан, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарнинг </span><span class=rvts13>ҳ</span><span class=rvts14>удудида фойдаланишга топширилган корхоналарнинг ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>ариш </span><span class=rvts13>қ</span><span class=rvts14>увватларидан ни</span><span class=rvts13>ҳ</span><span class=rvts14>оятда самарасиз фойдаланилмо</span><span class=rvts13>қ</span><span class=rvts14>да, бунинг о</span><span class=rvts13>қ</span><span class=rvts14>ибатида ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>ариш ва экспорт </span><span class=rvts13>ҳ</span><span class=rvts14>ажмлари </span><span class=rvts13>ҳ</span><span class=rvts14>амда иш жойлари сони тасди</span><span class=rvts13>қ</span><span class=rvts14>ланган бизнес-режалар параметрларига мувофи</span><span class=rvts13>қ</span><span class=rvts14> келмайди;</span></p>
+<p class=rvps11><span class=rvts14>еттинчидан, </span><span class=rvts13>Қ</span><span class=rvts14>ора</span><span class=rvts13>қ</span><span class=rvts14>алпо</span><span class=rvts13>ғ</span><span class=rvts14>истон Республикаси Вазирлар Кенгаши раисининг биринчи ўринбосари, вилоятлар ва Тошкент ша</span><span class=rvts13>ҳ</span><span class=rvts14>ар </span><span class=rvts13>ҳ</span><span class=rvts14>окимларининг и</span><span class=rvts13>қ</span><span class=rvts14>тисодиёт ва тадбиркорлик масалалари бўйича биринчи ўринбосарлари ра</span><span class=rvts13>ҳ</span><span class=rvts14>барлигида эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари фаолиятини мувофи</span><span class=rvts13>қ</span><span class=rvts14>лаштириш бўйича ташкил </span><span class=rvts13>қ</span><span class=rvts14>илинган </span><span class=rvts13>ҳ</span><span class=rvts14>удудий комиссиялар томонидан жойларда юзага келувчи масалаларни тезкорлик билан </span><span class=rvts13>ҳ</span><span class=rvts14>ал этиш борасидаги ишларни мувофи</span><span class=rvts13>қ</span><span class=rvts14>лаштиришнинг таъсирчан механизми мавжуд эмас.</span></p>
+<p class=rvps12><span class=rvts14>Мана шуларнинг </span><span class=rvts13>ҳ</span><span class=rvts14>аммаси эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналарида жойлаштириладиган инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларини танлаб олиш, ер майдонлари ажратиб бериш тартиби, хомашё ва материаллардан фойдаланишни таъминлаш, тадбиркорлик субъектларига кредит ресурслари ажратишнинг принципиал янги тизими яратилишини та</span><span class=rvts13>қ</span><span class=rvts14>озо этади.</span></p>
+<p class=rvps13><span class=rvts14>Таш</span><span class=rvts13>қ</span><span class=rvts14>и бозорларда харидоргир бўлган ю</span><span class=rvts13>қ</span><span class=rvts14>ори </span><span class=rvts13>қ</span><span class=rvts14>ўшилган </span><span class=rvts13>қ</span><span class=rvts14>ийматли ра</span><span class=rvts13>қ</span><span class=rvts14>обатдош, сифатли ма</span><span class=rvts13>ҳ</span><span class=rvts14>сулот ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>арилишини таъминлайдиган минерал-хомашё ва </span><span class=rvts13>қ</span><span class=rvts14>ишло</span><span class=rvts13>қ</span><span class=rvts14> хўжалиги ресурсларини чу</span><span class=rvts13>қ</span><span class=rvts14>ур </span><span class=rvts13>қ</span><span class=rvts14>айта ишлаш бўйича ю</span><span class=rvts13>қ</span><span class=rvts14>ори технологияли замонавий ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>аришларни барпо этишга хорижий ва ма</span><span class=rvts13>ҳ</span><span class=rvts14>аллий инвестицияларни жалб этиш учун </span><span class=rvts13>ғ</span><span class=rvts14>оят </span><span class=rvts13>қ</span><span class=rvts14>улай ишбилармонлик му</span><span class=rvts13>ҳ</span><span class=rvts14>итини вужудга келтириш, шунингдек, республика минта</span><span class=rvts13>қ</span><span class=rvts14>аларининг ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>ариш ва ресурс сало</span><span class=rvts13>ҳ</span><span class=rvts14>иятидан комплекс </span><span class=rvts13>ҳ</span><span class=rvts14>амда самарали фойдаланиш, бунинг асосида янги иш жойларини ташкиллаштириш ва а</span><span class=rvts13>ҳ</span><span class=rvts14>оли даромадларини ошириш ма</span><span class=rvts13>қ</span><span class=rvts14>садида:</span></p>
+<p class=rvps14><span class=rvts2></span></p>
+<p class=rvps15><span class=rvts14>1. 2017 йилнинг 1 декабридан бошлаб эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналарини бош</span><span class=rvts13>қ</span><span class=rvts14>ариш </span><span class=rvts13>ҳ</span><span class=rvts14>амда улар фаолиятини ташкил этишнинг янги тизими жорий этилсин, унда </span><span class=rvts13>қ</span><span class=rvts14>уйидагилар назарда тутилсин:</span></p>
+<p class=rvps16><span class=rvts14>а) эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари фаолиятини мувофи</span><span class=rvts13>қ</span><span class=rvts14>лаштириш бўйича ташкил </span><span class=rvts13>қ</span><span class=rvts14>илинган </span><span class=rvts13>ҳ</span><span class=rvts14>удудий комиссиялар 1-иловага</span><span class="rvts1">*</span><span class=rvts14> мувофи</span><span class=rvts13>қ</span><span class=rvts14> намунавий таркибда </span><span class=rvts13>Қ</span><span class=rvts14>ора</span><span class=rvts13>қ</span><span class=rvts14>алпо</span><span class=rvts13>ғ</span><span class=rvts14>истон Республикаси, вилоятлар ва Тошкент ша</span><span class=rvts13>ҳ</span><span class=rvts14>рида эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналарининг маъмурий кенгашлари (кейинги ўринларда - маъмурий кенгашлар) этиб </span><span class=rvts13>қ</span><span class=rvts14>айта ташкил </span><span class=rvts13>қ</span><span class=rvts14>илинсин, </span><span class=rvts13>қ</span><span class=rvts14>уйидагилар уларнинг асосий вазифалари ва фаолияти йўналишлари этиб белгилансин:</span></p>
+<p class=rvps17><span class=rvts14>тегишли </span><span class=rvts13>ҳ</span><span class=rvts14>удудда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари фаолиятини давлат томонидан тартибга солиш ва мувофи</span><span class=rvts13>қ</span><span class=rvts14>лаштириш, шунингдек, ало</span><span class=rvts13>ҳ</span><span class=rvts14>ида </span><span class=rvts13>ҳ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>ий ва и</span><span class=rvts13>қ</span><span class=rvts14>тисодий режимга риоя этилиши устидан назоратни амалга ошириш;</span></p>
+<p class=rvps18><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналарининг самарали фаолият юритишини ташкиллаштириш, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари дирекцияларини шакллантириш </span><span class=rvts13>ҳ</span><span class=rvts14>амда улар фаолияти устидан назоратни амалга ошириш;</span></p>
+<p class=rvps19><span class=rvts14>инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларини танлаш ва уларни амалга ошириш учун эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар </span><span class=rvts13>ҳ</span><span class=rvts14>удудида жойлаштириш бўйича </span><span class=rvts13>қ</span><span class=rvts14>арор </span><span class=rvts13>қ</span><span class=rvts14>абул </span><span class=rvts13>қ</span><span class=rvts14>илиш;</span></p>
+<p class=rvps20><span class=rvts14>тадбиркорлик субъектларини танлаб олиш ва уларни кичик саноат зоналарида жойлаштириш бўйича танлов комиссияси функцияларини амалга ошириш;</span></p>
+<p class=rvps21><span class=rvts14>инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларини амалга ошириш учун эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналарининг иштирокчиларига ер майдонлари та</span><span class=rvts13>қ</span><span class=rvts14>дим этиш тў</span><span class=rvts13>ғ</span><span class=rvts14>рисида </span><span class=rvts13>қ</span><span class=rvts14>арорлар </span><span class=rvts13>қ</span><span class=rvts14>абул </span><span class=rvts13>қ</span><span class=rvts14>илиш;</span></p>
+<p class=rvps22><span class=rvts14>давлат мулки бўлган ишламаётган корхоналар ва бўш ётган мол-мулкларни эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналарининг иштирокчиларига инвестиция мажбуриятларини </span><span class=rvts13>қ</span><span class=rvts14>абул </span><span class=rvts13>қ</span><span class=rvts14>илган </span><span class=rvts13>ҳ</span><span class=rvts14>олда "нол" харид </span><span class=rvts13>қ</span><span class=rvts14>иймати бўйича сотиш тў</span><span class=rvts13>ғ</span><span class=rvts14>рисида </span><span class=rvts13>қ</span><span class=rvts14>арор </span><span class=rvts13>қ</span><span class=rvts14>абул </span><span class=rvts13>қ</span><span class=rvts14>илиш;</span></p>
+<p class=rvps23><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналарини ривожлантириш дастурларини ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>иш, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарни ривожлантиришнинг бош режаларини, шунингдек, кичик саноат зоналарини ривожлантириш режаларини кўриб чи</span><span class=rvts13>қ</span><span class=rvts14>иш, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналарида му</span><span class=rvts13>ҳ</span><span class=rvts14>андислик-коммуникация </span><span class=rvts13>ҳ</span><span class=rvts14>амда транспорт инфратузилмасини </span><span class=rvts13>қ</span><span class=rvts14>уриш бўйича лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларнинг ўз ва</span><span class=rvts13>қ</span><span class=rvts14>тида амалга оширилишини таъминлаш;</span></p>
+<p class=rvps24><span class=rvts14>инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларининг амалга оширилиши, шунингдек инвестициялаш тў</span><span class=rvts13>ғ</span><span class=rvts14>рисида битимга киритилган мажбуриятларнинг, шу жумладан, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари иштирокчилари корхоналарининг бизнес-режалари параметрлари бажарилиши устидан мониторинг олиб бориш;</span></p>
+<p class=rvps25><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналарининг иштирокчилари - тадбиркорлик субъектларига инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларини амалга оширишда ва корхоналарнинг фаолият юритишида юзага келадиган масалалар комплексини </span><span class=rvts13>ҳ</span><span class=rvts14>ал этишда ёрдам кўрсатиш;</span></p>
+<p class=rvps26><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар </span><span class=rvts13>ҳ</span><span class=rvts14>удудларининг чегараларини ани</span><span class=rvts13>қ</span><span class=rvts14>лаштириш ва янги кичик саноат зоналари барпо этиш бўйича таклифлар киритиш;</span></p>
+<p class=rvps27><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари фаолияти самарадорлигини ошириш, шунингдек, улар фаолиятини тартибга солувчи норматив-</span><span class=rvts13>ҳ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>ий </span><span class=rvts13>ҳ</span><span class=rvts14>ужжатларга ўзгартиш ва </span><span class=rvts13>қ</span><span class=rvts14>ўшимчалар киритиш бўйича таклифлар та</span><span class=rvts13>қ</span><span class=rvts14>дим этиш;</span></p>
+<p class=rvps28><span class=rvts14>б) эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарнинг Маъмурий кенгаши тугатилган </span><span class=rvts13>ҳ</span><span class=rvts14>олда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари маъмурий кенгашларининг фаолиятини мувофи</span><span class=rvts13>қ</span><span class=rvts14>лаштириш бўйича Республика кенгаши (кейинги ўринларда - Республика кенгаши) 2-иловага</span><span class="rvts1">*</span><span class=rvts14> мувофи</span><span class=rvts13>қ</span><span class=rvts14> таркибда ташкил </span><span class=rvts13>қ</span><span class=rvts14>илинсин, уларнинг асосий вазифалари ва фаолияти йўналишлари этиб </span><span class=rvts13>қ</span><span class=rvts14>уйидагилар белгилансин:</span></p>
+<p class=rvps29><span class=rvts14>ўрта муддатли ва узо</span><span class=rvts13>қ</span><span class=rvts14> муддатли исти</span><span class=rvts13>қ</span><span class=rvts14>болда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналарини ривожлантириш стратегиясини белгилаш;</span></p>
+<p class=rvps30><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари маъмурий кенгашлари </span><span class=rvts13>ҳ</span><span class=rvts14>амда дирекциялари фаолиятига ра</span><span class=rvts13>ҳ</span><span class=rvts14>барликни амалга ошириш, мувофи</span><span class=rvts13>қ</span><span class=rvts14>лаштириш ва мониторинг </span><span class=rvts13>қ</span><span class=rvts14>илиш;</span></p>
+<p class=rvps31><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналарининг фаолият юритиши ва уларни ривожлантириш, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари </span><span class=rvts13>ҳ</span><span class=rvts14>удудида инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларини амалга ошириш билан бо</span><span class=rvts13>ғ</span><span class=rvts14>ли</span><span class=rvts13>қ</span><span class=rvts14> ташкилий-техник масалаларни </span><span class=rvts13>ҳ</span><span class=rvts14>ал этишда вазирликлар, идоралар, тижорат банклари, ма</span><span class=rvts13>ҳ</span><span class=rvts14>аллий давлат </span><span class=rvts13>ҳ</span><span class=rvts14>окимияти органлари томонидан амалий ёрдам кўрсатилиши борасидаги фаолиятини ани</span><span class=rvts13>қ</span><span class=rvts14>-пухта мувофи</span><span class=rvts13>қ</span><span class=rvts14>лаштиришни, улар томонидан бюрократизм ва сансалорлик фактларига йўл </span><span class=rvts13>қ</span><span class=rvts14>ўймаслик бўйича тезкор чоралар кўриш, айбдор мансабдор шахсларга нисбатан </span><span class=rvts13>қ</span><span class=rvts14>атъий жавобгарлик чоралари кўриш юзасидан таклифлар киритиш;</span></p>
+<p class=rvps32><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари фаолиятининг барча ташкилий масалалари, хорижий инвесторлардан тушаётган исти</span><span class=rvts13>қ</span><span class=rvts14>болли таклифлар, шунингдек, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари </span><span class=rvts13>ҳ</span><span class=rvts14>удудида амалга ошириш тавсия этилаётган, Республика кенгашига та</span><span class=rvts13>қ</span><span class=rvts14>дим этилган ани</span><span class=rvts13>қ</span><span class=rvts14> лойи</span><span class=rvts13>ҳ</span><span class=rvts14>а таклифларини тезкорлик билан кўриб чи</span><span class=rvts13>қ</span><span class=rvts14>иш </span><span class=rvts13>ҳ</span><span class=rvts14>амда улар бўйича келишилган </span><span class=rvts13>қ</span><span class=rvts14>арорлар </span><span class=rvts13>қ</span><span class=rvts14>абул </span><span class=rvts13>қ</span><span class=rvts14>илиш;</span></p>
+<p class=rvps33><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари </span><span class=rvts13>ҳ</span><span class=rvts14>удудида лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларни амалга оширувчи инвесторлар учун, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналарининг иштирокчилари - хўжалик юритувчи субъектларнинг самарали фаолият юритиши, улар ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>араётган ма</span><span class=rvts13>ҳ</span><span class=rvts14>сулотни экспортга етказиб беришни кўпайтириш учун яна </span><span class=rvts13>ҳ</span><span class=rvts14>ам кўпро</span><span class=rvts13>қ</span><span class=rvts14> </span><span class=rvts13>қ</span><span class=rvts14>улай шарт-шароитлар яратишга </span><span class=rvts13>қ</span><span class=rvts14>аратилган </span><span class=rvts13>қ</span><span class=rvts14>онунчилик ва норматив-</span><span class=rvts13>ҳ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>ий </span><span class=rvts13>ҳ</span><span class=rvts14>ужжатларни янада такомиллаштириш бўйича белгиланган тартибда таклифлар киритиш;</span></p>
+<p class=rvps34><span class=rvts14>лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларни амалга ошириш, жумладан, лойи</span><span class=rvts13>ҳ</span><span class=rvts14>а ишланмаси ва лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларни амалга ошириш, объектларни ишга тушириш ва пировард ма</span><span class=rvts13>қ</span><span class=rvts14>садларга эришишнинг бутун цикли давомида уни сифатли ташкил этиш, мувофи</span><span class=rvts13>қ</span><span class=rvts14>лаштириш ва мониторинг </span><span class=rvts13>қ</span><span class=rvts14>илиш;</span></p>
+<p class=rvps35><span class=rvts14>белгиланган муддатларда фойдаланишга топширилишига тўс</span><span class=rvts13>қ</span><span class=rvts14>инлик </span><span class=rvts13>қ</span><span class=rvts14>илувчи сабабларни ани</span><span class=rvts13>қ</span><span class=rvts14>лаган </span><span class=rvts13>ҳ</span><span class=rvts14>олда, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар </span><span class=rvts13>ҳ</span><span class=rvts14>удудида инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>алари амалга оширилишини, шунингдек, юзага келаётган масалалар ва муаммоларни </span><span class=rvts13>ҳ</span><span class=rvts14>ал этишда уларга амалий ёрдам кўрсатиш чора-тадбирларини </span><span class=rvts13>қ</span><span class=rvts14>абул </span><span class=rvts13>қ</span><span class=rvts14>илган </span><span class=rvts13>ҳ</span><span class=rvts14>олда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари иштирокчилари - </span><span class=rvts13>ҳ</span><span class=rvts14>ўжалик юритувчи субъектлар молия-хўжалик фаолиятининг самарадорлигини доимий мониторинг </span><span class=rvts13>қ</span><span class=rvts14>илиб бориш;</span></p>
+<p class=rvps36><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар дирекцияси фаолияти устидан амалий назорат ўрнатиш, маъ</span><span class=rvts13>қ</span><span class=rvts14>улланган инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларининг амалга оширилиши тў</span><span class=rvts13>ғ</span><span class=rvts14>рисида дирекция ра</span><span class=rvts13>ҳ</span><span class=rvts14>барларининг мунтазам </span><span class=rvts13>ҳ</span><span class=rvts14>исоботларини тинглаб бориш, вазирликлар, идоралар, хўжалик бирлашмалари </span><span class=rvts13>ҳ</span><span class=rvts14>амда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари дирекцияларининг зиммасига юкланган вазифалар ва функциялар бажарилишини таъминламаган ра</span><span class=rvts13>ҳ</span><span class=rvts14>барларига нисбатан жавобгарлик чоралари кўриш тў</span><span class=rvts13>ғ</span><span class=rvts14>рисида таклифлар киритиш;</span></p>
+<p class=rvps37><span class=rvts14>маъмурий кенгашлар ёки ваколатли органларнинг асосли таклифлари бўйича эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зона иштирокчиси ма</span><span class=rvts13>қ</span><span class=rvts14>омини тўхтатиш ёки ундан ма</span><span class=rvts13>ҳ</span><span class=rvts14>рум </span><span class=rvts13>қ</span><span class=rvts14>илиш;</span></p>
+<p class=rvps38><span class=rvts14>янги эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари барпо этиш </span><span class=rvts13>ҳ</span><span class=rvts14>амда ишлаб турганларининг чегараларини ўзгартириш масалаларини келишиб олиш;</span></p>
+<p class=rvps39><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар </span><span class=rvts13>ҳ</span><span class=rvts14>удудида </span><span class=rvts13>қ</span><span class=rvts14>иймати 5,0 миллион А</span><span class=rvts13>Қ</span><span class=rvts14>Ш доллари эквивалентидан ю</span><span class=rvts13>қ</span><span class=rvts14>ори бўлган инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларини амалга ошириш юзасидан маъмурий кенгашларнинг </span><span class=rvts13>қ</span><span class=rvts14>арорларини келишиб олиш.</span></p>
+<p class=rvps40><span class=rvts2></span></p>
+<p class=rvps41><span class=rvts14>2. </span><span class=rvts13>Қ</span><span class=rvts14>уйидагилар белгилансин:</span></p>
+<p class=rvps42><span class=rvts14>маъмурий кенгашлар ўзларининг ваколатига киритилган </span><span class=rvts13>қ</span><span class=rvts14>арорларни </span><span class=rvts13>қ</span><span class=rvts14>абул </span><span class=rvts13>қ</span><span class=rvts14>илишда муста</span><span class=rvts13>қ</span><span class=rvts14>илдирлар;</span></p>
+<p class=rvps43><span class=rvts13>Қ</span><span class=rvts14>ора</span><span class=rvts13>қ</span><span class=rvts14>алпо</span><span class=rvts13>ғ</span><span class=rvts14>истон Республикаси И</span><span class=rvts13>қ</span><span class=rvts14>тисодиёт вазирлиги, вилоятлар </span><span class=rvts13>ҳ</span><span class=rvts14>амда Тошкент ша</span><span class=rvts13>ҳ</span><span class=rvts14>рининг и</span><span class=rvts13>қ</span><span class=rvts14>тисодиёт ва </span><span class=rvts13>ҳ</span><span class=rvts14>удудларни комплекс ривожлантириш бош бош</span><span class=rvts13>қ</span><span class=rvts14>армалари тегишли равишда </span><span class=rvts13>Қ</span><span class=rvts14>ора</span><span class=rvts13>қ</span><span class=rvts14>алпо</span><span class=rvts13>ғ</span><span class=rvts14>истон Республикаси, вилоятлар ва Тошкент ша</span><span class=rvts13>ҳ</span><span class=rvts14>рида эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари маъмурий кенгашларининг ишчи органлари </span><span class=rvts13>ҳ</span><span class=rvts14>исобланади;</span></p>
+<p class=rvps44><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар </span><span class=rvts13>ҳ</span><span class=rvts14>удудида биринчи навбатда Ўзбекистон Касаба уюшмалари федерацияси кенгаши томонидан та</span><span class=rvts13>қ</span><span class=rvts14>дим этиладиган рўйхатларга биноан энг аввало бандликка му</span><span class=rvts13>ҳ</span><span class=rvts14>тожларни иш билан таъминлаган </span><span class=rvts13>ҳ</span><span class=rvts14>олда янги иш жойларини вужудга келтириб, ма</span><span class=rvts13>ҳ</span><span class=rvts14>аллийлаштириш лойи</span><span class=rvts13>ҳ</span><span class=rvts14>алари учун </span><span class=rvts13>қ</span><span class=rvts14>онун </span><span class=rvts13>ҳ</span><span class=rvts14>ужжатларида белгиланган талаблар ва мезонларга мос келадиган, импорт ўрнини босадиган, экспортга йўналтирилган ю</span><span class=rvts13>қ</span><span class=rvts14>ори технологияли ва инновацион ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>аришларни барпо этиш бўйича лойи</span><span class=rvts13>ҳ</span><span class=rvts14>алар жойлаштирилади.</span></p>
+<p class=rvps45><span class=rvts2></span></p>
+<p class=rvps46><span class=rvts14>3. Эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари фаолияти со</span><span class=rvts13>ҳ</span><span class=rvts14>асида бир-бирини такрорловчи ваколатлар </span><span class=rvts13>ҳ</span><span class=rvts14>амда функцияларга эга бўлган доимий фаолият юритувчи комиссиялар ва ишчи гуру</span><span class=rvts13>ҳ</span><span class=rvts14>лар тугатилсин.</span></p>
+<p class=rvps47><span class=rvts2></span></p>
+<p class=rvps48><span class=rvts14>4. </span><span class=rvts13>Қ</span><span class=rvts14>уйидагилар:</span></p>
+<p class=rvps49><span class=rvts13>Қ</span><span class=rvts14>ора</span><span class=rvts13>қ</span><span class=rvts14>алпо</span><span class=rvts13>ғ</span><span class=rvts14>истон Республикаси, вилоятлар ва Тошкент ша</span><span class=rvts13>ҳ</span><span class=rvts14>ридаги эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналарининг маъмурий кенгашлари тў</span><span class=rvts13>ғ</span><span class=rvts14>рисидаги Низом 3-иловага</span><span class="rvts1">*</span><span class=rvts14> мувофи</span><span class=rvts13>қ</span><span class=rvts14>;</span></p>
+<p class=rvps50><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари маъмурий кенгашларининг фаолиятини мувофи</span><span class=rvts13>қ</span><span class=rvts14>лаштириш бўйича Республика кенгаши тў</span><span class=rvts13>ғ</span><span class=rvts14>рисидаги Низом 4-иловага</span><span class="rvts1">*</span><span class=rvts14> мувофи</span><span class=rvts13>қ</span><span class=rvts14> тасди</span><span class=rvts13>қ</span><span class=rvts14>лансин.</span></p>
+<p class=rvps51><span class=rvts2></span></p>
+<p class=rvps52><span class=rvts14>5. Республика кенгаши (А.Н. Арипов) 2017 йилнинг 1 декабрига </span><span class=rvts13>қ</span><span class=rvts14>адар минта</span><span class=rvts13>қ</span><span class=rvts14>аларнинг мавжуд минерал-хомашё, ер, сув, </span><span class=rvts13>қ</span><span class=rvts14>ишло</span><span class=rvts13>қ</span><span class=rvts14> хўжалиги ресурсларини, ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>ариш ва экспорт сало</span><span class=rvts13>ҳ</span><span class=rvts14>иятини, экологик шарт-шароитини </span><span class=rvts13>ҳ</span><span class=rvts14>исобга олган </span><span class=rvts13>ҳ</span><span class=rvts14>олда </span><span class=rvts13>ҳ</span><span class=rvts14>ар бир эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зонанинг тармо</span><span class=rvts13>қ</span><span class=rvts14> ихтисослашувини белгиласин.</span></p>
+<p class=rvps53><span class=rvts14>Ўзбекистон Республикаси Инвестициялар бўйича давлат </span><span class=rvts13>қ</span><span class=rvts14>ўмитаси И</span><span class=rvts13>қ</span><span class=rvts14>тисодиёт вазирлиги, Таш</span><span class=rvts13>қ</span><span class=rvts14>и савдо вазирлиги, Таш</span><span class=rvts13>қ</span><span class=rvts14>и ишлар вазирлиги, Савдо-саноат палатаси, тижорат банклари билан биргаликда икки ой муддатда </span><span class=rvts13>ҳ</span><span class=rvts14>ар бир эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зонанинг тармо</span><span class=rvts13>қ</span><span class=rvts14> ихтисослашувини </span><span class=rvts13>ҳ</span><span class=rvts14>исобга олган </span><span class=rvts13>ҳ</span><span class=rvts14>олда ана шу зоналарга хорижий инвесторларни жалб этиш бўйича "йўл хариталари"ни ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>син.</span></p>
+<p class=rvps54><span class=rvts2></span></p>
+<p class=rvps55><span class=rvts14>6. Шундай тартиб ўрнатилсинки, унга мувофи</span><span class=rvts13>қ</span><span class=rvts14>:</span></p>
+<p class=rvps56><span class=rvts14>Ўзбекистон Республикаси Тикланиш ва тара</span><span class=rvts13>ққ</span><span class=rvts14>иёт жам</span><span class=rvts13>ғ</span><span class=rvts14>армаси эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари </span><span class=rvts13>ҳ</span><span class=rvts14>удудларида лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларни молиялаштираётган барча тижорат банкларига, тасди</span><span class=rvts13>қ</span><span class=rvts14>ланган квоталар доирасида, кредит линиялари очилишини таъминлайди;</span></p>
+<p class=rvps57><span class=rvts14>маъмурий кенгашларга эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари ташкил этилган барча </span><span class=rvts13>ҳ</span><span class=rvts14>удудлардаги ер участкаларини, шу жумладан, давлат мулки бўлган фаолият юритмаётган бўш объектлар ва бўш ер майдонларини тасарруф этиш </span><span class=rvts13>ҳ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>и берилади;</span></p>
+<p class=rvps58><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зона ва кичик саноат зонасидаги ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>ариш </span><span class=rvts13>қ</span><span class=rvts14>увватлари, биринчи навбатда, тортиб келинган му</span><span class=rvts13>ҳ</span><span class=rvts14>андислик инфраструктурасига эга бўлган </span><span class=rvts13>ҳ</span><span class=rvts14>удудларда ва фаолият кўрсатмаётган бўш бинолар, иншоотлар </span><span class=rvts13>ҳ</span><span class=rvts14>амда </span><span class=rvts13>қ</span><span class=rvts14>уриб битказилмаган объектлар базасида жойлаштирилади;</span></p>
+<p class=rvps59><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зона иштирокчилари ўзларининг ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>ариш э</span><span class=rvts13>ҳ</span><span class=rvts14>тиёжлари учун зарур бўлган биржа товарлари (хомашё, материаллар, ярим фабрикатлар ва тайёр ма</span><span class=rvts13>ҳ</span><span class=rvts14>сулотларни) ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>арувчилар билан тў</span><span class=rvts13>ғ</span><span class=rvts14>ридан-тў</span><span class=rvts13>ғ</span><span class=rvts14>ри шартномалар асосида, эркин биржа савдоларида таркиб топадиган ўртача котировкалардан келиб чи</span><span class=rvts13>ққ</span><span class=rvts14>ан </span><span class=rvts13>ҳ</span><span class=rvts14>олда бозор нархларида сотиб олиш </span><span class=rvts13>ҳ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>ига эгадирлар;</span></p>
+<p class=rvps60><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарнинг иштирокчиларига фойда соли</span><span class=rvts13>ғ</span><span class=rvts14>и ва ягона соли</span><span class=rvts13>қ</span><span class=rvts14> тўлови бўйича берилган имтиёзларнинг амал </span><span class=rvts13>қ</span><span class=rvts14>илиш муддати эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зона </span><span class=rvts13>ҳ</span><span class=rvts14>удудида ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>ариш объекти фойдаланишга </span><span class=rvts13>қ</span><span class=rvts14>абул </span><span class=rvts13>қ</span><span class=rvts14>илинган санадан бошлаб </span><span class=rvts13>ҳ</span><span class=rvts14>исобланади;</span></p>
+<p class=rvps61><span class=rvts14>2018 йилнинг 1 мартидан бошлаб инвесторлар эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари дирекцияларига ахборот тизимларини кўллаган </span><span class=rvts13>ҳ</span><span class=rvts14>олда интерфаол шаклда инвестиция буюртманомаларини та</span><span class=rvts13>қ</span><span class=rvts14>дим этишлари мумкин;</span></p>
+<p class=rvps62><span class=rvts14>инвестиция киритиш тў</span><span class=rvts13>ғ</span><span class=rvts14>рисидаги битимларда назарда тутилган инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аси параметрларини бажариш бўйича белгиланган мажбуриятларнинг хўжалик юритувчи субъектлар томонидан бажарилмаслиги тадбиркорлик субъектини эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зона иштирокчиси ма</span><span class=rvts13>қ</span><span class=rvts14>омидан белгиланган тартибда ма</span><span class=rvts13>ҳ</span><span class=rvts14>рум этиш учун асос </span><span class=rvts13>ҳ</span><span class=rvts14>исобланади;</span></p>
+<p class=rvps63><span class=rvts14>тадбиркорни эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зона иштирокчиси ма</span><span class=rvts13>қ</span><span class=rvts14>омидан ма</span><span class=rvts13>ҳ</span><span class=rvts14>рум </span><span class=rvts13>қ</span><span class=rvts14>илиш унинг эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зона </span><span class=rvts13>ҳ</span><span class=rvts14>удудидаги фаолиятини, шунингдек эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зона иштирокчисига мулк эгалиги </span><span class=rvts13>ҳ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>и билан тегишли бўлган бош</span><span class=rvts13>қ</span><span class=rvts14>а объектларга нисбатан </span><span class=rvts13>ҳ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>лари тўхтатилишига олиб келмайди. Бунда ушбу тадбиркорлик субъекти ЭИЗ иштирокчилари учун берилган имтиёзлар ва афзалликлардан фойдаланмайди;</span></p>
+<p class=rvps64><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зона иштирокчиси ма</span><span class=rvts13>қ</span><span class=rvts14>омидан ма</span><span class=rvts13>ҳ</span><span class=rvts14>рум бўлган тадбиркорлик субъектидан, зарур </span><span class=rvts13>ҳ</span><span class=rvts14>олларда, ер участкасини олиб </span><span class=rvts13>қ</span><span class=rvts14>ўйиш </span><span class=rvts13>қ</span><span class=rvts14>онунчиликка </span><span class=rvts13>ҳ</span><span class=rvts14>амда инвестор билан тузилган инвестиция киритиш тў</span><span class=rvts13>ғ</span><span class=rvts14>рисидаги битим ёки бош</span><span class=rvts13>қ</span><span class=rvts14>а шартномаларга мувофи</span><span class=rvts13>қ</span><span class=rvts14> амалга оширилади.</span></p>
+<p class=rvps65><span class=rvts2></span></p>
+<p class=rvps66><span class=rvts14>7. Белгилаб </span><span class=rvts13>қ</span><span class=rvts14>ўйилсинки, соли</span><span class=rvts13>қ</span><span class=rvts14> </span><span class=rvts13>қ</span><span class=rvts14>онунчилиги ўзгарганида эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарнинг иштирокчилари соли</span><span class=rvts13>қ</span><span class=rvts14>лар ва бош</span><span class=rvts13>қ</span><span class=rvts14>а мажбурий тўловлар бўйича улар рўйхатдан ўтказилган санада амал </span><span class=rvts13>қ</span><span class=rvts14>илган норма ва </span><span class=rvts13>қ</span><span class=rvts14>оидаларни </span><span class=rvts13>қ</span><span class=rvts14>ўллашга </span><span class=rvts13>ҳ</span><span class=rvts14>а</span><span class=rvts13>қ</span><span class=rvts14>лидирлар, акциз соли</span><span class=rvts13>ғ</span><span class=rvts14>и олинадиган товарлар соли</span><span class=rvts13>ққ</span><span class=rvts14>а тортилишини тартибга солувчи </span><span class=rvts13>ҳ</span><span class=rvts14>ужжатларнинг нормалари ва </span><span class=rvts13>қ</span><span class=rvts14>оидалари бундан мустасно.</span></p>
+<p class=rvps67><span class=rvts2></span></p>
+<p class=rvps68><span class=rvts14>8. 2017 йилнинг 1 ноябридан бошлаб эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарнинг иштирокчилари - тадбиркорлик субъектлари томонидан тузиладиган импорт шартномаларини Ўзбекистон Республикаси Инвестициялар бўйича давлат </span><span class=rvts13>қ</span><span class=rvts14>ўмитасида экспертизадан ўтказиш талаби бекор </span><span class=rvts13>қ</span><span class=rvts14>илинсин, мазкур субъектларнинг устав капиталларида Ўзбекистон Республикаси Тикланиш ва тара</span><span class=rvts13>ққ</span><span class=rvts14>иёт жам</span><span class=rvts13>ғ</span><span class=rvts14>армасининг кредит линияси </span><span class=rvts13>ҳ</span><span class=rvts14>исобига тижорат банклари томонидан белгиланган тартибда молиялаштириладиган давлат улуши мавжуд эмас.</span></p>
+<p class=rvps69><span class=rvts2></span></p>
+<p class=rvps70><span class=rvts14>9. Ўзбекистон Республикаси Президентининг "Ургут", "</span><span class=rvts13>Ғ</span><span class=rvts14>иждувон", "</span><span class=rvts13>Қ</span><span class=rvts14>ў</span><span class=rvts13>қ</span><span class=rvts14>он" ва "</span><span class=rvts13>Ҳ</span><span class=rvts14>азорасп" эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарини ташкил этиш тў</span><span class=rvts13>ғ</span><span class=rvts14>рисида" 2017 йил 12 январдаги ПФ-4931-сонли Фармони </span><span class="rvts1">8-бандининг</span><span class=rvts14> амал </span><span class=rvts13>қ</span><span class=rvts14>илиши давлат унитар корхоналари - "Навоий", "Ангрен", "Жиззах" эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналари дирекциялари </span><span class=rvts13>ҳ</span><span class=rvts14>амда янгидан ташкил этилаётган эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарнинг дирекцияларига жорий этилсин.</span></p>
+<p class=rvps71><span class=rvts2></span></p>
+<p class=rvps72><span class=rvts14>10. Ўзбекистон Республикаси Молия вазирлиги (Б.А. Ходжаев) су</span><span class=rvts13>ғ</span><span class=rvts14>урта компаниялари билан биргаликда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарнинг иштирокчиларига бериладиган кредитлар бўйича гаров таъминоти су</span><span class=rvts13>ғ</span><span class=rvts14>урталанишини расмийлаштиришда 0,5 фоиздан орти</span><span class=rvts13>қ</span><span class=rvts14> бўлмаган ми</span><span class=rvts13>қ</span><span class=rvts14>дорда су</span><span class=rvts13>ғ</span><span class=rvts14>урта мукофоти ундирилишини амалиётга татби</span><span class=rvts13>қ</span><span class=rvts14> этсин.</span></p>
+<p class=rvps73><span class=rvts2></span></p>
+<p class=rvps74><span class=rvts14>11. Тижорат банкларига белгиланган тартибда:</span></p>
+<p class=rvps75><span class=rvts14>амалдаги кредит шартномаси бўйича мажбуриятларни бажариш учун эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар иштирокчилари - корхоналарнинг пул о</span><span class=rvts13>қ</span><span class=rvts14>имларида ва</span><span class=rvts13>қ</span><span class=rvts14>тинчалик номутаносиблик рўй берган </span><span class=rvts13>ҳ</span><span class=rvts14>олларда кредитни </span><span class=rvts13>қ</span><span class=rvts14>айтариш муддатини кейинга кўчириш ёки муддатини узайтириш йўли билан асосий </span><span class=rvts13>қ</span><span class=rvts14>арз юзасидан тўловлар ми</span><span class=rvts13>қ</span><span class=rvts14>дорини камайтириш бўйича кредит шартномаларига тегишли ўзгартиришлар киритиш;</span></p>
+<p class=rvps76><span class=rvts14>кредит буюртманомасини кўриб чи</span><span class=rvts13>қ</span><span class=rvts14>иш учун эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар иштирокчиларидан воситачилик </span><span class=rvts13>ҳ</span><span class=rvts14>а</span><span class=rvts13>қ</span><span class=rvts14>и ундирилишини бекор </span><span class=rvts13>қ</span><span class=rvts14>илиш ва абонент </span><span class=rvts13>ҳ</span><span class=rvts14>а</span><span class=rvts13>қ</span><span class=rvts14>и тўлашдан озод </span><span class=rvts13>қ</span><span class=rvts14>илиш;</span></p>
+<p class=rvps77><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар </span><span class=rvts13>ҳ</span><span class=rvts14>удудида инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аси ишга туширилгунга </span><span class=rvts13>қ</span><span class=rvts14>адар, аммо норматив муддатдан кўп бўлмаган даврда берилган кредитлар юзасидан </span><span class=rvts13>қ</span><span class=rvts14>ўшиб </span><span class=rvts13>ҳ</span><span class=rvts14>исобланган фоизларни капиталлаштириш чора-тадбирларини кўриш тавсия этилсин.</span></p>
+<p class=rvps78><span class=rvts2></span></p>
+<p class=rvps79><span class=rvts14>12. Ўзбекистон Республикаси И</span><span class=rvts13>қ</span><span class=rvts14>тисодиёт вазирлиги, Инвестициялар бўйича давлат </span><span class=rvts13>қ</span><span class=rvts14>ўмитаси </span><span class=rvts13>ҳ</span><span class=rvts14>амда Ахборот технологиялари ва коммуникацияларини ривожлантириш вазирлигининг Ўзбекистон Республикаси эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналари ва кичик саноат зоналарининг Ягона порталини яратиш ва 2018 йилнинг 1 мартидан бошлаб уни ишга тушириш тў</span><span class=rvts13>ғ</span><span class=rvts14>рисидаги таклифига розилик берилсин, ушбу портал:</span></p>
+<p class=rvps80><span class=rvts14>мамлакатнинг эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари тў</span><span class=rvts13>ғ</span><span class=rvts14>рисида, та</span><span class=rvts13>қ</span><span class=rvts14>дим этилаётган имтиёзлар, инвестиция киритиш афзалликлари, инфратузилма, географик жойлашув, шунингдек, уларнинг </span><span class=rvts13>ҳ</span><span class=rvts14>удудида жойлашган давлат мулки объектлари, инвесторларга кўрсатилаётган хизматлар тў</span><span class=rvts13>ғ</span><span class=rvts14>рисида давлат тили, рус тили ва бош</span><span class=rvts13>қ</span><span class=rvts14>а хорижий тилларда кенгайтирилган ахборотлар олишни;</span></p>
+<p class=rvps81><span class=rvts14>инвесторлар, шу жумладан, хорижий инвесторларга </span><span class=rvts13>ҳ</span><span class=rvts14>амда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналарининг иштирокчиларига амалга ошириш тавсия этилган инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>алари тў</span><span class=rvts13>ғ</span><span class=rvts14>рисида ахборот берилишини;</span></p>
+<p class=rvps82><span class=rvts14>инвесторлар, жумладан, хорижий инвесторларга </span><span class=rvts13>ҳ</span><span class=rvts14>амда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари иштирокчиларига интерфаол шаклда зоналар дирекцияларининг, давлат органлари </span><span class=rvts13>ҳ</span><span class=rvts14>амда бош</span><span class=rvts13>қ</span><span class=rvts14>а ташкилотларнинг хизматлари, шу жумладан, инвестиция буюртманомалари </span><span class=rvts13>ҳ</span><span class=rvts14>амда бош</span><span class=rvts13>қ</span><span class=rvts14>а </span><span class=rvts13>ҳ</span><span class=rvts14>ужжатларни </span><span class=rvts13>қ</span><span class=rvts14>абул </span><span class=rvts13>қ</span><span class=rvts14>илиш, аризалар, бланклар ва бош</span><span class=rvts13>қ</span><span class=rvts14>а зарур </span><span class=rvts13>ҳ</span><span class=rvts14>ужжатларнинг шаклларини олиш бўйича хизматлар кўрсатилишини;</span></p>
+<p class=rvps83><span class=rvts14>инвесторнинг </span><span class=rvts13>қ</span><span class=rvts14>аерда ва </span><span class=rvts13>қ</span><span class=rvts14>андай усулда мурожаат </span><span class=rvts13>қ</span><span class=rvts14>илганлигидан </span><span class=rvts13>қ</span><span class=rvts14>атъий назар, инвестиция буюртманомаларини кўриб чи</span><span class=rvts13>қ</span><span class=rvts14>ишнинг бориши ва натижасидан хабардор бўлиб туриш имкониятини;</span></p>
+<p class=rvps84><span class=rvts14>сало</span><span class=rvts13>ҳ</span><span class=rvts14>иятли инвесторлар </span><span class=rvts13>ҳ</span><span class=rvts14>амда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари иштирокчиларининг ўзларини </span><span class=rvts13>қ</span><span class=rvts14>изи</span><span class=rvts13>қ</span><span class=rvts14>тирувчи масалалар бўйича зоналар дирекциясига, маъмурий кенгашлар ва Республика кенгашига тў</span><span class=rvts13>ғ</span><span class=rvts14>ридан-тў</span><span class=rvts13>ғ</span><span class=rvts14>ри мурожаат </span><span class=rvts13>қ</span><span class=rvts14>илиш имкониятини таъминлайди.</span></p>
+<p class=rvps85><span class=rvts14>Ўзбекистон Республикаси ахборот технологиялари ва коммуникацияларини ривожлантириш вазири Ш.Х. Шерматов, и</span><span class=rvts13>қ</span><span class=rvts14>тисодиёт вазири Г.К. Саидова, инвестициялар бўйича давлат </span><span class=rvts13>қ</span><span class=rvts14>ўмитаси раиси А.И. Ахмедходжаев зиммасига </span><span class=rvts13>қ</span><span class=rvts14>арорнинг ушбу банди белгиланган муддатларда бажарилиши юзасидан шахсий жавобгарлик юклансин.</span></p>
+<p class=rvps86><span class=rvts2></span></p>
+<p class=rvps87><span class=rvts14>13. Ўзбекистон Республикаси И</span><span class=rvts13>қ</span><span class=rvts14>тисодиёт вазирлиги дахлдор вазирликлар ва идоралар билан биргаликда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналарини транспорт, му</span><span class=rvts13>ҳ</span><span class=rvts14>андислик-коммуникация ва ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>ариш инфратузилмаси билан таъминлашга </span><span class=rvts13>қ</span><span class=rvts14>аратилган лойи</span><span class=rvts13>ҳ</span><span class=rvts14>алар Ўзбекистон Республикасининг 2018 йилги ва кейинги йиллардаги Инвестиция дастурига киритилишини таъминласин.</span></p>
+<p class=rvps88><span class=rvts2></span></p>
+<p class=rvps89><span class=rvts14>14. </span><span class=rvts13>Қ</span><span class=rvts14>уйидагилар:</span></p>
+<p class=rvps90><span class=rvts14>Ўзбекистон Республикаси И</span><span class=rvts13>қ</span><span class=rvts14>тисодиёт вазирлиги ра</span><span class=rvts13>ҳ</span><span class=rvts14>барлари (Г.К. Саидова, С.Х. Бекенов, Д.Д. Асомов) зиммасига - эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар </span><span class=rvts13>ҳ</span><span class=rvts14>удудида амалга ошириш таклиф этилаётган лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларнинг доимий янгилаб туриладиган рўйхатини шакллантириш, инвестиция буюртманомаларини сифатли ва тезкор кўриб чи</span><span class=rvts13>қ</span><span class=rvts14>иш, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналарининг иштирокчилари - субъектлар томонидан маъ</span><span class=rvts13>қ</span><span class=rvts14>улланган инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>алари амалга оширилишини тизимли мониторинг </span><span class=rvts13>қ</span><span class=rvts14>илиш юзасидан;</span></p>
+<p class=rvps91><span class=rvts14>Ўзбекистон Республикаси Инвестициялар бўйича давлат </span><span class=rvts13>қ</span><span class=rvts14>ўмитаси ра</span><span class=rvts13>ҳ</span><span class=rvts14>барлари (А.И. Ахмедходжаев, Л.Ш. </span><span class=rvts13>Қ</span><span class=rvts14>удратов) зиммасига - Ўзбекистон Республикаси Таш</span><span class=rvts13>қ</span><span class=rvts14>и ишлар вазирлиги билан биргаликда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарнинг </span><span class=rvts13>ҳ</span><span class=rvts14>ар бири учун шерик-мамлакатни белгилаш, сало</span><span class=rvts13>ҳ</span><span class=rvts14>иятли хорижий инвесторларни ЭИЗ </span><span class=rvts13>ҳ</span><span class=rvts14>удудида лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларни амалга оширишга жалб этиш, улар билан тизимли иш олиб бориш, шунингдек, янгидан барпо этилаётган ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>аришларни замонавий ускуналари ва технологиялар билан жи</span><span class=rvts13>ҳ</span><span class=rvts14>озлаш </span><span class=rvts13>қ</span><span class=rvts14>исмида эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар </span><span class=rvts13>ҳ</span><span class=rvts14>удудида ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>аришни жойлаштиришга инвестиция буюртманомаларини сифатли ва </span><span class=rvts13>ҳ</span><span class=rvts14>ар томонлама кўриб чи</span><span class=rvts13>қ</span><span class=rvts14>иш юзасидан;</span></p>
+<p class=rvps92><span class=rvts14>Ўзбекистон Республикаси Хусусийлаштирилган корхоналарга кўмаклашиш ва ра</span><span class=rvts13>қ</span><span class=rvts14>обатни ривожлантириш давлат </span><span class=rvts13>қ</span><span class=rvts14>ўмитаси ра</span><span class=rvts13>ҳ</span><span class=rvts14>барлари (Р.А. </span><span class=rvts13>Ғ</span><span class=rvts14>уломов, Р.А. Аминов) зиммасига - бекор ётган ёки </span><span class=rvts13>қ</span><span class=rvts14>урилиши тугалланмаган объектлар, самарасиз фойдаланилаётган ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>ариш бинолари </span><span class=rvts13>ҳ</span><span class=rvts14>амда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналарининг иштирокчилари - хўжалик юритувчи субъектларнинг янгидан </span><span class=rvts13>қ</span><span class=rvts14>урилаётган корхоналарини жойлаштириш учун ер майдонлари синчиклаб, пухта хатловдан ўтказилиши юзасидан;</span></p>
+<p class=rvps93><span class=rvts14>Ўзбекистон Республикаси савдо-саноат палатаси раиси А.И. Икромов зиммасига - эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари </span><span class=rvts13>ҳ</span><span class=rvts14>удудида ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>аришни ташкил этиш бизнес-режаларини ёки инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларининг техник-и</span><span class=rvts13>қ</span><span class=rvts14>тисодий асосларини ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>ишда тадбиркорлик субъектларига кўмак бериш юзасидан;</span></p>
+<p class=rvps94><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналарига бириктирилган тижорат банкларининг ра</span><span class=rvts13>ҳ</span><span class=rvts14>барлари зиммасига - эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари </span><span class=rvts13>ҳ</span><span class=rvts14>удудларида амалга оширилаётган лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларнинг ўз ва</span><span class=rvts13>қ</span><span class=rvts14>тида ва тўла </span><span class=rvts13>ҳ</span><span class=rvts14>ажмда молиялаштирилишини мувофи</span><span class=rvts13>қ</span><span class=rvts14>лаштириш ва мониторинг </span><span class=rvts13>қ</span><span class=rvts14>илиш юзасидан;</span></p>
+<p class=rvps95><span class=rvts14>"Ўзбекэнерго" АЖ раиси У.М. Мустафоев, "Ўзтрансгаз" АЖ раиси А.С. Мустафоев, Ўзбекистон Республикаси уй-жой коммунал хизмат кўрсатиш вазири М.Х. Солиев, </span><span class=rvts13>Қ</span><span class=rvts14>ора</span><span class=rvts13>қ</span><span class=rvts14>алпо</span><span class=rvts13>ғ</span><span class=rvts14>истон Республикаси Вазирлар Кенгашининг раиси, вилоятлар ва Тошкент ша</span><span class=rvts13>ҳ</span><span class=rvts14>ар </span><span class=rvts13>ҳ</span><span class=rvts14>окимлари зиммасига - эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар </span><span class=rvts13>қ</span><span class=rvts14>урилиши ва уларнинг таш</span><span class=rvts13>қ</span><span class=rvts14>и инфратузилмага уланиши, эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари иштирокчиларининг электр энергияси, табиий газ, сув билан, шунингдек, уларнинг ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>ариш э</span><span class=rvts13>ҳ</span><span class=rvts14>тиёжларига мувофи</span><span class=rvts13>қ</span><span class=rvts14> таш</span><span class=rvts13>қ</span><span class=rvts14>и канализация тармо</span><span class=rvts13>қ</span><span class=rvts14>лари билан узлуксиз таъминланиши юзасидан шахсий жавобгарлик юклансин.</span></p>
+<p class=rvps96><span class=rvts2></span></p>
+<p class=rvps97><span class=rvts14>15. Ўзбекистон Республикаси Инвестициялар бўйича давлат </span><span class=rvts13>қ</span><span class=rvts14>ўмитаси И</span><span class=rvts13>қ</span><span class=rvts14>тисодий вазирлиги ва тижорат банклари билан биргаликда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналари ходимларининг инвесторлар билан ишлаш бўйича, шу жумладан, махсус курслар ташкил этиш йўли билан малакаси муттасил ошириб борилишини таъминласин.</span></p>
+<p class=rvps98><span class=rvts2></span></p>
+<p class=rvps99><span class=rvts14>16. Ўзбекистон Республикаси И</span><span class=rvts13>қ</span><span class=rvts14>тисодиёт вазирлиги, Молия вазирлиги, Инвестициялар бўйича давлат </span><span class=rvts13>қ</span><span class=rvts14>ўмитаси бош</span><span class=rvts13>қ</span><span class=rvts14>а манфаатдор вазирликлар ва идоралар билан биргаликда бир ой муддатда:</span></p>
+<p class=rvps100><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар тў</span><span class=rvts13>ғ</span><span class=rvts14>рисидаги янгиланган низомни;</span></p>
+<p class=rvps101><span class=rvts14>кичик саноат зоналари тў</span><span class=rvts13>ғ</span><span class=rvts14>рисидаги низомни;</span></p>
+<p class=rvps102><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар ва кичик саноат зоналари </span><span class=rvts13>ҳ</span><span class=rvts14>удудида жойлаштириш учун инвестиция лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларини танлаш ва уларнинг иштирокчиларини рўйхатга олиш тартиби тў</span><span class=rvts13>ғ</span><span class=rvts14>рисидаги низомларни, шунингдек, бюрократизм ва сансалорликни бартараф этишга </span><span class=rvts13>қ</span><span class=rvts14>аратилган нормаларни тасди</span><span class=rvts13>қ</span><span class=rvts14>лаш, низомларга лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларни амалга ошириш </span><span class=rvts13>ҳ</span><span class=rvts14>амда эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва кичик саноат зоналарида жойлаштириш учун танлаб олишнинг ани</span><span class=rvts13>қ</span><span class=rvts14> мезонларини киритиш;</span></p>
+<p class=rvps103><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарнинг иштирокчиларига ер майдонлари бериш тў</span><span class=rvts13>ғ</span><span class=rvts14>рисидаги янгиланган низомни;</span></p>
+<p class=rvps104><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар </span><span class=rvts13>ҳ</span><span class=rvts14>удудида соли</span><span class=rvts13>қ</span><span class=rvts14>лар ва божхона тўловлари бўйича имтиёзларни </span><span class=rvts13>қ</span><span class=rvts14>ўллаш тартиби тў</span><span class=rvts13>ғ</span><span class=rvts14>рисидаги янгиланган низомни тасди</span><span class=rvts13>қ</span><span class=rvts14>лаш, бунда лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларнинг бизнес-режалари/техник-и</span><span class=rvts13>қ</span><span class=rvts14>тисодий асосланишининг асосий и</span><span class=rvts13>қ</span><span class=rvts14>тисодий ва ижтимоий кўрсаткичлари, (киритилаётган инвестициялар </span><span class=rvts13>ҳ</span><span class=rvts14>ажми, товар айланмаси ва экспорт суммаси, яратилаётган доимий иш ўринлари сони, ишлаб чи</span><span class=rvts13>қ</span><span class=rvts14>аришнинг валютада </span><span class=rvts13>қ</span><span class=rvts14>опланиши ва бош</span><span class=rvts13>қ</span><span class=rvts14>алар) </span><span class=rvts13>ҳ</span><span class=rvts14>исобга олинган </span><span class=rvts13>ҳ</span><span class=rvts14>олда имтиёзлар </span><span class=rvts13>қ</span><span class=rvts14>ўлланилишини назарда тутиш;</span></p>
+<p class=rvps105><span class=rvts14>эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар дирекциялари, иштирокчилари ва инвесторлари ўртасида тузиладиган инвестиция киритиш тў</span><span class=rvts13>ғ</span><span class=rvts14>рисидаги намунавий битимни тасди</span><span class=rvts13>қ</span><span class=rvts14>лаш бўйича норматив-</span><span class=rvts13>ҳ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>у</span><span class=rvts13>қ</span><span class=rvts14>ий </span><span class=rvts13>ҳ</span><span class=rvts14>ужжатларнинг лойи</span><span class=rvts13>ҳ</span><span class=rvts14>аларини Ўзбекистон Республикаси Вазирлар Ма</span><span class=rvts13>ҳ</span><span class=rvts14>камасига киритсин.</span></p>
+<p class=rvps106><span class=rvts2></span></p>
+<p class=rvps107><span class=rvts14>17. Ўзбекистон Республикаси Вазирлар Ма</span><span class=rvts13>ҳ</span><span class=rvts14>камаси бир ой муддатда Ўзбекистон Республикаси Президентининг 2017 йил 3 майдаги ПФ-5032-сонли </span><span class="rvts1">Фармони</span><span class=rvts14> билан ташкил </span><span class=rvts13>қ</span><span class=rvts14>илинган фармацевтика эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналарига кирувчи </span><span class=rvts13>ҳ</span><span class=rvts14>удудларнинг чегараларини тасди</span><span class=rvts13>қ</span><span class=rvts14>лаш бўйича </span><span class=rvts13>қ</span><span class=rvts14>арор </span><span class=rvts13>қ</span><span class=rvts14>абул </span><span class=rvts13>қ</span><span class=rvts14>илсин.</span></p>
+<p class=rvps108><span class=rvts2></span></p>
+<p class=rvps109><span class="rvts1"></span>
+<span class=rvts14>18. Ўзбекистон Республикаси Президентининг "Эркин и</span><span class=rvts13>қ</span><span class=rvts14>тисодий зоналар самарали фаолият кўрсатиши учун вазирликлар, идоралар, жойлардаги давлат </span><span class=rvts13>ҳ</span><span class=rvts14>окимияти органларини мувофи</span><span class=rvts13>қ</span><span class=rvts14>лаштиришни кучайтириш ва уларнинг масъулиятини ошириш чора-тадбирлари тў</span><span class=rvts13>ғ</span><span class=rvts14>рисида" 2017 йил 7 августдаги П</span><span class=rvts13>Қ</span><span class=rvts14>-3175-сонли </span><span class=rvts13>қ</span><span class=rvts14>арори 4-бандининг </span><span class="rvts1">иккинчи хатбоши</span><span class=rvts14> чи</span><span class=rvts13>қ</span><span class=rvts14>ариб ташлансин.</span></p>
+<p class=rvps110><span class=rvts2></span></p>
+<p class=rvps111><span class=rvts14>19. Ўзбекистон Республикаси И</span><span class=rvts13>қ</span><span class=rvts14>тисодиёт вазирлиги, Молия вазирлиги, Инвестициялар бўйича давлат </span><span class=rvts13>қ</span><span class=rvts14>ўмитаси, Хусусийлаштирилган корхоналарга кўмаклашиш ва ра</span><span class=rvts13>қ</span><span class=rvts14>обатни ривожлантириш давлат </span><span class=rvts13>қ</span><span class=rvts14>ўмитаси, Адлия вазирлиги </span><span class=rvts13>ҳ</span><span class=rvts14>амда бош</span><span class=rvts13>қ</span><span class=rvts14>а манфаатдор вазирликлар ва идоралар билан биргаликда бир ой муддатда </span><span class=rvts13>қ</span><span class=rvts14>онун </span><span class=rvts13>ҳ</span><span class=rvts14>ужжатларига ушбу </span><span class=rvts13>қ</span><span class=rvts14>арордан келиб чи</span><span class=rvts13>қ</span><span class=rvts14>адиган ўзгартиш ва </span><span class=rvts13>қ</span><span class=rvts14>ўшимчалар тў</span><span class=rvts13>ғ</span><span class=rvts14>рисида Ўзбекистон Республикаси Вазирлар Ма</span><span class=rvts13>ҳ</span><span class=rvts14>камасига таклифлар киритсин.</span></p>
+<p class=rvps112><span class=rvts2></span></p>
+<p class=rvps113><span class=rvts14>20. Мазкур </span><span class=rvts13>қ</span><span class=rvts14>арорнинг ижросини назорат </span><span class=rvts13>қ</span><span class=rvts14>илиш Ўзбекистон Республикасининг Бош вазири А.Н. Арипов, Ўзбекистон Республикаси Президентининг Давлат масла</span><span class=rvts13>ҳ</span><span class=rvts14>атчиси В.А. Голышев, Ўзбекистон Республикаси и</span><span class=rvts13>қ</span><span class=rvts14>тисодиёт вазири Г.К. Саидова </span><span class=rvts13>ҳ</span><span class=rvts14>амда Ўзбекистон Республикаси инвестициялар бўйича давлат </span><span class=rvts13>қ</span><span class=rvts14>ўмитасининг раиси А.И. Ахмедходжаев зиммасига юклансин.</span></p>
+<p class=rvps114><span class=rvts2></span></p>
+<p class=rvps115><span class=rvts2></span></p>
+<p class=rvps116><span class=rvts7>Ўзбекистон Республикаси Президенти&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ш. Мирзиёев</span></p>
+<p class=rvps117><span class=rvts2></span></p>
+<p class=rvps118><span class=rvts2></span></p>
+<p class=rvps119><span class="rvts1"></span>
+<span class=rvts15>*) Иловалар рус тилидаги матнда берилган.</span></p>
+<p class=rvps120><span class=rvts2></span></p>
+<p class=rvps121><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts16>Қ</span><span class=rvts17>онун </span><span class=rvts16>ҳ</span><span class=rvts17>ужжатлари маълумотлари миллий базаси (www.lex.uz),</span></p>
+<p class=rvps122><span class=rvts17>2017 йил 25 октябрь</span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p>
+<p class=rvps122><span class=rvts2></span></p
